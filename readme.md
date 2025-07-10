@@ -129,7 +129,7 @@ camerart_official_web/
 - ✅ **`localStorage`를 이용해 열림/닫힘 상태 유지**
 - ✅ **서브메뉴(ARCHIVE) 열림 상태도 기억**
 
-### ABOUT 타임라인
+### About 페이지 타임라인
 - `.timeline-entry`는 `data-id`, `data-preview` 속성 보유
 - `about.js`에서
   - Hover 시 → 이미지 프리뷰 표시
