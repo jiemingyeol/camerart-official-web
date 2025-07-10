@@ -1,4 +1,28 @@
-env/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# 환경 파일
+.env
+
+# 가상환경
+env/
+venv/
+
+# Mac
 .DS_Store
+
+# VSCode 설정 (옵션)
+.vscode/
+
+# 로그, 캐시, 백업
+*.log
+*.bak
+*.swp
+
+# 테스트 관련
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
