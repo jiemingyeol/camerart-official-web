@@ -1,0 +1,31 @@
+.intro-page body, .intro-wrapper {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.intro-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.gif-box {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gif-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

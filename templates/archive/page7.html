@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block page_class %}archive-page archive-7{% endblock %}
+
+{% block content %}
+<div class="now-container">
+    <!-- 좌측 고정 포스터 -->
+    <div class="poster">
+        <img src="{{ url_for('static', filename='images/archive/7/poster.jpg') }}" alt="포스터">
+    </div>
+
+    <!-- 우측 스크롤 콘텐츠 -->
+    <div class="content">
+        <section class="exhibition-info">
+            <h1>7th Exhibition</h1>
+            <p>아카이브 전시 설명 텍스트...</p>
+        </section>
+
+        <section class="installation-views">
+            <h2>→ INSTALLATION VIEWS</h2>
+            <div class="scroll-gallery">
+                <img src="{{ url_for('static', filename='images/archive/7/install1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/7/install2.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/7/install3.jpg') }}">
+            </div>
+        </section>
+
+        <section class="works">
+            <h2>→ WORKS</h2>
+            <div class="works-gallery">
+                <img src="{{ url_for('static', filename='images/archive/7/work1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/7/work2.jpg') }}">
+            </div>
+        </section>
+
+        <section class="funding">
+            <h2>→ FUNDING</h2>
+            <p>펀딩 관련 설명...</p>
+            <img src="{{ url_for('static', filename='images/archive/7/funding.jpg') }}">
+        </section>
+    </div>
+</div>
+{% endblock %}

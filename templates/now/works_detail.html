@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="works-detail-page">
+    <div class="works-header">
+        <a href="{{ url_for('now') }}">← WORKS</a>
+        <h2>작업물 상세 보기</h2>
+    </div>
+    <div class="works-gallery-grid">
+        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work1.jpg') }}"></div>
+        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work2.jpg') }}"></div>
+        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work3.jpg') }}"></div>
+        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work4.jpg') }}"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block page_class %}now-page{% endblock %}
+
+{% block content %}
+<div class="now-container">
+    <div class="poster">
+        <img src="{{ url_for('static', filename='images/now/poster.jpg') }}" alt="포스터">
+    </div>
+    <div class="content">
+        <section class="exhibition-info">
+            <h1>피사(被寫)의 석탑</h1>
+            <p>시선의 틈에서 서로의 마음을 쏟듯</p>
+            <p><strong>장소:</strong> 서울시 종로구 율곡로 3길 17, 57th 갤러리</p>
+            <p><strong>기간:</strong> 2025.02.19 - 2025.02.24 (10:00 - 20:00)</p>
+            <p class="description">전시 설명 텍스트... 줄글 내용 삽입</p>
+        </section>
+        <section class="installation-views">
+            <h2>→ INSTALLATION VIEWS</h2>
+            <div class="scroll-gallery draggable-scroll" id="installScroll">
+                <img src="{{ url_for('static', filename='images/now/install1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/install2.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/install3.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/install4.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/install5.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/install6.jpg') }}">
+            </div>
+        </section>
+        <section class="works">
+            <div class="works-header">
+                <h2>→ WORKS</h2>
+                <a href="{{ url_for('works') }}">MORE</a>
+            </div>
+            <div class="works-gallery">
+                <img src="{{ url_for('static', filename='images/now/work1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/now/work2.jpg') }}">
+            </div>
+        </section>
+        <section class="funding">
+            <h2>→ FUNDING</h2>
+            <p>펀딩 관련 설명 + 이미지</p>
+            <img src="{{ url_for('static', filename='images/now/funding.jpg') }}">
+        </section>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  // 사이드바는 이 페이지에 처음 오면 닫힌 상태로
+  localStorage.setItem("sidebarOpen", "false");
+  localStorage.setItem("submenuOpen", "false");
+</script>
+{% endblock %}

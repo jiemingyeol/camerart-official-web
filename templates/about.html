@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_class %}about-page{% endblock %}
+
+{% block content %}
+<div class="about-container">
+  <div class="about-header">
+    <img class="about-logo" src="{{ url_for('static', filename='images/about/logo.png') }}" alt="Camerart Logo">
+    <p>
+      ‘Camerata’ 란 16세기말에 고대 그리스 극의 음악을 참고하여 작곡가, 시인, 학자, 예술 애호가들이 모인 그룹을 가리킵니다.
+      내용의 통일성도 없는 기존의 종합공연예술을 비난하며 깊이 있고 통일성을 가진 종합예술을 만들고자 하였던 그룹입니다.
+      저희 ‘Camer:art’ 는 이 ‘Camerata’ 의 정신을 본 받아 전시 기획을 통해 현대에서도 비판적 사고를 가지고 더 나은 문화예술을
+      만들어나가고자 Camerata 와 Art 의 합성어 Carmer:art로 예술을 함께하는 전시 동아리입니다.
+    </p>
+  </div>
+
+  <div class="timeline">
+    {% for section in history %}
+    <div class="timeline-section">
+      <h3 class="year">{{ section.year }}</h3>
+      {% for entry in section.entries %}
+      <div class="timeline-entry"
+          {% if entry.preview %}data-preview="{{ entry.preview }}"{% endif %}
+          {% if entry.id %}data-id="{{ entry.id }}"{% endif %}>
+        <div class="timeline-label">{{ entry.label }}</div>
+        {% if entry.description %}
+        <div class="timeline-detail">
+          <p>{{ entry.description | safe }}</p>
+          <div class="detail-images">
+            {% for img in entry.images %}
+            <img src="{{ img }}">
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+
+<div id="imagePreview"></div>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+{% endblock %}

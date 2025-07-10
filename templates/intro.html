@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block page_class %}intro-page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/intro.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="intro-wrapper" onclick="goToNowPage()">
+    <!-- 전체 배경 GIF -->
+    <img src="{{ url_for('static', filename='images/intro/background.gif') }}" class="intro-bg" alt="배경">
+
+    <!-- 위치 지정된 GIF 박스들 -->
+    <div class="gif-box" style="top: 10%; left: 15%;">
+        <img src="{{ url_for('static', filename='images/intro/box1.gif') }}" alt="gif1">
+    </div>
+    <div class="gif-box" style="top: 50%; left: 40%;">
+        <img src="{{ url_for('static', filename='images/intro/box2.gif') }}" alt="gif2">
+    </div>
+    <div class="gif-box" style="top: 70%; left: 70%;">
+        <img src="{{ url_for('static', filename='images/intro/box3.gif') }}" alt="gif3">
+    </div>
+</div>
+{% endblock %}

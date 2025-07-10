@@ -1,0 +1,125 @@
+/* ---------- 공통 전체 ---------- */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, p {
+    margin: 0.5rem 0;
+}
+
+/* ---------- Now & Archive 페이지 공통 ---------- */
+.now-page .now-container,
+.archive-page .now-container {
+    display: flex;
+}
+
+.now-page .poster,
+.archive-page .poster {
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.now-page .poster img,
+.archive-page .poster img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.now-page .content,
+.archive-page .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.now-page section,
+.archive-page section {
+    margin-bottom: 3rem;
+}
+
+/* Installation Views */
+.scroll-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.scroll-gallery img {
+    height: 150px;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.scroll-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* 드래그 커서 */
+.draggable-scroll {
+    cursor: grab;
+    user-select: none;
+}
+.draggable-scroll.dragging {
+    cursor: grabbing;
+}
+
+/* Works 섹션 */
+.works-header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2.5rem;
+    align-items: center;
+}
+
+.works-header a {
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+    border: none;
+    padding: 0;
+    background: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.works-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.works-gallery img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+/* Works 상세 페이지 */
+.works-detail-page {
+    padding: 2rem;
+}
+
+.works-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}

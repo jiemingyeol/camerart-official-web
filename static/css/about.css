@@ -1,0 +1,89 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.about-header img,
+.about-logo {
+  width: 200px !important; /* 로고 크기 고정 */
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about-header p {
+  max-width: 800px;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.timeline {
+  margin-top: 3rem;
+}
+
+.timeline-section {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.timeline .year {
+  border-top: 2px solid black;
+  padding-top: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.timeline-entry {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.timeline-label {
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.timeline-label:hover {
+  background-color: #f0f0f0;
+}
+
+.timeline-detail {
+  display: none;
+  margin-top: 1rem;
+}
+
+.timeline-entry.active .timeline-detail {
+  display: block;
+}
+
+.detail-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.detail-images img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#imagePreview {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  pointer-events: none;
+  background: #fff;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#imagePreview img {
+  max-width: 150px;
+  height: auto;
+}
