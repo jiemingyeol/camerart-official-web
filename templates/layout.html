@@ -1,3 +1,13 @@
+{% macro ordinal(n) -%}
+  {%- set n_mod100 = n % 100 -%}
+  {{ n }}{%- if n_mod100 // 10 != 1 -%}
+    {%- if n % 10 == 1 -%}st
+    {%- elif n % 10 == 2 -%}nd
+    {%- elif n % 10 == 3 -%}rd
+    {%- else -%}th{%- endif -%}
+  {%- else -%}th{%- endif -%}
+{%- endmacro %}
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -27,10 +37,14 @@
                 <span class="menu-toggle" onclick="toggleSubmenu(this)">
                     <span class="arrow">▶</span> ARCHIVE
                 </span>
-                <ul class="submenu">
-                    {% for i in range(1, 16) %}
-                    <li><a href="/archive/{{ i }}">{{ i }}th</a></li>
-                    {% endfor %}
+                <!-- ① .submenu → .submenu archive-menu 로 변경 -->
+                <ul class="submenu archive-menu">
+                    {%- for i in range(1, total_pages|default(15) + 1) %}
+                    {# ② <li>에 archive-menu-item 클래스와 active 토글 #}
+                    <li class="archive-menu-item {% if current_page|default(0) == i %}active{% endif %}">
+                        <a href="{{ url_for('archive_page', num=i) }}">{{ ordinal(i) }}</a>
+                    </li>
+                    {%- endfor %}
                 </ul>
             </li>
 
@@ -44,6 +58,7 @@
     <!-- 공통 JS -->
     <script src="{{ url_for('static', filename='js/dragscroll.js') }}"></script>
     <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/archive.js') }}"></script>
 
     <!-- 페이지별 추가 JS -->
     {% block extra_js %}{% endblock %}

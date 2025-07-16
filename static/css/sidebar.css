@@ -99,3 +99,13 @@
     font-size: 0.9rem;
     transition: transform 0.2s ease;
 }
+
+#sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
+  text-decoration: none; /* 기본 상태 */
+}
+
+#sidebar .menu .submenu.archive-menu li.archive-menu-item > a:hover,
+#sidebar .menu .submenu.archive-menu li.archive-menu-item.active > a {
+  text-decoration: underline !important;
+  font-weight: bold;
+}
