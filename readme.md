@@ -18,41 +18,40 @@
 
 ## 📂 폴더 구조
 
-camerart_official_web/
-├── app.py
-├── .env
-├── .gitignore
-├── readme.md
-├── requirements.txt
-├── static/
-│ ├── css/
-│ │ ├── style.css
-│ │ ├── sidebar.css
-│ │ ├── archive.css
-│ │ └── about.css
-│ ├── js/
-│ │ ├── dragscroll.js
-│ │ ├── sidebar.js
-│ │ ├── archive.js
-│ │ ├── about.js
-│ │ └── intro.js
-│ ├── images/
-│ └── data/
-│ ├── history.json
-│ └── archive_images.json
-└── templates/
-├── layout.html
-├── intro.html
-├── now/
-│ ├── index.html
-│ └── works_detail.html
-├── archive/
-│ ├── page1.html
-│ └── ... (page2.html ~ page15.html)
-└── about.html
+    camerart_official_web/
+    ├── app.py
+    ├── .env
+    ├── .gitignore
+    ├── readme.md
+    ├── requirements.txt
+    ├── static/
+    │   ├── css/
+    │   │   ├── style.css
+    │   │   ├── sidebar.css
+    │   │   ├── archive.css
+    │   │   └── about.css
+    │   ├── js/
+    │   │   ├── dragscroll.js
+    │   │   ├── sidebar.js
+    │   │   ├── archive.js
+    │   │   ├── about.js
+    │   │   └── intro.js
+    │   ├── images/
+    │   └── data/
+    │       ├── history.json
+    │       └── archive_images.json
+    └── templates/
+        ├── layout.html
+        ├── intro.html
+        ├── now/
+        │   ├── index.html
+        │   └── works_detail.html
+        ├── archive/
+        │   ├── page1.html
+        │   └── ... (page2.html ~ page15.html)
+        └── about.html
 
 ---
-
 ## 🚀 주요 기능
 
 ### 공통
