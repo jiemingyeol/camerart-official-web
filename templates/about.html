@@ -20,6 +20,7 @@
       <h3 class="year">{{ section.year }}</h3>
       {% for entry in section.entries %}
       <div class="timeline-entry"
+          style="--hover-color: {{ entry.color | default('#0000ff') }};"
           {% if entry.preview %}data-preview="{{ entry.preview }}"{% endif %}
           {% if entry.id %}data-id="{{ entry.id }}"{% endif %}>
         <div class="timeline-label">{{ entry.label }}</div>

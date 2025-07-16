@@ -21,6 +21,7 @@
 
 .timeline {
   margin-top: 3rem;
+  padding-left: 0;
 }
 
 .timeline-section {
@@ -39,17 +40,23 @@
   padding-left: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  margin-left: 0; /* 들여쓰기 누적 제거 */
 }
 
 .timeline-label {
   font-weight: 500;
-  transition: background-color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.timeline-label:hover {
-  background-color: #f0f0f0;
+/* hover 시 해당 entry의 레이블만 색상 및 밑줄 변경 */
+.timeline-entry > .timeline-label:hover,
+.timeline-entry:hover > .timeline-label {
+  color: var(--hover-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
+/* 클릭(확장) 시 상세 영역 표시 및 배경색 적용 */
 .timeline-detail {
   display: none;
   margin-top: 1rem;
@@ -57,6 +64,10 @@
 
 .timeline-entry.active .timeline-detail {
   display: block;
+  background-color: var(--hover-color);
+  padding: 1rem;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .detail-images {

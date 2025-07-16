@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   entries.forEach(entry => {
     const previewImg = entry.dataset.preview;
-    const detail = entry.querySelector(".timeline-detail");
     const label = entry.querySelector(".timeline-label");
 
     // Hover preview
@@ -25,20 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
       preview.style.display = "none";
     });
 
-    // Click to toggle detail
+    // Click to toggle detail (열림/닫힘)
     label.addEventListener("click", () => {
-      const isActive = entry.classList.contains("active");
-
-      entries.forEach(e => {
-        e.classList.remove("active");
-        e.querySelector(".timeline-detail")?.style.setProperty("display", "none");
-      });
-
-      if (!isActive) {
+      if (entry.classList.contains("active")) {
+        // 이미 열려 있으면 닫기
+        entry.classList.remove("active");
+      } else {
+        // 다른 항목 닫고 클릭한 항목만 열기
+        entries.forEach(e => e.classList.remove("active"));
         entry.classList.add("active");
-        detail.style.display = "block";
-        preview.style.display = "none";
       }
+      preview.style.display = "none";
     });
   });
 });

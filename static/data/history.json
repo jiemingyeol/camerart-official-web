@@ -3,7 +3,8 @@
     "year": "2017",
     "entries": [
       {
-        "label": "07 ｜ 전시 기획팀 Camerart 결성"
+        "label": "07 ｜ 전시 기획팀 Camerart 결성",
+        "color": "#e74c3c"
       }
     ]
   },
@@ -15,6 +16,7 @@
         "label": "01 ｜ 첫 번째 기획展 [아름다운 권태; 권태의 도약]",
         "preview": "/static/images/about/preview/1.jpg",
         "description": "1번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/1/detail1.jpg",
           "/static/images/about/exhibition/1/detail2.jpg"
@@ -25,6 +27,7 @@
         "label": "08 ｜ 두 번째 기획展 [마이너리티 리포트 - '우리가 거짓말하는 이유']",
         "preview": "/static/images/about/preview/2.jpg",
         "description": "2번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/2/detail1.jpg",
           "/static/images/about/exhibition/2/detail2.jpg"
@@ -40,6 +43,7 @@
         "label": "02 ｜ 세 번째 기획展 [눈치가 발바닥이라]",
         "preview": "/static/images/about/preview/3.jpg",
         "description": "03번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/3/detail1.jpg",
           "/static/images/about/exhibition/3/detail2.jpg"
@@ -50,6 +54,7 @@
         "label": "08 ｜ 네 번째 기획展 [창파의 조각배]",
         "preview": "/static/images/about/preview/4.jpg",
         "description": "04번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/4/detail1.jpg",
           "/static/images/about/exhibition/4/detail2.jpg"
@@ -65,6 +70,7 @@
         "label": "02 ｜ 다섯 번째 기획展 [들여다본, 다면]",
         "preview": "/static/images/about/preview/5.jpg",
         "description": "05번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/5/detail1.jpg",
           "/static/images/about/exhibition/5/detail2.jpg"
@@ -75,6 +81,7 @@
         "label": "08 ｜ 여섯 번째 기획展 [우리에 갇하다]",
         "preview": "/static/images/about/preview/6.jpg",
         "description": "06번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/6/detail1.jpg",
           "/static/images/about/exhibition/6/detail2.jpg"
@@ -90,6 +97,7 @@
         "label": "02 ｜ 일곱 번째 기획展 [나무만 없었더라도, 플라스틱 천국이었을텐데]",
         "preview": "/static/images/about/preview/7.jpg",
         "description": "07번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/7/detail1.jpg",
           "/static/images/about/exhibition/7/detail2.jpg"
@@ -100,6 +108,7 @@
         "label": "08 ｜ 여덟 번째 기획展 [지금은 부재중이오니, 메시지를 남겨주세요]",
         "preview": "/static/images/about/preview/8.jpg",
         "description": "08번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/8/detail1.jpg",
           "/static/images/about/exhibition/8/detail2.jpg"
@@ -115,6 +124,7 @@
         "label": "02 ｜ 아홉 번째 기획展 [7마리의 검은 고양이]",
         "preview": "/static/images/about/preview/9.jpg",
         "description": "09번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/9/detail1.jpg",
           "/static/images/about/exhibition/9/detail2.jpg"
@@ -130,6 +140,7 @@
         "label": "02 ｜ 열한 번째 기획展 [행복으로 돈을 살 수는 없잖아요]",
         "preview": "/static/images/about/preview/11.jpg",
         "description": "11번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/11/detail1.jpg",
           "/static/images/about/exhibition/11/detail2.jpg"
@@ -140,6 +151,7 @@
         "label": "08 ｜ 열두 번째 기획展 [Love X-file: not found]",
         "preview": "/static/images/about/preview/12.jpg",
         "description": "12번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/12/detail1.jpg",
           "/static/images/about/exhibition/12/detail2.jpg"
@@ -155,6 +167,7 @@
         "label": "02 ｜ 열세 번째 기획展 [웰컴 두 도파민 월드]",
         "preview": "/static/images/about/preview/13.jpg",
         "description": "13번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/13/detail1.jpg",
           "/static/images/about/exhibition/13/detail2.jpg"
@@ -165,6 +178,7 @@
         "label": "08 ｜ 열네 번째 기획展 [내 삶 속 이름들, 사랑하거나 지워버리거나]",
         "preview": "/static/images/about/preview/14.jpg",
         "description": "14번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/14/detail1.jpg",
           "/static/images/about/exhibition/14/detail2.jpg"
@@ -180,6 +194,7 @@
         "label": "02 ｜ 열다섯 번째 기획展 [피사의 석탑]",
         "preview": "/static/images/about/preview/15.jpg",
         "description": "15번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+        "color": "#e74c3c",
         "images": [
           "/static/images/about/exhibition/15/detail1.jpg",
           "/static/images/about/exhibition/15/detail2.jpg"
