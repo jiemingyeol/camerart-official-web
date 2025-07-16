@@ -6,10 +6,6 @@ app = Flask(__name__)
 # 캐러셀을 활성화할 페이지 번호 리스트
 CAROUSEL_SLIDES = {1: 2, 4: 2, 15: 2}
 
-# 페이지별 슬라이드 이미지 경로를 JSON으로 관리
-with open('static/data/archive_images.json', encoding='utf-8') as f:
-    ARCHIVE_IMAGES = json.load(f)
-
 @app.route('/')
 def intro():
     # 전체 Archive 페이지 수 제공

@@ -1,58 +1,75 @@
+// static/js/archive.js
+
 document.addEventListener('DOMContentLoaded', () => {
-  const poster   = document.querySelector('.poster');
-  const carousel = document.querySelector('.poster-carousel');
-  const totalPages     = 15;
-  const threshold      = 120;
-  const transitionTime = 300;
+  const poster    = document.querySelector('.poster');
+  const carousel  = document.querySelector('.poster-carousel');
+  const totalPages     = 15;   // 전체 페이지 수
+  const threshold      = 120;  // 휠 누적 delta 기준
+  const transitionTime = 300;  // 페이드 전환 시간(ms)
 
-  let scrollDeltaPage = 0, lastTimePage = 0;
-  let scrollDeltaCar  = 0, lastTimeCar  = 0;
+  // 페이지 내비게이션용 상태
+  let scrollDeltaPage = 0;
+  let lastTimePage    = 0;
 
-  // 페이지 이동 함수(생략)…
+  // 캐러셀 내비게이션용 상태 (휠 기능은 제거)
+  let scrollDeltaCar = 0;
+  let lastTimeCar    = 0;
 
-  // 1) .poster 휠 → 페이지 전환 (생략)…
+  // 현재 페이지 번호 추출
+  const match = document.body.className.match(/archive-(\d+)/);
+  const currentPage = match ? Number(match[1]) : null;
 
-  // 2) .poster-carousel 휠 & 클릭 → 슬라이드 전환
+  // 페이지 이동 함수
+  const goToPage = (pageNum) => {
+    if (!pageNum || pageNum < 1 || pageNum > totalPages) return;
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = `/archive/${pageNum}`;
+    }, transitionTime);
+  };
+
+  // 1) 왼쪽 영역( poster 또는 poster-carousel ) 휠 스크롤 → 페이지 전환
+  const navElement = poster || carousel;
+  if (navElement && currentPage) {
+    navElement.addEventListener('wheel', e => {
+      e.preventDefault();
+      const now = Date.now();
+      if (now - lastTimePage < transitionTime) return;
+
+      scrollDeltaPage += e.deltaY;
+      if (Math.abs(scrollDeltaPage) >= threshold) {
+        const dir = scrollDeltaPage > 0 ? 1 : -1;
+        goToPage(currentPage + dir);
+        scrollDeltaPage = 0;
+        lastTimePage    = now;
+      }
+    });
+  }
+
+  // 2) 캐러셀이 있는 경우 → 버튼 클릭으로만 슬라이드 전환
   if (carousel) {
-    const track   = carousel.querySelector('.carousel-track');
-    const slides  = Array.from(track.children);
-    let currentIndex = 0;
+    const track       = carousel.querySelector('.carousel-track');
+    const slides      = Array.from(track.children);
+    let currentIndex  = 0;
 
-    // 슬라이드 위치 업데이트
-    const update = () => {
+    // 슬라이드 위치 갱신
+    const updateCarousel = () => {
       const w = slides[0].getBoundingClientRect().width;
       track.style.transform = `translateX(-${currentIndex * w}px)`;
     };
-    window.addEventListener('resize', update);
-    update();
+    updateCarousel();
+    window.addEventListener('resize', updateCarousel);
 
     const prevBtn = carousel.querySelector('.prev');
     const nextBtn = carousel.querySelector('.next');
 
-    // ← 버튼 클릭
     prevBtn.addEventListener('click', () => {
       currentIndex = (currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
-      update();
+      updateCarousel();
     });
-    // → 버튼 클릭
     nextBtn.addEventListener('click', () => {
       currentIndex = (currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
-      update();
-    });
-
-    // 휠 스크롤으로도 prev/next 트리거
-    carousel.addEventListener('wheel', (e) => {
-      e.preventDefault();
-      const now = Date.now();
-      if (now - lastTimeCar < transitionTime) return;
-
-      scrollDeltaCar += e.deltaY;
-      if (Math.abs(scrollDeltaCar) >= threshold) {
-        if (scrollDeltaCar > 0) nextBtn.click();
-        else prevBtn.click();
-        scrollDeltaCar = 0;
-        lastTimeCar    = now;
-      }
+      updateCarousel();
     });
   }
 });
