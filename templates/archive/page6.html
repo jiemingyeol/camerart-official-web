@@ -5,9 +5,29 @@
 {% block content %}
 <div class="now-container">
     <!-- 좌측 고정 포스터 -->
-    <div class="poster">
-        <img src="{{ url_for('static', filename='images/archive/6/poster.jpg') }}" alt="포스터">
-    </div>
+    {% if enable_carousel %}
+        <div class="poster-carousel">
+            <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+            <div class="carousel-track-container">
+            <ul class="carousel-track">
+                {% for i in range(1, slide_count+1) %}
+                <li class="carousel-slide">
+                    <img
+                    src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/poster' ~ i ~ '.jpg') }}"
+                    alt="포스터 {{ i }}">
+                </li>
+                {% endfor %}
+            </ul>
+            </div>
+            <button class="carousel-btn next" aria-label="Next slide">›</button>
+        </div>
+        {% else %}
+        <div class="poster">
+            <img
+            src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/poster.jpg') }}"
+            alt="포스터">
+        </div>
+        {% endif %}
 
     <!-- 우측 스크롤 콘텐츠 -->
     <div class="content">

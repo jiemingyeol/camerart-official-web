@@ -1,38 +1,58 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const poster = document.querySelector('.poster');
-  if (!poster) return;
+  const poster   = document.querySelector('.poster');
+  const carousel = document.querySelector('.poster-carousel');
+  const totalPages     = 15;
+  const threshold      = 120;
+  const transitionTime = 300;
 
-  // body 클래스에서 현재 페이지 번호 추출
-  const match = document.body.className.match(/archive-(\d+)/);
-  if (!match) return;
-  const pageNum = Number(match[1]);
-  const totalPages = 15; // 실제 전체 페이지 수로 조정
+  let scrollDeltaPage = 0, lastTimePage = 0;
+  let scrollDeltaCar  = 0, lastTimeCar  = 0;
 
-  let scrollDelta = 0;
-  const threshold = 120;       // 누적 deltaY 기준값
-  const transitionTime = 300;  // 페이드 전환 시간 (ms)
-  let lastTime = 0;
+  // 페이지 이동 함수(생략)…
 
-  const goToPage = (num) => {
-    if (num < 1 || num > totalPages) return;
-    document.body.classList.add('fade-out');
-    setTimeout(() => {
-      window.location.href = `/archive/${num}`;
-    }, transitionTime);
-  };
+  // 1) .poster 휠 → 페이지 전환 (생략)…
 
-  poster.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    const now = Date.now();
-    // 스로틀: transitionTime만큼 대기
-    if (now - lastTime < transitionTime) return;
+  // 2) .poster-carousel 휠 & 클릭 → 슬라이드 전환
+  if (carousel) {
+    const track   = carousel.querySelector('.carousel-track');
+    const slides  = Array.from(track.children);
+    let currentIndex = 0;
 
-    scrollDelta += e.deltaY;
-    if (Math.abs(scrollDelta) >= threshold) {
-      const dir = scrollDelta > 0 ? 1 : -1;
-      goToPage(pageNum + dir);
-      scrollDelta = 0;
-      lastTime = now;
-    }
-  });
+    // 슬라이드 위치 업데이트
+    const update = () => {
+      const w = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentIndex * w}px)`;
+    };
+    window.addEventListener('resize', update);
+    update();
+
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+
+    // ← 버튼 클릭
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
+      update();
+    });
+    // → 버튼 클릭
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+      update();
+    });
+
+    // 휠 스크롤으로도 prev/next 트리거
+    carousel.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const now = Date.now();
+      if (now - lastTimeCar < transitionTime) return;
+
+      scrollDeltaCar += e.deltaY;
+      if (Math.abs(scrollDeltaCar) >= threshold) {
+        if (scrollDeltaCar > 0) nextBtn.click();
+        else prevBtn.click();
+        scrollDeltaCar = 0;
+        lastTimeCar    = now;
+      }
+    });
+  }
 });
