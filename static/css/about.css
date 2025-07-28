@@ -1,100 +1,153 @@
-.about-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: 'Noto Sans KR', sans-serif;
+/* 전체 레이아웃 기본 설정 */
+body.about-page {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Gothic A1', sans-serif;
+  color: #000;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.about-header img,
-.about-logo {
-  width: 200px !important; /* 로고 크기 고정 */
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
+.about-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  font-family: 'Gothic A1', sans-serif;
 }
 
-.about-header p {
-  max-width: 800px;
-  line-height: 1.6;
-  margin-top: 1rem;
-}
-
-.timeline {
-  margin-top: 3rem;
-  padding-left: 0;
-}
-
-.timeline-section {
-  padding-top: 20px;
-  margin-top: 20px;
-}
-
-.timeline .year {
-  border-top: 2px solid black;
-  padding-top: 10px;
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-.timeline-entry {
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
-  margin-left: 0; /* 들여쓰기 누적 제거 */
-}
-
-.timeline-label {
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-/* hover 시 해당 entry의 레이블만 색상 및 밑줄 변경 */
-.timeline-entry > .timeline-label:hover,
-.timeline-entry:hover > .timeline-label {
-  color: var(--hover-color);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* 클릭(확장) 시 상세 영역 표시 및 배경색 적용 */
-.timeline-detail {
-  display: none;
-  margin-top: 1rem;
-}
-
-.timeline-entry.active .timeline-detail {
-  display: block;
-  background-color: var(--hover-color);
-  padding: 1rem;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.detail-images {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.detail-images img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 4px;
-}
-
-#imagePreview {
+/* CAMER:ART 제목 */
+.about-title {
   position: absolute;
+  top: calc(111 / 1080 * 100vh);
+  left: calc(90 / 1920 * 100vw);
+  font-size: 130px;
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+/* → (camerata + art) 줄 */
+.about-sub {
+  position: absolute;
+  top: calc(250 / 1080 * 100vh);
+  left: calc(90 / 1920 * 100vw);
+  font-size: 86px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-sub .arrow {
+  font-size: 1.2em;
+}
+
+/* 세로 구분선 (title과 description 사이) */
+.about-divider {
+  position: absolute;
+  top: calc(120 / 1080 * 100vh);
+  left: calc(750 / 1920 * 100vw);
+  width: 3px;
+  height: calc(235 / 1080 * 100vh);
+  background-color: #000;
+}
+
+/* 소개 텍스트 */
+.about-description {
+  position: absolute;
+  top: calc(120 / 1080 * 100vh);
+  left: calc(837 / 1920 * 100vw);
+  width: calc(875 / 1920 * 100vw);
+  font-size: 25px;
+  line-height: 2.2;
+  font-family: 'Gothic A1', sans-serif;
+  margin-bottom: 4rem;
+}
+
+/* 이미지 미리보기 */
+#imagePreview {
+  position: fixed;
+  z-index: 9999;
   display: none;
-  z-index: 999;
   pointer-events: none;
-  background: #fff;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 #imagePreview img {
-  max-width: 150px;
   height: auto;
+  max-height: 180px;
+  min-height: 80px;
+  width: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* 타임라인 영역 */
+.timeline {
+  position: relative;
+  top: calc((250 + 86 + 75) / 1080 * 100vh); /* subtitle bottom + 75px */
+  width: 100%;
+  padding-bottom: 4rem;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+/* 전시 항목 */
+.timeline-entry {
+  margin: 0 auto;
+  width: calc(100% - 180px);
+  transition: all 0.3s ease;
+  border-top: 1px solid #000;
+  line-height: 1.6;
+}
+
+.timeline-label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: calc(20 / 1080 * 100vh);
+  padding: 0.5rem 0 0; /* 상단만 패딩 */
+  box-sizing: border-box;
+}
+
+/* 펼침 영역 - 닫힌 상태 */
+.timeline-detail {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 펼침 영역 - 열린 상태 */
+.timeline-entry.active .timeline-detail {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 0.5rem 0;
+  background-color: var(--hover-color);
+}
+
+.timeline-detail p {
+  flex: 2;
+  font-size: calc(20 / 1080 * 100vh);
+  line-height: 1.5;
+}
+
+.detail-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.detail-images img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: cover;
 }

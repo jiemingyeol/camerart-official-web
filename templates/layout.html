@@ -18,40 +18,40 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/archive.css') }}">
-    
+
 
     <!-- 페이지별 추가 CSS -->
     {% block extra_css %}{% endblock %}
-</head>
-<body class="{% block page_class %}{% endblock %}">
+    </head>
+    <body class="{% block page_class %}{% endblock %}">
 
-    <!-- ☰ 햄버거 메뉴 버튼 (스크롤 고정) -->
-    <div id="menu-button" onclick="toggleSidebar()">
-        <img src="{{ url_for('static', filename='images/menu-icon.png') }}"
-            alt="메뉴" />
-    </div>
+        <!-- ☰ 햄버거 메뉴 버튼 (스크롤 고정) -->
+        <div id="menu-button" onclick="toggleSidebar()">
+            <img src="{{ url_for('static', filename='images/menu-icon.png') }}"
+                alt="메뉴" />
+        </div>
 
-    <!-- 사이드바 -->
-    <div id="sidebar">
-        <ul class="menu">
-            <li><a href="/about">(CAMER:ART)</a></li>
-            <li><a href="/now">(ON VIEW)</a></li>
-            <li class="has-submenu">
-                <span class="menu-toggle" onclick="toggleSubmenu(this)">
-                    <span class="arrow">▶</span> (PAST)
-                </span>
-                <!-- ① .submenu → .submenu archive-menu 로 변경 -->
-                <ul class="submenu archive-menu">
-                    {%- for i in range(1, total_pages|default(15) + 1) %}
-                    {# ② <li>에 archive-menu-item 클래스와 active 토글 #}
-                    <li class="archive-menu-item {% if current_page|default(0) == i %}active{% endif %}">
-                        <a href="{{ url_for('archive_page', num=i) }}">{{ ordinal(i) }}</a>
-                    </li>
-                    {%- endfor %}
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <!-- 사이드바 -->
+        <div id="sidebar">
+            <ul class="menu">
+                <li><a href="/about">(CAMER:ART)</a></li>
+                <li><a href="/now">(ON VIEW)</a></li>
+                <li class="has-submenu">
+                    <span class="menu-toggle" onclick="toggleSubmenu(this)">
+                        <span class="arrow">▶</span> (PAST)
+                    </span>
+                    <!-- ① .submenu → .submenu archive-menu 로 변경 -->
+                    <ul class="submenu archive-menu">
+                        {%- for i in range(1, total_pages|default(15) + 1) %}
+                        {# ② <li>에 archive-menu-item 클래스와 active 토글 #}
+                        <li class="archive-menu-item {% if current_page|default(0) == i %}active{% endif %}">
+                            <a href="{{ url_for('archive_page', num=i) }}">{{ ordinal(i) }}</a>
+                        </li>
+                        {%- endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
     <!-- 페이지별 콘텐츠 -->
     {% block content %}{% endblock %}
