@@ -3,19 +3,17 @@ function toggleSidebar() {
     const isCurrentlyOpen = sidebar.classList.contains("open");
 
     if (isCurrentlyOpen) {
-        // 닫기
         sidebar.classList.remove("open");
         localStorage.setItem("sidebarOpen", "false");
 
         setTimeout(() => {
             sidebar.style.display = "none";
-        }, 300); // transition 시간과 맞춰야 자연스러움
+        }, 300);
     } else {
-        // 열기
         sidebar.style.display = "block";
         setTimeout(() => {
             sidebar.classList.add("open");
-        }, 10); // 트랜지션 자연스럽게
+        }, 10);
         localStorage.setItem("sidebarOpen", "true");
     }
 }

@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block page_class %}archive-page archive-9{% endblock %}
+{% block page_class %}archive-page archive-5{% endblock %}
 
 {% block content %}
 <div class="now-container">
@@ -32,31 +32,37 @@
     <!-- 우측 스크롤 콘텐츠 -->
     <div class="content">
         <section class="exhibition-info">
-            <h1>9th Exhibition</h1>
+            <h1>5th Exhibition</h1>
             <p>아카이브 전시 설명 텍스트...</p>
         </section>
 
         <section class="installation-views">
             <h2>→ INSTALLATION VIEWS</h2>
             <div class="scroll-gallery">
-                <img src="{{ url_for('static', filename='images/archive/9/install1.jpg') }}">
-                <img src="{{ url_for('static', filename='images/archive/9/install2.jpg') }}">
-                <img src="{{ url_for('static', filename='images/archive/9/install3.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/5/install1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/5/install2.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/5/install3.jpg') }}">
             </div>
         </section>
 
         <section class="works">
-            <h2>→ WORKS</h2>
+            <div class="works-header">
+                <h2>→ WORKS</h2>
+                <a class="more-link"
+                href="{{ url_for('archive_works', num=current_page) }}">
+                More →
+                </a>
+            </div>
             <div class="works-gallery">
-                <img src="{{ url_for('static', filename='images/archive/9/work1.jpg') }}">
-                <img src="{{ url_for('static', filename='images/archive/9/work2.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/work1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/work2.jpg') }}">
             </div>
         </section>
 
         <section class="funding">
             <h2>→ FUNDING</h2>
             <p>펀딩 관련 설명...</p>
-            <img src="{{ url_for('static', filename='images/archive/9/funding.jpg') }}">
+            <img src="{{ url_for('static', filename='images/archive/5/funding.jpg') }}">
         </section>
     </div>
 </div>

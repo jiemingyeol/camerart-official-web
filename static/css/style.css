@@ -1,7 +1,21 @@
+/* ─────────────────────────────────────────────────── */
+/* Gothic A1 폰트 로드 */
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('../fonts/GothicA1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ─────────────────────────────────────────────────── */
+/* 기본 폰트 설정 */
+html, body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
 /* ---------- 공통 전체 ---------- */
 body {
     margin: 0;
-    font-family: sans-serif;
     overflow-x: hidden;
 }
 
@@ -76,6 +90,7 @@ h1, h2, p {
 /* Works 섹션 */
 .works-header {
     display: flex;
+    font-size: 0.9rem;
     justify-content: space-between;
     padding-right: 2.5rem;
     align-items: center;
@@ -108,6 +123,19 @@ h1, h2, p {
 /* Works 상세 페이지 */
 .works-detail-page {
     padding: 2rem;
+}
+
+.works-detail-title {
+    font-size: 2.5rem;    /* 원하는 크기로 조정 */
+    font-weight: bold;    /* 필요 시 굵게 */
+    color: black;
+    cursor: pointer;
+}
+
+.works-detail-title,
+.works-detail-title a {
+    color: #000;
+    text-decoration: underline;
 }
 
 .works-gallery-grid {

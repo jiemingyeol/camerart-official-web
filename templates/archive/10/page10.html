@@ -46,10 +46,16 @@
         </section>
 
         <section class="works">
-            <h2>→ WORKS</h2>
+            <div class="works-header">
+                <h2>→ WORKS</h2>
+                <a class="more-link"
+                href="{{ url_for('archive_works', num=current_page) }}">
+                More →
+                </a>
+            </div>
             <div class="works-gallery">
-                <img src="{{ url_for('static', filename='images/archive/10/work1.jpg') }}">
-                <img src="{{ url_for('static', filename='images/archive/10/work2.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/work1.jpg') }}">
+                <img src="{{ url_for('static', filename='images/archive/' ~ current_page ~ '/work2.jpg') }}">
             </div>
         </section>
 

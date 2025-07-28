@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/archive.css') }}">
-
+    
 
     <!-- 페이지별 추가 CSS -->
     {% block extra_css %}{% endblock %}
@@ -27,17 +27,18 @@
 
     <!-- ☰ 햄버거 메뉴 버튼 (스크롤 고정) -->
     <div id="menu-button" onclick="toggleSidebar()">
-        ☰
+        <img src="{{ url_for('static', filename='images/menu-icon.png') }}"
+            alt="메뉴" />
     </div>
 
     <!-- 사이드바 -->
     <div id="sidebar">
         <ul class="menu">
-            <li><a href="/now">NOW</a></li>
-
+            <li><a href="/about">(CAMER:ART)</a></li>
+            <li><a href="/now">(ON VIEW)</a></li>
             <li class="has-submenu">
                 <span class="menu-toggle" onclick="toggleSubmenu(this)">
-                    <span class="arrow">▶</span> ARCHIVE
+                    <span class="arrow">▶</span> (PAST)
                 </span>
                 <!-- ① .submenu → .submenu archive-menu 로 변경 -->
                 <ul class="submenu archive-menu">
@@ -49,8 +50,6 @@
                     {%- endfor %}
                 </ul>
             </li>
-
-            <li><a href="/about">ABOUT</a></li>
         </ul>
     </div>
 

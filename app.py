@@ -27,12 +27,24 @@ def archive_page(num):
     enable_carousel = slide_count > 0
 
     return render_template(
-        f'archive/page{num}.html',
+        f'archive/{num}/page{num}.html',
         current_page=num,
         total_pages=total_pages,
         enable_carousel=enable_carousel,
         slide_count=slide_count
     )
+
+# --- ARCHIVE Works 상세 페이지 라우트 ---
+@app.route('/archive/<int:num>/works')
+def archive_works(num):
+    total_pages = 15
+    # 여기서 num에 맞는 상세 데이터가 필요하면 로드하세요.
+    return render_template(
+        f'archive/{num}/works_detail.html',
+        current_page=num,
+        total_pages=total_pages
+    )
+
 @app.route("/about")
 def about():
     with open("static/data/history.json", encoding="utf-8") as f:
@@ -43,6 +55,8 @@ def about():
         history=history_data,
         total_pages=15
     )
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

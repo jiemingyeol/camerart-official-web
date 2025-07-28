@@ -1,15 +1,24 @@
+/* ─────────────────────────────────────────────────── */
 /* 햄버거 버튼 */
+/* ─────────────────────────────────────────────────── */
 #menu-button {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    background: white;
-    padding: 6px 10px;
-    border-radius: 6px;
+    top: 40px;
+    right: 40px;
+    width: 32px;         /* 아이콘 실제 너비 */
+    height: 32px;        /* 아이콘 실제 높이 */
+    background: transparent;
+    padding: 0;          /* 내부 여백 제거 */
+    border: none;
     cursor: pointer;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     z-index: 1001;
+}
+
+#menu-button img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율 유지하며 꽉 채우기 */
 }
 
 /* 인트로 페이지에서는 햄버거 버튼 숨김 */
@@ -17,7 +26,9 @@
     display: none;
 }
 
-/* 사이드바 기본 상태 */
+/* ─────────────────────────────────────────────────── */
+/* 사이드바: 열기/닫기 애니메이션 (부드럽게 열리고 닫히도록) */
+/* ─────────────────────────────────────────────────── */
 #sidebar {
     position: fixed;
     top: 0;
@@ -32,16 +43,18 @@
 
     /* 숨김 초기값 */
     transform: translateX(100%);
-    transition: transform 0.3s ease;
-    visibility: hidden;
     opacity: 0;
+    pointer-events: none;
+
+    /* 열기/닫기 모두에 적용되는 트랜지션 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* 사이드바 open 상태 */
+/* open 상태일 때 */
 #sidebar.open {
-    transform: translateX(0%);
-    visibility: visible;
+    transform: translateX(0);
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* 인트로 페이지에서는 사이드바 강제 숨김 */
@@ -49,18 +62,21 @@
     display: none !important;
 }
 
-/* 메뉴 목록 */
+/* ─────────────────────────────────────────────────── */
+/* 사이드바 메뉴 리스트: 햄버거 버튼 바로 아래에서 시작 */
+/* ─────────────────────────────────────────────────── */
 #sidebar .menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-top: calc(2.5rem + 1rem);
+    height: calc(100% - (2.5rem + 1rem));
+    overflow-y: auto;
 }
-
 #sidebar .menu li {
-    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
 }
-
-#sidebar .menu a, 
+#sidebar .menu a,
 #sidebar .menu span {
     text-decoration: none;
     color: black;
@@ -68,14 +84,18 @@
     cursor: pointer;
 }
 
-/* 초기 로딩 시 애니메이션 제거 */
+/* 초기 로딩 시 애니메이션 제거 (필요 시) */
 .sidebar-no-transition {
     transition: none !important;
 }
 
-/* 서브메뉴 */
+/* ─────────────────────────────────────────────────── */
+/* 서브메뉴: 부드러운 펼침/접힘 */
+/* ─────────────────────────────────────────────────── */
 .submenu {
-    display: none;
+    /* display 대신 max-height로 애니메이션 */
+    max-height: 0;
+    overflow: hidden;
     list-style: none;
     margin-top: 0.5rem;
     margin-left: 1rem;
@@ -83,29 +103,25 @@
 }
 
 .submenu.show {
-    display: block;
+    /* 충분히 큰 값으로 설정하여 완전 펼쳐짐 */
+    max-height: 1000px;
 }
 
-/* 토글 화살표 */
-.menu-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
+/* 토글 화살표: 열림 상태에 따라 회전 (옵션) */
 .menu-toggle .arrow {
     font-size: 0.9rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
+}
+.menu-toggle.open .arrow {
+    transform: rotate(90deg);
 }
 
+/* Archive 서브메뉴 항목 스타일 */
 #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
-  text-decoration: none; /* 기본 상태 */
+    text-decoration: none;
 }
-
 #sidebar .menu .submenu.archive-menu li.archive-menu-item > a:hover,
 #sidebar .menu .submenu.archive-menu li.archive-menu-item.active > a {
-  text-decoration: underline !important;
-  font-weight: bold;
+    text-decoration: underline !important;
+    font-weight: bold;
 }
