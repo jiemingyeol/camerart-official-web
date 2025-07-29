@@ -22,8 +22,8 @@ body.about-page {
   position: absolute;
   top: calc(111 / 1080 * 100vh);
   left: calc(90 / 1920 * 100vw);
-  font-size: 130px;
-  letter-spacing: 7px;
+  font-size: calc(130 / 2560 * 100vw);
+  letter-spacing: calc(7 / 2560 * 100vw);
   margin: 0;
 }
 
@@ -32,7 +32,7 @@ body.about-page {
   position: absolute;
   top: calc(250 / 1080 * 100vh);
   left: calc(90 / 1920 * 100vw);
-  font-size: 86px;
+  font-size: calc(86 / 2560 * 100vw);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -47,7 +47,7 @@ body.about-page {
   position: absolute;
   top: calc(120 / 1080 * 100vh);
   left: calc(750 / 1920 * 100vw);
-  width: 3px;
+  width: calc(3 / 2560 * 100vw);
   height: calc(235 / 1080 * 100vh);
   background-color: #000;
 }
@@ -58,7 +58,7 @@ body.about-page {
   top: calc(120 / 1080 * 100vh);
   left: calc(837 / 1920 * 100vw);
   width: calc(875 / 1920 * 100vw);
-  font-size: 25px;
+  font-size: calc(25 / 2560 * 100vw);
   line-height: 2.2;
   font-family: 'Gothic A1', sans-serif;
   margin-bottom: 4rem;
