@@ -3,7 +3,7 @@
     "id": "00",
     "title": "전시 기획팀 Camerart 결성",
     "date": "2017.07",
-    "date_detail": "2018.01.23-2018.01.26",
+    "date_detail": "",
     "preview": "",
     "description": "",
     "color": "#D4FF3A",
@@ -29,7 +29,7 @@
     "date": "2018.08",
     "date_detail": "2018.08.17-2018.08.19",
     "preview": "/static/images/about/preview/2.png",
-    "description": "<strong>우리는 살아가며 수많은 거짓말을 한다.</strong><br>우리는 좋든 싫든, 사회적으로 승인된 존재가 되기 위해서 끊임없이<br>타인 혹은 스스로를 검열한다. <마이너리티 리포트; 우리가 거짓말하는<br>이유>에서는 강제된 사회화 속에서 반복되는 거짓말을 통해 우리<br>사회의 초상을 가감 없이 그려보고자 한다. .",
+    "description": "<strong>우리는 살아가며 수많은 거짓말을 한다.</strong><br>우리는 좋든 싫든, 사회적으로 승인된 존재가 되기 위해서 끊임없이<br>타인 혹은 스스로를 검열한다. &lt;마이너리티 리포트; 우리가 거짓말하는<br>이유&gt;에서는 강제된 사회화 속에서 반복되는 거짓말을 통해 우리<br>사회의 초상을 가감 없이 그려보고자 한다. .",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/2/detail1.png",
@@ -42,7 +42,7 @@
     "date": "2019.02",
     "date_detail": "2019.02.15-2019.02.17",
     "preview": "/static/images/about/preview/3.png",
-    "description": "<strong>지금, 어디서 얼마나 눈치 보고 있나요?</strong><br>사회 생활에서 눈치는 필수라는 말이 불만이다가도 어느 순간 '눈치 좀<br>챙기지.'라며 눈쌀 찌푸리던 나의 모습에 놀란적 있으신가요?<br><눈치가 발바닥이라 展>는 눈치의 순간에서 드러나는 우리의 유동적<br>권력에 대하여 이야기합니다. 눈치 보는 쪽에도 눈치 주는 쪽에도 이입<br>할 수 있는, 우리가 눈치 없이 눈치에 관하여 외치고자 합니다.<br>눈치가 발바닥에 붙어도 괜찮은 사람들에게<br>\"죄송해요. 전 눈치가 발바닥이라…<br> 당신 하신 말씀은 못 알아듣겠습니다.\" ",
+    "description": "<strong>지금, 어디서 얼마나 눈치 보고 있나요?</strong><br>사회 생활에서 눈치는 필수라는 말이 불만이다가도 어느 순간 '눈치 좀<br>챙기지.'라며 눈쌀 찌푸리던 나의 모습에 놀란적 있으신가요?<br>&lt;눈치가 발바닥이라 展&gt;는 눈치의 순간에서 드러나는 우리의 유동적<br>권력에 대하여 이야기합니다. 눈치 보는 쪽에도 눈치 주는 쪽에도 이입<br>할 수 있는, 우리가 눈치 없이 눈치에 관하여 외치고자 합니다.<br>눈치가 발바닥에 붙어도 괜찮은 사람들에게<br>\"죄송해요. 전 눈치가 발바닥이라…<br> 당신 하신 말씀은 못 알아듣겠습니다.\" ",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/3/detail1.png",
@@ -55,7 +55,7 @@
     "date": "2019.08",
     "date_detail": "2019.08.16-2019.08.18",
     "preview": "/static/images/about/preview/4.png",
-    "description": " <strong>I’m so blue</strong><br>인생을 계절에 비유했을 때 봄이라 명명되어진 10, 20대를 나타내는<br>‘푸른 봄’의 청춘(靑春). <창파의 조각배 展>은 봄 앞에 놓여 진 푸름<br>에 주목하여 다양한 시각으로 청춘이 가지고 있는 심리들을 조망하<br>고자 합니다. 기성세대들의 청춘 예찬에 숨어 있는, 누구나 알지만 아<br>무도 모르는 (척하는), 망망대해의 조각배와 같은 실제 청춘들의 움직<br>임을 발견하는 전시입니다.",
+    "description": " <strong>I’m so blue</strong><br>인생을 계절에 비유했을 때 봄이라 명명되어진 10, 20대를 나타내는<br>‘푸른 봄’의 청춘(靑春). &lt;창파의 조각배 展&gt;은 봄 앞에 놓여 진 푸름<br>에 주목하여 다양한 시각으로 청춘이 가지고 있는 심리들을 조망하<br>고자 합니다. 기성세대들의 청춘 예찬에 숨어 있는, 누구나 알지만 아<br>무도 모르는 (척하는), 망망대해의 조각배와 같은 실제 청춘들의 움직<br>임을 발견하는 전시입니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/4/detail1.png",
@@ -69,7 +69,7 @@
     "date": "2020.02",
     "date_detail": "2020.02.14-2020.02.16",
     "preview": "/static/images/about/preview/5.png",
-    "description": "<strong>당신은, 당신의 욕망이 온전히 자신만의 것이라고<br>단언할 수 있습니까?</strong><br>개인의 욕망과 사회적 금기는 한끝 차이라 마치 서로가 서로의<br>그림자인 듯 항상 맞닿아 있습니다. 타인과 어울려 살아가는 과정에서<br>개인의 욕망은 사회적 금기라는 '낙인'을 수없이 마주합니다.<br>특정 욕망이 사회적 금기로 취급되는 상황에서<br>선택의 주체가 온전한 주체성의 주인은 맞는지 의심됩니다.<br>[우리에 갇히다]는 욕망의 근원에 의문을 제기합니다.",
+    "description": "<strong>여러 모습의 나 중 진정한 나는 무엇일까요?</strong><br>인간의 이중성과 모순은 다면적인 사람의 특성상 당연한 것일지도 모<br>릅니다. 인간의 다면을 ‘위선’으로 여겨왔던 세상에서, &lt;들여다본, 다<br>면 展&gt;은 그런 다양한 관계 속에 놓인 인간의 모순과 내면을 들여다보<br>고자 합니다. 지금 이 시간을 살아가는 여러 모습의 나 중 진정한 나는<br>무엇일까요? 그 모든 ‘나’를 인정하고 재조명하는 시간을 전시를 통해<br>가지시길 바랍니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/5/detail1.png",
@@ -78,11 +78,11 @@
   },
   {
     "id": "06",
-    "title": "여섯 번째 기획展 | 우리에 갇하다",
+    "title": "여섯 번째 기획展 | 우리에 갇히다",
     "date": "2020.08",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2020.08.23-2020.08.??",
     "preview": "/static/images/about/preview/6.png",
-    "description": "06번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>당신은, 당신의 욕망이 온전히 자신만의 것이라고<br>단언할 수 있습니까?</strong><br>개인의 욕망과 사회적 금기는 한끝 차이라 마치 서로가 서로의<br>그림자인 듯 항상 맞닿아 있습니다. 타인과 어울려 살아가는 과정에서<br>개인의 욕망은 사회적 금기라는 '낙인'을 수없이 마주합니다.<br>특정 욕망이 사회적 금기로 취급되는 상황에서<br>선택의 주체가 온전한 주체성의 주인은 맞는지 의심됩니다.<br>[우리에 갇히다]는 욕망의 근원에 의문을 제기합니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/6/detail1.png",
@@ -93,9 +93,9 @@
     "id": "07",
     "title": "일곱 번째 기획展 | 나무만 없었더라도, 플라스틱 천국이었을텐데",
     "date": "2021.02",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2021.02.19-2021.02.21",
     "preview": "/static/images/about/preview/7.png",
-    "description": "07번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>당신은 지구에게 나무같은 존재인가요, 플라스틱 같은 존재인가요?</strong><br>플라스틱을 비롯한 많은 쓰레기 문제로 고통받는 지구에 살고 있는<br>우리.  &lt;나무만 없었더라도, 플라스틱 천국이었을텐데 展&gt;은 인간이<br>지구에 존재하는 행위에 대한 근본적인 성찰을 하고자 합니다. 이번<br>전시가 위의 질문에 대해 고민할 수 있는 시간이 되길<바랍니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/7/detail1.png",
@@ -106,9 +106,9 @@
     "id": "08",
     "title": "여덟 번째 기획展 | 지금은 부재중이오니, 메시지를 남겨주세요",
     "date": "2021.08",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2021.08.12-2021.08.14",
     "preview": "/static/images/about/preview/8.png",
-    "description": "08번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>'죽음'을 떠올려보세요. 두려우신가요?<br>혹은 너무 먼 존재라는 생각에 무감각하신가요?</strong><br>나의 죽음, 타인의 죽음, 그리고 무생물적인 존재의 죽음 그 이상까지.<br>&lt;지금은 부재중이오니 메세지를 남겨주세요展&gt;은 '죽음'을 주제로 다<br>루고 있습니다. 단편적인 시각에서 다소 어둡게만 느껴지던 '죽음'을<br>전시를 통해 다각적인 시각으로 바라보는 기회가 되시길 바랍니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/8/detail1.png",
@@ -119,22 +119,35 @@
     "id": "09",
     "title": "아홉 번째 기획展 | 7마리의 검은 고양이",
     "date": "2022.02",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2022.02.17-2022.02.20",
     "preview": "/static/images/about/preview/9.png",
-    "description": "09번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>우리의 감정을 치유하기 위한 믿음은 어디 있을까?</strong><br>본 전시는 검은 고양이가 가진 불운의 상징을 전복시키며, 미신의 양면<br>성을 밝혀낸다. 믿는 행위의 원인과 양상 그리고 여러 형태의 미신을<br>예술의 소재로 승화시켜 감정 치유의 계기를 만든다. 미신을 매개로<br>'지금-여기' 에 있는 개인의 마음속 심층에 도달해 두려움의 정서를 통<br>찰하고, 이 감정이 표출되는 양상을 관찰한다. 불안과 두려움이 만들어<br>올린 미신은 누군가에게는 기댈 수 있는 안식처가 되어주기도 하지만,<br>때로는 엇물린 톱니처럼 그것을 믿는 자를 짓누르고 파괴하기도 한다.<br>다양한 형태의 예술로 펼쳐낸 미신의 이야기를 통해 관람객이 결국 한<br>없이 약해져 상해버린 마음을 또렷이 마주해볼 수 있길 바란다. ",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/9/detail1.png",
       "/static/images/about/exhibition/9/detail2.png"
     ]
   },
+    {
+    "id": "10",
+    "title": "열 번째 기획展 | 그 마을의 행방: 아이들이 사라졌다",
+    "date": "2022.08",
+    "date_detail": "2022.08.22-2022.08.28",
+    "preview": "/static/images/about/preview/9.png",
+    "description": "<strong>작은 아이들의 온전한 세계를 우리는 얼마나 오래 잊고 지냈나요?</strong><br>&lt;그 마을의 행방: 아이들이 사라졌다&gt; 展 은 당신을 ‘어린이의 세계’로<br>초대합니다. 아이들이 경험하는 세계로 들어가 그 시절의 감각을 되찾<br>아봅니다. 곧, 나와 어린이의 교차점을 발견하게 될 거예요. 누구나 아<br>이였고, 누구나 아이일 수 있습니다.  그런데, ‘아이들’이 사라졌습니다.<br>이들의 부재는 결국 마을의 부재로 이어집니다. 모두가 시선을 맞춰<br>대화하고, 누구나 환영받는 마을이요. 마을은 어떻게 다시 만들 수<br>있고 어떤 모습을 하고 있을까요? 당신을 제3의 공간으로 안내합니다.",
+    "color": "#D4FF3A",
+    "images": [
+      "/static/images/about/exhibition/10/detail1.png",
+      "/static/images/about/exhibition/10/detail2.png"
+    ]
+  },
   {
     "id": "11",
     "title": "열한 번째 기획展 | 행복으로 돈을 살 수는 없잖아요",
     "date": "2023.02",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2023.02.21-2023.02.26",
     "preview": "/static/images/about/preview/11.png",
-    "description": "11번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>당신의 행복은 얼마짜리인가요?</strong><br>&lt;행복으로 돈을 살 수는 없잖아요&gt; 展은 돈에 가려 보이지 않았던 것들<br>의 의미를 되짚습니다. 그 과정에서 돈은 파괴의 대상으로도, 문제의<br>원인으로도 지목되지 않습니다. 대신, 카메랄트는 돈을 둘러싼 ‘인<br>’의 모습을 포착합니다. 돈을 원망하고 선망하다가도, 돈 너머의 행<br>복을 꽃피우는 생명체들이 우리니까요. ",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/11/detail1.png",
@@ -145,9 +158,9 @@
     "id": "12",
     "title": "열두 번째 기획展 | Love X-file: not found",
     "date": "2023.08",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2023.08.22-2023.08.27",
     "preview": "/static/images/about/preview/12.png",
-    "description": "12번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>집 나간 사랑을 찾습니다.</strong><br>각자 걸어온 길을 한 번 돌아볼까요? 무수한 추억들이 기억을 메우고<br>있습니다.  이 모든 기억들에는 사랑이 함께 했습니다.<br>&lt;Love X-flie : not found&gt; 展은 ‘사랑’의 의미와 함께 사랑을 통해<br>마주하는 ‘나 자신’에 대해 주목합니다. 이와 같은 과정에서 사랑은<br>무수한 형태로 표현되며, 사랑의 다양한 모습에 대해 이야기합니다.<br>사랑이 품고 있는 욕망과 결핍까지도 살펴봅니다 . 이 모든 감정들이<br>헛되거나 불필요하지 않으니까요. 다양한 방식으로 형상화된 작품들<br>과 함께, 사랑을 찾아가는 카메랄트의 여정에 당신을 초대합니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/12/detail1.png",
@@ -158,9 +171,9 @@
     "id": "13",
     "title": "열세 번째 기획展 | 웰컴 두 도파민 월드",
     "date": "2024.02",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2024.02.19-2024.02.24",
     "preview": "/static/images/about/preview/13.png",
-    "description": "13번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>당신 몰래 도파민이 다녀갑니다. 그 속에서 정신이 날아갈 수<br>있으니 안전에 유의하시길 바랍니다.</strong><br>오늘날 쾌락과 중독에 관련된 문제는 그 심각성이 과거에 비해 높아졌<br>습니다. 어떻게 보면 이는 기술의 발전을 통해 우리 사회가 풍요로움과<br>여유를 얻었기에 발생한 결과라고도 볼 수 있죠. 최근 미디어의 발달,<br>숏폼의 등장에서부터 비롯된 '도파민 중독'이라는 말이 유행한 것처럼<br>요. 그러나 우리는 또한 동시에 무엇을 잃었습니다.  저마다 잃어버린<br>그 무엇을 되찾기 위해 도파민과 친구가 되려 합니다. 다양한 모습으로<br>나타난 쾌락과 중독의 양태, 그리고 그 속에서 '나'를 찾기 위한 반성의<br>시작입니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/13/detail1.png",
@@ -169,11 +182,11 @@
   },
   {
     "id": "14",
-    "title": "열네 번째 기획展 | 내 삶 속 이름들, 사랑하거나 지워버리거나",
+    "title": "열네 번째 기획展 | 이름으로부터 명명된 것",
     "date": "2024.08",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2024.08.24-2024.09.01",
     "preview": "/static/images/about/preview/14.png",
-    "description": "14번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "<strong>당신은 한국 사회에서 어떻게 호명되나요?</strong><br>성별, 나이, 학력, 국적, 인종, 성적 지향성, 출신 지역, 종교, ...<br>그 모든 '이름표'들. 한 사람은 수많은 특성의 집합체입니다.<br>타인과 부대끼며  살아갈 수밖에 없는 '사회'라는 곳에서,<br>어떤 특성은 자랑거리가 되고 어떤 특성은 치부가 되지요.<br>저희는 한국 사회에서 특정한 이미지 효과를 불러일으키는<br>특성들을 '사회적 이름표들'이라 명명했습니다.<br>그리고 정답 없는 질문을, <이름으로부터 명명된 것>을 통해 던집니다.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/14/detail1.png",
@@ -184,13 +197,39 @@
     "id": "15",
     "title": "열다섯 번째 기획展 | 피사의 석탑",
     "date": "2025.02",
-    "date_detail": "2019.08.16-2019.08.18",
+    "date_detail": "2025.02.19-2025.02.24",
     "preview": "/static/images/about/preview/15.png",
-    "description": "15번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "description": "🔴 <strong>REC. 시선이 감시당한 순간</strong><br>거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되<br>어 있지는 않나요? &lt;피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을<br>쌓듯&gt;은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모<br>습을 그려냅니다. 타인은 때로는 지옥이기에, 그들의 시선은 우리를 검<br>열하고 감시합니다. 하지만 인간은 그 시선과 관계 속에서 스스로의 존<br>재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시에 피사<br>체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지<br>고민합니다. 또한 기어코 마주하는 순간을 포착합니다. 흐릿한 군중이<br>아니라, 내 앞에 존재하는 당신의 눈을.",
     "color": "#D4FF3A",
     "images": [
       "/static/images/about/exhibition/15/detail1.png",
-      "/static/images/about/exhibition/15/detail2.png"
+      "/static/images/about/exhibition/15/detail2.png",
+      "/static/images/about/exhibition/15/detail3.png"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "열여섯 번째 기획展 | The Rabbit Hole",
+    "date": "2025.08",
+    "date_detail": "2025.08.20-2025.08.26",
+    "preview": "/static/images/about/preview/16.png",
+    "description": "<strong>진짜 자유란 무엇인가</strong><br>자유는 누구나 원하지만, 누구도 명확히 정의하지 못하는 개념이다.<br>많은 사람들이 자유를 갈망하면서도, 막상 그 자유 속에서<br>혼란과 책임을 마주하게 된다. 이 전시에서 그런 자유의 모순과 애매한<br>경계를 시각적, 공간적 장치를 통해 드러내고자 한다.<br>이 과정에서 우리는 자유가 단순히 해방이나 탈출이 아닌 선택과 책임,<br>가능성과 쾌락, 그리고 나 자신과의 대면임을 깨닫게 된다.",
+    "color": "#D4FF3A",
+    "images": [
+      "/static/images/about/exhibition/16/detail1.png",
+      "/static/images/about/exhibition/16/detail2.png"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "열일곱 번째 기획展 | NEXT?",
+    "date": "2026.??",
+    "date_detail": "2026.??.??-2026.??.??",
+    "preview": "",
+    "description": "<strong>또 새로운 우리만의 도전들</strong><br>다양하고 색다른 경험을 쌓아갈 수 있는 CAMER:ART. 지금껏 쌓아온<br>오묘한 우리만의 전시를 이어가고 싶은 분들을 초대합니다.",
+    "color": "#D4FF3A",
+    "images": [
+      "/static/images/about/exhibition/17/detail1.png"
     ]
   }
 ]

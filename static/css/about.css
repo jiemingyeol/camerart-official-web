@@ -137,35 +137,59 @@ body.about-page {
   opacity: 0;
   transition: all 0.4s ease;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 1.5rem;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 펼침 영역 - 열린 상태 */
 .timeline-entry.active .timeline-detail {
-  max-height: 1000px;
+  max-height: 1200px;
   opacity: 1;
   padding: 0.2rem 0;
   background-color: var(--hover-color);
 }
 
+.timeline-entry:nth-of-type(18) .detail-images {
+  position: relative;
+  width: 60%;
+  height: calc(300 / 1080 * 100vh);
+}
+
 .timeline-detail p {
-  flex: 2;
-  font-size: calc(17 / 1080 * 100vh);
-  line-height: 1.5;
+  width: 40%;
+  font-size: calc(20 / 1080 * 100vh);
+  line-height: 1.7;
 }
 
 .detail-images {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
+  position: relative;
+  width: 60%;
+  height: calc(450 / 1080 * 100vh);
 }
 
-.detail-images img {
-  max-width: 100%;
-  max-height: 140px;
-  object-fit: cover;
+.detail-images img:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(350 / 2560 * 100vw);
+  height: auto;
+}
+
+.detail-images img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: calc(400 / 2560 * 100vw);
+  width: calc(350 / 2560 * 100vw);
+  height: auto;
+}
+
+.detail-images img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: calc(800 / 2560 * 100vw);
+  width: calc(350 / 2560 * 100vw);
+  height: auto;
 }

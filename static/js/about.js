@@ -49,10 +49,32 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(e => e.classList.remove("active"));
         entry.classList.add("active");
 
-        // 확장 시 페이지 맨 아래로 스크롤 이동
-        setTimeout(() => {
-          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-        }, 100);
+        // ✅ 항목 인덱스 확인 (0부터 시작)
+        const index = Array.from(entries).indexOf(entry);
+
+        if (index <= 10) {
+          // 1~11번째 → 페이지 중앙에 고정
+          setTimeout(() => {
+            const elementTop = entry.getBoundingClientRect().top + window.scrollY;
+            const elementHeight = entry.offsetHeight;
+            const viewportHeight = window.innerHeight;
+            const scrollPosition = elementTop - (viewportHeight / 2) + (elementHeight / 2);
+
+            window.scrollTo({
+              top: scrollPosition,
+              behavior: 'smooth'
+            });
+          }, 300);
+        } 
+        else if (index >= 11) {
+          // 12~17번째 → 페이지 끝까지 스크롤
+          setTimeout(() => {
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth'
+            });
+          }, 300);
+        }
       }
       preview.style.display = "none";
     });
