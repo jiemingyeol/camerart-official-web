@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // ✅ 항목 인덱스 확인 (0부터 시작)
         const index = Array.from(entries).indexOf(entry);
 
-        if (index <= 10) {
+        if (index >= 2 && index <= 10) {
           // 1~11번째 → 페이지 중앙에 고정
           setTimeout(() => {
             const elementTop = entry.getBoundingClientRect().top + window.scrollY;
