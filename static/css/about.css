@@ -154,7 +154,7 @@ body.about-page {
 
 .timeline-entry:nth-of-type(18) .detail-images {
   position: relative;
-  width: 60%;
+  width: 80%;
   height: calc(300 / 1080 * 100vh);
 }
 
