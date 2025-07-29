@@ -113,8 +113,12 @@ body.about-page {
   transition: background-color 0.3s ease;
 }
 
+.timeline-label:hover {
+  color: var(--hover-color, #0000ff); /* ✅ Hover 시 JSON 색상 사용 */
+}
+
 .timeline-entry.active .timeline-label{
-  background-color: var(--hover-color);
+  background-color: #D4FF3A;
   text-decoration: underline;
 }
 
@@ -127,7 +131,7 @@ body.about-page {
 
 .timeline-entry.active .timeline-datedetail {
   display: block;
-  background-color: var(--hover-color);
+  background-color: #D4FF3A;
 }
 
 /* 펼침 영역 - 닫힌 상태 */
@@ -149,7 +153,7 @@ body.about-page {
   max-height: 1200px;
   opacity: 1;
   padding: 0.2rem 0;
-  background-color: var(--hover-color);
+  background-color: #D4FF3A;
 }
 
 .timeline-entry:nth-of-type(18) .detail-images {
