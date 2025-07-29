@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entry.addEventListener("mouseenter", () => {
       if (entry.classList.contains("active")) return;
       if (preview && previewImg) {
-        const randomHeight = Math.floor(Math.random() * (180 - 80 + 1)) + 80;
+        const randomHeight = Math.floor(Math.random() * (320)) + 160;
         preview.innerHTML = `<img src="${previewImg}" alt="preview" style="height: ${randomHeight}px; width: auto;">`;
         preview.style.display = "block";
       }

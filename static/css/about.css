@@ -74,8 +74,8 @@ body.about-page {
 
 #imagePreview img {
   height: auto;
-  max-height: 180px;
-  min-height: 80px;
+  max-height: calc((300) / 1080 * 100vh);
+  min-height: calc((100) / 1080 * 100vh);
   width: auto;
   border: 1px solid #ccc;
   background: #fff;
