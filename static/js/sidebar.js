@@ -2,7 +2,7 @@ function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     const isCurrentlyOpen = sidebar.classList.contains("open");
 
-      // Intro 페이지(‘/’)에서 Now 페이지('/now')로 직접 이동한 경우
+    // Intro 페이지(‘/’)에서 Now 페이지('/now')로 직접 이동한 경우
     // 이전에 저장된 open 상태를 강제로 'false'로 설정합니다.
     try {
         const refPath = new URL(document.referrer).pathname;

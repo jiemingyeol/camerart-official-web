@@ -108,8 +108,26 @@ body.about-page {
   align-items: center;
   font-weight: 600;
   font-size: calc(20 / 1080 * 100vh);
-  padding: 0.5rem 0 0; /* 상단만 패딩 */
+  padding: 0.5rem 0 0;
   box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-entry.active .timeline-label{
+  background-color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.timeline-datedetail {
+  display: none;
+  font-size: calc(20 / 1080 * 100vh);
+  font-weight: 400;
+  padding: 0.3rem 0 0.3rem;
+}
+
+.timeline-entry.active .timeline-datedetail {
+  display: block;
+  background-color: var(--hover-color);
 }
 
 /* 펼침 영역 - 닫힌 상태 */
@@ -128,13 +146,13 @@ body.about-page {
 .timeline-entry.active .timeline-detail {
   max-height: 1000px;
   opacity: 1;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
   background-color: var(--hover-color);
 }
 
 .timeline-detail p {
   flex: 2;
-  font-size: calc(20 / 1080 * 100vh);
+  font-size: calc(17 / 1080 * 100vh);
   line-height: 1.5;
 }
 

@@ -31,10 +31,16 @@
         style="--hover-color: {{ entry.color | default('#0000ff') }};"
         {% if entry.preview %}data-preview="{{ entry.preview }}"{% endif %}
         {% if entry.id %}data-id="{{ entry.id }}"{% endif %}>
+
       <div class="timeline-label">
         <span class="label-title">{{ entry.title }}</span>
         <span class="label-date">{{ entry.date }}</span>
       </div>
+
+      {% if entry.date_detail %}
+      <div class="timeline-datedetail">{{ entry.date_detail }}</div>
+      {% endif %}
+
       {% if entry.description %}
       <div class="timeline-detail">
         <p>{{ entry.description | safe }}</p>

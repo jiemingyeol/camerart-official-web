@@ -3,6 +3,7 @@
     "id": "00",
     "title": "전시 기획팀 Camerart 결성",
     "date": "2017.07",
+    "date_detail": "2018.01.23-2018.01.26",
     "preview": "",
     "description": "",
     "color": "#D4FF3A",
@@ -12,168 +13,184 @@
     "id": "01",
     "title": "첫 번째 기획展 | 아름다운 권태; 권태의 도약",
     "date": "2018.01",
-    "preview": "/static/images/about/preview/1.jpg",
-    "description": "1번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "date_detail": "2018.01.23-2018.01.26",
+    "preview": "/static/images/about/preview/1.png",
+    "description": "<strong>당신에게 권태란 무엇인가요?</strong><br>로고와 포스터를 꾸미고 있는 나비는 카메랄트(CAMERART)의 첫 전시<br>'권태'의 상징입니다. 어딘가를 향해 날아오르고 있는나비는 권태에서<br>비롯된 상실감과 무기력함에서 벗어나 도약하는 모습을 형상화한<br>모습으로, 권태를 대표합니다. 날아오르는 흰 나비를 통해, 권태라는<br>허물을 벗고 날아오르는 새로운 '나'를 제시하고자 합니다.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/1/detail1.jpg",
-      "/static/images/about/exhibition/1/detail2.jpg"
+      "/static/images/about/exhibition/1/detail1.png",
+      "/static/images/about/exhibition/1/detail2.png",
+      "/static/images/about/exhibition/1/detail3.png"
     ]
   },
   {
     "id": "02",
     "title": "두 번째 기획展 | 마이너리티 리포트 - '우리가 거짓말하는 이유'",
     "date": "2018.08",
-    "preview": "/static/images/about/preview/2.jpg",
-    "description": "2번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "date_detail": "2018.08.17-2018.08.19",
+    "preview": "/static/images/about/preview/2.png",
+    "description": "<strong>우리는 살아가며 수많은 거짓말을 한다.</strong><br>우리는 좋든 싫든, 사회적으로 승인된 존재가 되기 위해서 끊임없이<br>타인 혹은 스스로를 검열한다. <마이너리티 리포트; 우리가 거짓말하는<br>이유>에서는 강제된 사회화 속에서 반복되는 거짓말을 통해 우리<br>사회의 초상을 가감 없이 그려보고자 한다. .",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/2/detail1.jpg",
-      "/static/images/about/exhibition/2/detail2.jpg"
+      "/static/images/about/exhibition/2/detail1.png",
+      "/static/images/about/exhibition/2/detail2.png"
     ]
   },
   {
     "id": "03",
     "title": "세 번째 기획展 | 눈치가 발바닥이라",
     "date": "2019.02",
-    "preview": "/static/images/about/preview/3.jpg",
-    "description": "03번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "date_detail": "2019.02.15-2019.02.17",
+    "preview": "/static/images/about/preview/3.png",
+    "description": "<strong>지금, 어디서 얼마나 눈치 보고 있나요?</strong><br>사회 생활에서 눈치는 필수라는 말이 불만이다가도 어느 순간 '눈치 좀<br>챙기지.'라며 눈쌀 찌푸리던 나의 모습에 놀란적 있으신가요?<br><눈치가 발바닥이라 展>는 눈치의 순간에서 드러나는 우리의 유동적<br>권력에 대하여 이야기합니다. 눈치 보는 쪽에도 눈치 주는 쪽에도 이입<br>할 수 있는, 우리가 눈치 없이 눈치에 관하여 외치고자 합니다.<br>눈치가 발바닥에 붙어도 괜찮은 사람들에게<br>\"죄송해요. 전 눈치가 발바닥이라…<br> 당신 하신 말씀은 못 알아듣겠습니다.\" ",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/3/detail1.jpg",
-      "/static/images/about/exhibition/3/detail2.jpg"
+      "/static/images/about/exhibition/3/detail1.png",
+      "/static/images/about/exhibition/3/detail2.png"
     ]
   },
   {
     "id": "04",
     "title": "네 번째 기획展 | 창파의 조각배",
     "date": "2019.08",
-    "preview": "/static/images/about/preview/4.jpg",
-    "description": "04번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/4.png",
+    "description": " <strong>I’m so blue</strong><br>인생을 계절에 비유했을 때 봄이라 명명되어진 10, 20대를 나타내는<br>‘푸른 봄’의 청춘(靑春). <창파의 조각배 展>은 봄 앞에 놓여 진 푸름<br>에 주목하여 다양한 시각으로 청춘이 가지고 있는 심리들을 조망하<br>고자 합니다. 기성세대들의 청춘 예찬에 숨어 있는, 누구나 알지만 아<br>무도 모르는 (척하는), 망망대해의 조각배와 같은 실제 청춘들의 움직<br>임을 발견하는 전시입니다.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/4/detail1.jpg",
-      "/static/images/about/exhibition/4/detail2.jpg"
+      "/static/images/about/exhibition/4/detail1.png",
+      "/static/images/about/exhibition/4/detail2.png",
+      "/static/images/about/exhibition/4/detail3.png"
     ]
   },
   {
     "id": "05",
     "title": "다섯 번째 기획展 | 들여다본, 다면",
     "date": "2020.02",
-    "preview": "/static/images/about/preview/5.jpg",
-    "description": "05번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
+    "date_detail": "2020.02.14-2020.02.16",
+    "preview": "/static/images/about/preview/5.png",
+    "description": "<strong>당신은, 당신의 욕망이 온전히 자신만의 것이라고<br>단언할 수 있습니까?</strong><br>개인의 욕망과 사회적 금기는 한끝 차이라 마치 서로가 서로의<br>그림자인 듯 항상 맞닿아 있습니다. 타인과 어울려 살아가는 과정에서<br>개인의 욕망은 사회적 금기라는 '낙인'을 수없이 마주합니다.<br>특정 욕망이 사회적 금기로 취급되는 상황에서<br>선택의 주체가 온전한 주체성의 주인은 맞는지 의심됩니다.<br>[우리에 갇히다]는 욕망의 근원에 의문을 제기합니다.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/5/detail1.jpg",
-      "/static/images/about/exhibition/5/detail2.jpg"
+      "/static/images/about/exhibition/5/detail1.png",
+      "/static/images/about/exhibition/5/detail2.png"
     ]
   },
   {
     "id": "06",
     "title": "여섯 번째 기획展 | 우리에 갇하다",
     "date": "2020.08",
-    "preview": "/static/images/about/preview/6.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/6.png",
     "description": "06번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/6/detail1.jpg",
-      "/static/images/about/exhibition/6/detail2.jpg"
+      "/static/images/about/exhibition/6/detail1.png",
+      "/static/images/about/exhibition/6/detail2.png"
     ]
   },
   {
     "id": "07",
     "title": "일곱 번째 기획展 | 나무만 없었더라도, 플라스틱 천국이었을텐데",
     "date": "2021.02",
-    "preview": "/static/images/about/preview/7.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/7.png",
     "description": "07번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/7/detail1.jpg",
-      "/static/images/about/exhibition/7/detail2.jpg"
+      "/static/images/about/exhibition/7/detail1.png",
+      "/static/images/about/exhibition/7/detail2.png"
     ]
   },
   {
     "id": "08",
     "title": "여덟 번째 기획展 | 지금은 부재중이오니, 메시지를 남겨주세요",
     "date": "2021.08",
-    "preview": "/static/images/about/preview/8.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/8.png",
     "description": "08번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/8/detail1.jpg",
-      "/static/images/about/exhibition/8/detail2.jpg"
+      "/static/images/about/exhibition/8/detail1.png",
+      "/static/images/about/exhibition/8/detail2.png"
     ]
   },
   {
     "id": "09",
     "title": "아홉 번째 기획展 | 7마리의 검은 고양이",
     "date": "2022.02",
-    "preview": "/static/images/about/preview/9.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/9.png",
     "description": "09번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/9/detail1.jpg",
-      "/static/images/about/exhibition/9/detail2.jpg"
+      "/static/images/about/exhibition/9/detail1.png",
+      "/static/images/about/exhibition/9/detail2.png"
     ]
   },
   {
     "id": "11",
     "title": "열한 번째 기획展 | 행복으로 돈을 살 수는 없잖아요",
     "date": "2023.02",
-    "preview": "/static/images/about/preview/11.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/11.png",
     "description": "11번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/11/detail1.jpg",
-      "/static/images/about/exhibition/11/detail2.jpg"
+      "/static/images/about/exhibition/11/detail1.png",
+      "/static/images/about/exhibition/11/detail2.png"
     ]
   },
   {
     "id": "12",
     "title": "열두 번째 기획展 | Love X-file: not found",
     "date": "2023.08",
-    "preview": "/static/images/about/preview/12.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/12.png",
     "description": "12번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/12/detail1.jpg",
-      "/static/images/about/exhibition/12/detail2.jpg"
+      "/static/images/about/exhibition/12/detail1.png",
+      "/static/images/about/exhibition/12/detail2.png"
     ]
   },
   {
     "id": "13",
     "title": "열세 번째 기획展 | 웰컴 두 도파민 월드",
     "date": "2024.02",
-    "preview": "/static/images/about/preview/13.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/13.png",
     "description": "13번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/13/detail1.jpg",
-      "/static/images/about/exhibition/13/detail2.jpg"
+      "/static/images/about/exhibition/13/detail1.png",
+      "/static/images/about/exhibition/13/detail2.png"
     ]
   },
   {
     "id": "14",
     "title": "열네 번째 기획展 | 내 삶 속 이름들, 사랑하거나 지워버리거나",
     "date": "2024.08",
-    "preview": "/static/images/about/preview/14.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/14.png",
     "description": "14번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/14/detail1.jpg",
-      "/static/images/about/exhibition/14/detail2.jpg"
+      "/static/images/about/exhibition/14/detail1.png",
+      "/static/images/about/exhibition/14/detail2.png"
     ]
   },
   {
     "id": "15",
     "title": "열다섯 번째 기획展 | 피사의 석탑",
     "date": "2025.02",
-    "preview": "/static/images/about/preview/15.jpg",
+    "date_detail": "2019.08.16-2019.08.18",
+    "preview": "/static/images/about/preview/15.png",
     "description": "15번 전시 설명<br>이러면 어쩌구 저쩌구.<br>카메랄트와 함께 빠져드는 전시.",
     "color": "#D4FF3A",
     "images": [
-      "/static/images/about/exhibition/15/detail1.jpg",
-      "/static/images/about/exhibition/15/detail2.jpg"
+      "/static/images/about/exhibition/15/detail1.png",
+      "/static/images/about/exhibition/15/detail2.png"
     ]
   }
 ]
