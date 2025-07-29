@@ -153,8 +153,6 @@ body.about-page {
 }
 
 .timeline-entry:nth-of-type(18) .detail-images {
-  position: relative;
-  width: 80%;
   height: calc(300 / 1080 * 100vh);
 }
 
@@ -166,7 +164,7 @@ body.about-page {
 
 .detail-images {
   position: relative;
-  width: 60%;
+  width: 90%;
   height: calc(450 / 1080 * 100vh);
 }
 
