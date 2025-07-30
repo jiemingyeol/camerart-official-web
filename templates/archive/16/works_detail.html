@@ -6,13 +6,16 @@
 
 {% block content %}
 <div class="works-detail-container">
+
     <!-- 헤더 -->
     <div class="works-detail-header">
         <img class="works-detail-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
-        <span class="works-detail-title">(WORKS)</span>
+        <a href="{{ url_for('archive_page', num=current_page) }}" class="works-detail-title-link">
+        (WORKS)
+        </a>
     </div>
 
-    <!-- 이미지+설명 컨테이너 -->
+    <!-- 이미지 2행 그리드 -->
     <div class="works-detail-grid">
         {% for work in exhibition.images.works_detail %}
         <div class="works-detail-item">
@@ -23,5 +26,6 @@
         </div>
         {% endfor %}
     </div>
+
 </div>
 {% endblock %}

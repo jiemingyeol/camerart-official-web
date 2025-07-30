@@ -50,7 +50,6 @@
             <span class="works-title">(WORKS)</span>
             <a class="works-more" href="{{ url_for('archive_works', num=current_page) }}">MORE</a>
         </div>
-
         <!-- WORKS GRID (정렬된 데이터 사용) -->
         <div class="works-grid" id="worksGrid">
             {% for work in exhibition.images.works | sort(attribute='row') %}
@@ -62,7 +61,6 @@
             </div>
             {% endfor %}
         </div>
-
         <!-- FUNDING Header & Image -->
         <div class="funding-header-section" id="fundingHeader">
             <img class="funding-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
@@ -70,7 +68,7 @@
         </div>
 
         <div class="funding-image-container" id="fundingImageContainer">
-            <img src="{{ url_for('static', filename=funding) }}" alt="funding">
+            <img src="{{ url_for('static', filename=exhibition.images.funding) }}" alt="funding">
         </div>
     </div>
 </div>

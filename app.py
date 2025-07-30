@@ -25,7 +25,8 @@ def now():
     return render_template('archive/16/index.html',
                            current_page=16,
                            total_pages=total_pages,
-                           exhibition=exhibition)
+                           exhibition=exhibition
+                           )
 
 @app.route('/now/works')
 def now_works():

@@ -1,0 +1,103 @@
+/* 전체 컨테이너 */
+.works-detail-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* 최소 화면 높이 확보 */
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+.works-detail-header {
+  position: absolute;
+  top: calc(111 / 1080 * 100vh);
+  left: calc(90 / 1920 * 100vw);
+  display: flex;
+  align-items: center; /* 수평 중앙 정렬 */
+  gap: calc(10 / 1920 * 100vw); /* 화살표와 텍스트 간격 (선택적) */
+}
+
+/* 화살표 */
+.works-detail-arrow {
+  width: calc(60 / 1920 * 100vw);
+  height: calc(40 / 1080 * 100vh);
+  object-fit: contain;
+  transform: scaleX(-1);
+  margin: 0; /* 불필요한 마진 제거 */
+  padding: 0;
+  display: block;
+}
+
+/* WORKS 텍스트 링크 */
+.works-detail-title-link {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: calc(48 / 1080 * 100vh);
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  line-height: calc(40 / 1080 * 100vh); /* 화살표 높이와 동일하게 맞춤 */
+}
+
+.works-detail-title-link:hover {
+  text-decoration: none;
+}
+
+/* 이미지 그리드 */
+.works-detail-grid {
+  position: relative;
+  top: calc(111 / 1080 * 100vh + 48 / 1080 * 100vh + 72 / 1080 * 100vh);
+  /* WORKS 텍스트 최하단 기준 72px 아래 */
+  left: calc(90 / 1920 * 100vw);
+  width: calc((1920 - 90 - 90) / 1920 * 100vw);
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(220 / 1920 * 100vw), 1fr));
+  grid-auto-rows: auto;
+  grid-template-rows: repeat(2, auto);
+  gap: calc(24 / 1920 * 100vw) calc(24 / 1920 * 100vw);
+}
+
+/* 개별 아이템 */
+.works-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.works-detail-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.works-detail-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* 설명 */
+.works-detail-caption {
+  margin-top: calc(12 / 1080 * 100vh);
+  font-family: 'Gothic A1', sans-serif;
+  font-size: calc(14 / 1080 * 100vh);
+  color: #000;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.works-detail-title-link {
+  margin-left: calc(10 / 1920 * 100vw);
+  font-family: 'Gothic A1', sans-serif;
+  font-size: calc(48 / 1080 * 100vh);
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.works-detail-title-link:hover {
+  text-decoration: none;
+}
