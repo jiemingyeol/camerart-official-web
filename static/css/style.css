@@ -1,5 +1,4 @@
-/* ─────────────────────────────────────────────────── */
-/* Gothic A1 폰트 로드 */
+/* ────────── 기본 폰트 ────────── */
 @font-face {
   font-family: 'Gothic A1';
   src: url('../fonts/GothicA1.ttf') format('truetype');
@@ -7,147 +6,140 @@
   font-style: normal;
 }
 
-/* ─────────────────────────────────────────────────── */
-/* 기본 폰트 설정 */
 html, body {
   font-family: 'Gothic A1', sans-serif;
-}
-
-/* ---------- 공통 전체 ---------- */
-body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fff;
 }
 
 h1, h2, p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
-/* ---------- Now & Archive 페이지 공통 ---------- */
-.now-page .now-container,
-.archive-page .now-container {
+/* 전체 컨테이너 */
+.exhibition-container {
     display: flex;
-}
-
-.now-page .poster,
-.archive-page .poster {
-    flex: 1;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.now-page .poster img,
-.archive-page .poster img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-}
-
-.now-page .content,
-.archive-page .content {
-    flex: 1;
-    overflow-y: auto;
-    padding: 2rem;
-    background: #f9f9f9;
-}
-
-.now-page section,
-.archive-page section {
-    margin-bottom: 3rem;
-}
-
-/* Installation Views */
-.scroll-gallery {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding-bottom: 1rem;
-}
-
-.scroll-gallery img {
-    height: 150px;
-    flex-shrink: 0;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    transition: transform 0.3s;
-}
-
-.scroll-gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* 드래그 커서 */
-.draggable-scroll {
-    cursor: grab;
-    user-select: none;
-}
-.draggable-scroll.dragging {
-    cursor: grabbing;
-}
-
-/* Works 섹션 */
-.works-header {
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: space-between;
-    padding-right: 2.5rem;
-    align-items: center;
-}
-
-.works-header a {
-    text-decoration: underline;
-    color: black;
-    font-weight: normal;
-    border: none;
-    padding: 0;
-    background: none;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.works-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.works-gallery img {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-    border: 1px solid #ccc;
-}
-
-/* Works 상세 페이지 */
-.works-detail-page {
-    padding: 2rem;
-}
-
-.works-detail-title {
-    font-size: 2.5rem;    /* 원하는 크기로 조정 */
-    font-weight: bold;    /* 필요 시 굵게 */
-    color: black;
-    cursor: pointer;
-}
-
-.works-detail-title,
-.works-detail-title a {
-    color: #000;
-    text-decoration: underline;
-}
-
-.works-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
-
-.work-item img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 1px solid #ccc;
+    height: 100vh;
     background-color: #fff;
+    position: relative;
+}
+
+/* 좌측 포스터 이미지 영역 */
+.exhibition-left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: calc(17 / 1080 * 100vh);
+    padding-left: calc(20 / 1920 * 100vw);
+}
+
+.exhibition-left img {
+    width: calc((1920 / 2 - 20) / 1920 * 100vw);
+    height: calc((1080 - 17 * 2) / 1080 * 100vh);
+    object-fit: cover;
+}
+
+/* 중앙 수직선 */
+.vertical-divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: calc(1 / 1920 * 100vw);
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+}
+
+/* 오른쪽 콘텐츠 영역(텍스트 전체 박스) */
+.exhibition-right {
+    position: absolute;
+    top: 0;
+    left: calc(50% + (22 / 1920 * 100vw)); /* 중앙 구분선에서 22px 떨어짐 */
+    width: calc(50% - (18 / 1920 * 100vw) - (22 / 1920 * 100vw));
+    height: 100vh;
+    padding-right: calc(18 / 1920 * 100vw);
+    background-color: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* 제목 */
+.exhibition-title {
+    position: relative;
+    top: calc(111 / 1080 * 100vh);
+    left: calc(64 / 1920 * 100vw); /* 중앙 구분선+22px 기준에서 64px 여백 */
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(72 / 1080 * 100vh);
+    font-weight: normal;
+    color: #000;
+    margin: 0;
+}
+
+/* 장소 + 일시 */
+.exhibition-info {
+    position: relative;
+    top: calc((111 + 72) / 1080 * 100vh);
+    left: calc(64 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(18 / 1080 * 100vh);
+    color: #000;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.exhibition-divider {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36) / 1080 * 100vh); 
+    /* 111: 제목 top, 72: 제목 높이간격, 18: info 폰트 크기 정도 보정, 36: 간격 */
+    left: 0;
+    width: 100%;
+    height: calc(1 / 1080 * 100vh);
+    background-color: #000;
+    border: none;
+    margin: 0;
+}
+
+/* Description */
+.exhibition-description {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36) / 1080 * 100vh); 
+    /* 제목+간격+info+구분선간격+description 시작간격 */
+    left: calc(64 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(16 / 1080 * 100vh);
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Artist */
+.exhibition-artist {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164) / 1080 * 100vh);
+    /* description 끝(16px 폰트 높이)+164px 여백 */
+    left: calc(64 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(14 / 1080 * 100vh);
+    color: #000;
+    margin: 0;
+}
+
+/* 두 번째 구분선 */
+.exhibition-divider2 {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32) / 1080 * 100vh);
+    /* artist 텍스트 끝 + 32px 아래 */
+    left: 0;
+    width: 100%;
+    height: calc(1 / 1080 * 100vh);
+    background-color: #000;
+    border: none;
+    margin: 0;
 }

@@ -1,60 +1,87 @@
 from flask import Flask, render_template
 import json
+import os
 
 app = Flask(__name__)
 
-# 캐러셀을 활성화할 페이지 번호 리스트
 CAROUSEL_SLIDES = {1: 2, 4: 2, 15: 2}
+
+# JSON 파일 로드 함수
+def load_archive_data():
+    with open(os.path.join("static", "data", "archive.json"), encoding="utf-8") as f:
+        return json.load(f)
 
 @app.route('/')
 def intro():
-    # 전체 Archive 페이지 수 제공
-    return render_template('intro.html', total_pages=15)
+    archive_data = load_archive_data()
+    total_pages = len(archive_data)
+    return render_template('intro.html', total_pages=total_pages)
 
 @app.route('/now')
 def now():
-    return render_template('now/index.html', total_pages=15)
+    archive_data = load_archive_data()
+    exhibition = archive_data.get("16", {})
+    total_pages = len(archive_data)
+    return render_template('archive/16/index.html',
+                           current_page=16,
+                           total_pages=total_pages,
+                           exhibition=exhibition)
 
 @app.route('/now/works')
-def works():
-    return render_template('now/works_detail.html', total_pages=15)
+def now_works():
+    archive_data = load_archive_data()
+    exhibition = archive_data.get("16", {})
+    total_pages = len(archive_data)
+    return render_template('archive/16/works_detail.html',
+                           current_page=16,
+                           total_pages=total_pages,
+                           exhibition=exhibition)
 
 @app.route('/archive/<int:num>')
 def archive_page(num):
-    total_pages = 15  # 실제 전체 페이지 수
-    # slide_count → enable_carousel 플래그 계산
-    slide_count    = CAROUSEL_SLIDES.get(num, 0)
+    archive_data = load_archive_data()
+    exhibition = archive_data.get(str(num), {})
+    total_pages = len(archive_data)
+    slide_count = CAROUSEL_SLIDES.get(num, 0)
     enable_carousel = slide_count > 0
 
     return render_template(
-        f'archive/{num}/page{num}.html',
+        f'archive/{num}/index.html',
         current_page=num,
         total_pages=total_pages,
         enable_carousel=enable_carousel,
-        slide_count=slide_count
+        slide_count=slide_count,
+        exhibition=exhibition
     )
 
-# --- ARCHIVE Works 상세 페이지 라우트 ---
 @app.route('/archive/<int:num>/works')
 def archive_works(num):
-    total_pages = 15
-    # 여기서 num에 맞는 상세 데이터가 필요하면 로드하세요.
+    archive_data = load_archive_data()
+    exhibition = archive_data.get(str(num), {})
+    total_pages = len(archive_data)
     return render_template(
         f'archive/{num}/works_detail.html',
         current_page=num,
-        total_pages=total_pages
+        total_pages=total_pages,
+        exhibition=exhibition
     )
 
 @app.route("/about")
 def about():
     with open("static/data/history.json", encoding="utf-8") as f:
         history_data = json.load(f)
+<<<<<<< HEAD
     # 전체 페이지 수도 전달
     return render_template(
         "about.html",
         history=history_data,
         total_pages=15
     )
+=======
+    return render_template("about.html",
+                           history=history_data,
+                           total_pages=len(load_archive_data()))
+>>>>>>> 6bbebf5 (now page structure change)
 
 if __name__ == '__main__':
     app.run(debug=True)

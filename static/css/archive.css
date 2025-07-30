@@ -1,69 +1,45 @@
-/* ----------------------------------------
-   archive.css
----------------------------------------- */
-
-/* 공통 layout */
-.now-container {
-  display: flex;
-}
-
-/* --- 캐러셀 스타일 --- */
+/* ────────── 아카이브 전용 캐러셀 ────────── */
 .poster-carousel {
   position: relative;
   overflow: hidden;
   width: 40%;
 }
-.carousel-track-container { overflow: hidden; }
+
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  padding: 0; margin: 0; list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 .carousel-slide {
   min-width: 100%;
   box-sizing: border-box;
 }
+
 .carousel-slide img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 .carousel-btn {
-  position: absolute; top: 50%; transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.7);
-  border: none; font-size: 2rem; padding: 0.2rem 0.5rem;
-  cursor: pointer; z-index: 10;
-}
-.carousel-btn.prev { left: 0.5rem; }
-.carousel-btn.next { right: 0.5rem; }
-
-/* — 기존 poster 단일 이미지 스타일 — */
-.poster {
-  width: 40%; /* 캐러셀과 동일 비율로 유지 */
+  border: none;
+  font-size: 2rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.poster img {
-  display: block;
-  width: 100%;
-  height: auto;
+.carousel-btn.prev {
+  left: 0.5rem;
 }
 
-/* — content 영역 스타일 (기존 scroll 등) — */
-.content {
-  width: 60%;
-  padding-left: 2rem;
-}
-
-.scroll-gallery,
-.works-gallery {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-}
-
-.scroll-gallery img,
-.works-gallery img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 4px;
+.carousel-btn.next {
+  right: 0.5rem;
 }

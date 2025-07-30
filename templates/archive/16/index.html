@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block page_class %}archive-16-page{% endblock %}
+
+{% block content %}
+<div class="exhibition-container">
+    <!-- 왼쪽 포스터 영역 -->
+    <div class="exhibition-left">
+        <img src="{{ url_for('static', filename=exhibition.images.poster) }}" alt="전시 포스터">
+    </div>
+
+    <!-- 중앙 수직선 -->
+    <div class="vertical-divider"></div>
+
+    <!-- 오른쪽 텍스트 영역 -->
+    <div class="exhibition-right">
+        <!-- 전시 제목 -->
+        <h1 class="exhibition-title">{{ exhibition.title | safe }}</h1>
+
+        <!-- 장소 + 일시 -->
+        <p class="exhibition-info">{{ exhibition.info | safe }}</p>
+        <hr class="exhibition-divider">
+
+        <!-- ① Description -->
+        <p class="exhibition-description">{{ exhibition.description | safe }}</p>
+
+        <!-- ② Artist -->
+        <p class="exhibition-artist">{{ exhibition.artist }}</p>
+
+        <!-- ③ 두 번째 구분선 -->
+        <hr class="exhibition-divider2">
+    </div>
+</div>
+{% endblock %}
