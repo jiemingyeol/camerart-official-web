@@ -1,15 +1,27 @@
 {% extends "layout.html" %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/works_detail.css') }}">
+{% endblock %}
+
 {% block content %}
-<div class="works-detail-page">
-    <div class="works-detail-title">
-        <a href="{{ url_for('now') }}">← WORKS</a>
+<div class="works-detail-container">
+    <!-- 헤더 -->
+    <div class="works-detail-header">
+        <img class="works-detail-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+        <span class="works-detail-title">(WORKS)</span>
     </div>
-    <div class="works-gallery-grid">
-        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work1.png') }}"></div>
-        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work2.png') }}"></div>
-        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work3.png') }}"></div>
-        <div class="work-item"><img src="{{ url_for('static', filename='images/now/work4.png') }}"></div>
+
+    <!-- 이미지+설명 컨테이너 -->
+    <div class="works-detail-grid">
+        {% for work in exhibition.images.works_detail %}
+        <div class="works-detail-item">
+            <div class="works-detail-image">
+                <img src="{{ url_for('static', filename=work.image) }}" alt="work">
+            </div>
+            <p class="works-detail-caption">{{ work.caption }}</p>
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
