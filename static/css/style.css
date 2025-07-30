@@ -27,25 +27,27 @@ h1, h2, p {
     position: relative;
 }
 
-/* 좌측 포스터 이미지 영역 */
+/* 왼쪽 포스터 이미지 영역 */
 .exhibition-left {
     width: 50%;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;   /* 중앙 정렬 */
     align-items: flex-start;
     background-color: #fff;
     box-sizing: border-box;
-    padding-top: calc(17 / 1080 * 100vh);
-    padding-left: calc(20 / 1920 * 100vw);
+    padding-top: calc(17 / 1080 * 100vh);  /* 위쪽 여백 */
+    padding-bottom: calc(17 / 1080 * 100vh); /* 아래쪽 여백 */
+    padding-left: 0;   /* 왼쪽 여백 제거 */
 }
 
+/* 포스터 이미지 크기 조정 */
 .exhibition-left img {
-    width: calc((1920 / 2 - 20) / 1920 * 100vw);
-    height: calc((1080 - 17 * 2) / 1080 * 100vh);
-    object-fit: cover;
+    width: auto;
+    height: calc((1080 - 34) / 1080 * 100vh);  /* 전체 높이 - 상하 17px*2 */
+    max-width: 90%; /* 화면이 너무 넓을 때 대비 */
+    object-fit: contain;
 }
-
 /* 중앙 수직선 */
 .vertical-divider {
     position: absolute;
@@ -58,15 +60,17 @@ h1, h2, p {
 }
 
 /* 오른쪽 콘텐츠 영역(텍스트 전체 박스) */
+/* 오른쪽 전체 영역은 세로 스크롤만 */
 .exhibition-right {
     position: absolute;
     top: 0;
-    left: calc(50% + (22 / 1920 * 100vw)); /* 중앙 구분선에서 22px 떨어짐 */
+    left: calc(50% + (22 / 1920 * 100vw));
     width: calc(50% - (18 / 1920 * 100vw) - (22 / 1920 * 100vw));
     height: 100vh;
     padding-right: calc(18 / 1920 * 100vw);
     background-color: #fff;
-    overflow-y: auto;
+    overflow-y: auto;   /* ✅ 세로 스크롤만 */
+    overflow-x: hidden; /* ✅ 가로 스크롤 차단 */
     box-sizing: border-box;
 }
 
@@ -142,4 +146,195 @@ h1, h2, p {
     background-color: #000;
     border: none;
     margin: 0;
+}
+
+/* Installation Header (위치 복원) */
+.installation-header {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180) / 1080 * 100vh);
+    left: calc(64 / 1920 * 100vw);
+    display: flex;
+    align-items: center;
+}
+
+/* 화살표 아이콘 */
+.installation-arrow {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(40 / 1080 * 100vh);
+    object-fit: contain;
+}
+
+/* 제목 텍스트 */
+.installation-title {
+    margin-left: calc(2.5 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(48 / 1080 * 100vh);
+    color: #000;
+}
+
+/* 이미지 슬라이더 뷰포트 */
+.installation-container {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 48) / 1080 * 100vh);
+    left: calc(64 / 1920 * 100vw);
+    width: calc((1920 / 2 - 64 - 18) / 1920 * 100vw);
+    height: calc(260 / 1080 * 100vh);
+    overflow-x: auto;    /* ✅ 가로 스크롤 허용 */
+    overflow-y: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+/* 가로 스크롤 갤러리 */
+/* dragscroll 이벤트는 이 요소에만 적용 */
+.scroll-gallery {
+    display: flex;
+    gap: calc(16 / 1920 * 100vw);
+    cursor: grab;
+}
+
+/* 개별 이미지 */
+.install-slide {
+    flex: 0 0 auto;
+}
+
+.install-slide img {
+    height: calc(220 / 1080 * 100vh);
+    width: auto;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.install-slide img:hover {
+    transform: scale(1.05);
+}
+
+.draggable-scroll {
+    cursor: grab;
+    user-select: none;
+}
+
+.draggable-scroll.dragging {
+    cursor: grabbing;
+}
+
+/* WORKS Header */
+.works-header-section {
+    position: relative;
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 220) / 1080 * 100vh);
+    left: calc(64 / 1920 * 100vw);
+    display: flex;
+    align-items: center;
+}
+
+.works-arrow {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(40 / 1080 * 100vh);
+    object-fit: contain;
+}
+
+.works-title {
+    margin-left: calc(2.5 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(48 / 1080 * 100vh);
+    color: #000;
+}
+
+/* MORE 버튼 */
+.works-more {
+    position: relative;
+    left: calc(410 / 1920 * 100vw); /* WORKS 시작점으로부터 410px 오른쪽 */
+    top: calc(14 / 1080 * 100vh);  /* WORKS 글자보다 14px 아래 */
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(36 / 1080 * 100vh);
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* WORKS 이미지 그리드 */
+.works-grid {
+    position: relative;
+    /* 기존 계산식에서 32px 여백 추가 */
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32   /* 이전 요소들 */
+               + 180 + 32 + 220   /* installation slider 아래 */
+               + 32 + 48 + 36 + 32) / 1080 * 100vh);
+    /* 36px: MORE 글자 높이, 32px: MORE 아래 여백 */
+    left: calc(64 / 1920 * 100vw);  /* 좌측 여백 */
+    width: calc((1920 / 2 - 64 - 18 - 64) / 1920 * 100vw); 
+    /* 우측 64px 여백을 추가로 확보 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(220 / 1920 * 100vw), 1fr));
+    gap: calc(24 / 1920 * 100vw) calc(16 / 1920 * 100vw);
+    box-sizing: border-box;
+}
+
+/* 기본 이미지 컨테이너 */
+.work-image-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 비율별 클래스 */
+.ratio-3-4 { aspect-ratio: 3 / 4; }
+.ratio-1-1 { aspect-ratio: 1 / 1; }
+.ratio-4-3 { aspect-ratio: 4 / 3; }
+.ratio-16-9 { aspect-ratio: 16 / 9; }
+.ratio-9-16 { aspect-ratio: 9 / 16; }
+
+/* 이미지 설명 */
+.work-caption {
+    margin-top: calc(12 / 1080 * 100vh);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(14 / 1080 * 100vh);
+    color: #000;
+    text-align: left;
+}
+
+/* FUNDING (JS에서 top 자동 계산) */
+.funding-header-section {
+    position: absolute;
+    left: calc(64 / 1920 * 100vw);
+    display: flex;
+    align-items: center;
+}
+
+.funding-arrow {
+    width: calc(60 / 1920 * 100vw);
+    height: calc(40 / 1080 * 100vh);
+    object-fit: contain;
+}
+
+.funding-title {
+    margin-left: calc(2.5 / 1920 * 100vw);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: calc(48 / 1080 * 100vh);
+    color: #000;
+}
+
+.funding-image-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: calc(288 / 1080 * 100vh);
+}
+
+.funding-image-container img {
+    width: calc(792 / 1920 * 100vw);
+    height: auto;
+    object-fit: contain;
 }

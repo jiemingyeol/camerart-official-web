@@ -3,10 +3,10 @@
 /* ─────────────────────────────────────────────────── */
 #menu-button {
     position: fixed;
-    top: 40px;
-    right: 40px;
-    width: 32px;         /* 아이콘 실제 너비 */
-    height: 32px;        /* 아이콘 실제 높이 */
+    top: calc(40 / 1080 * 100vh);
+    right: calc(60 / 1920 * 100vw);
+    width: calc(32 / 1920 * 100vw);         /* 아이콘 실제 너비 */
+    height: calc(32 / 1080 * 100vh);        /* 아이콘 실제 높이 */
     background: transparent;
     padding: 0;          /* 내부 여백 제거 */
     border: none;

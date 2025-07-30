@@ -70,18 +70,9 @@ def archive_works(num):
 def about():
     with open("static/data/history.json", encoding="utf-8") as f:
         history_data = json.load(f)
-<<<<<<< HEAD
-    # 전체 페이지 수도 전달
-    return render_template(
-        "about.html",
-        history=history_data,
-        total_pages=15
-    )
-=======
     return render_template("about.html",
                            history=history_data,
                            total_pages=len(load_archive_data()))
->>>>>>> 6bbebf5 (now page structure change)
 
 if __name__ == '__main__':
     app.run(debug=True)
