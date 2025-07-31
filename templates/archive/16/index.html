@@ -67,8 +67,18 @@
             <span class="funding-title">(FUNDING)</span>
         </div>
 
-        <div class="funding-image-container" id="fundingImageContainer">
-            <img src="{{ url_for('static', filename=exhibition.images.funding) }}" alt="funding">
+        <!-- FUNDING 영역 -->
+        <div class="funding-container" id="fundingContainer">
+            {% if exhibition.images.funding_embed %}
+                <!-- ✅ 웹사이트 임베드 (iframe) -->
+                <iframe src="{{ exhibition.images.funding_embed }}" 
+                        class="funding-iframe"
+                        frameborder="0"
+                        scrolling="yes"></iframe>
+            {% else %}
+                <!-- ✅ 기존 이미지 -->
+                <img src="{{ url_for('static', filename=exhibition.images.funding) }}" alt="funding">
+            {% endif %}
         </div>
     </div>
 </div>

@@ -325,19 +325,23 @@ h1, h2, p {
     margin-left: calc(2.5 / 1920 * 100vw);
     font-family: 'Gothic A1', sans-serif;
     font-size: calc(48 / 1080 * 100vh);
+    text-decoration: none;
+    cursor: pointer;
     color: #000;
 }
 
-.funding-image-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: calc(288 / 1080 * 100vh);
+/* FUNDING 영역 */
+.funding-container {
+  width: 100%;
+  height: 500px; /* 기존 이미지 크기 유지 */
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-bottom: calc(288 / 1080 * 100vh);
 }
 
-.funding-image-container img {
-    width: calc(792 / 1920 * 100vw);
-    height: auto;
-    object-fit: contain;
+.funding-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
