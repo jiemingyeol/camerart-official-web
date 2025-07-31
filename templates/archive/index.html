@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="exhibition-container">
+    <!-- 왼쪽 포스터 영역 -->
+    <div class="exhibition-left">
+        <img src="{{ url_for('static', filename=exhibition.images.poster) }}" alt="전시 포스터">
+    </div>
+
+    <!-- 중앙 수직선 -->
+    <div class="vertical-divider"></div>
+
+    <!-- 오른쪽 텍스트 영역 -->
+    <div class="exhibition-right">
+        <!-- 전시 제목 -->
+        <h1 class="exhibition-title">{{ exhibition.title | safe }}</h1>
+
+        <!-- 장소 + 일시 -->
+        <p class="exhibition-info">{{ exhibition.info | safe }}</p>
+        <hr class="exhibition-divider">
+
+        <!-- ① Description -->
+        <p class="exhibition-description">{{ exhibition.description | safe }}</p>
+
+        <!-- ② Artist -->
+        <p class="exhibition-artist">{{ exhibition.artist | safe }}</p>
+
+        <!-- ③ 두 번째 구분선 -->
+        <hr class="exhibition-divider2">
+        <!-- Installation Views Header -->
+        <div class="installation-header">
+            <img class="installation-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+            <span class="installation-title">(INSTALLATION VIEWS)</span>
+        </div>
+
+        <div class="installation-container">
+            <div class="scroll-gallery draggable-scroll" id="installScroll">
+                {% for img in exhibition.images.installation %}
+                <div class="install-slide">
+                    <img src="{{ url_for('static', filename=img) }}" alt="installation">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- WORKS 헤더 -->
+        <div class="works-header-section">
+            <img class="works-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+            <span class="works-title">(WORKS)</span>
+            <a class="works-more" href="{{ url_for('archive_works', num=current_page) }}">MORE</a>
+        </div>
+        <!-- WORKS GRID (정렬된 데이터 사용) -->
+        <div class="works-grid" id="worksGrid">
+            {% for work in exhibition.images.works | sort(attribute='row') %}
+            <div class="work-item" data-row="{{ work.row }}">
+                <div class="work-image-container ratio-{{ work.ratio }}">
+                    <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
+                </div>
+                <p class="work-caption">{{ work.caption }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- FUNDING Header & Image -->
+        <div class="funding-header-section" id="fundingHeader">
+            <img class="funding-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+            <span class="funding-title">(FUNDING)</span>
+        </div>
+
+        <!-- FUNDING 영역 -->
+        <div class="funding-container" id="fundingContainer">
+            {% if exhibition.images.funding_embed %}
+                <!-- ✅ 웹사이트 임베드 (iframe) -->
+                <iframe src="{{ exhibition.images.funding_embed }}" 
+                        class="funding-iframe"
+                        frameborder="0"
+                        scrolling="yes"></iframe>
+            {% else %}
+                <!-- ✅ 기존 이미지 -->
+                <img src="{{ url_for('static', filename=exhibition.images.funding) }}" alt="funding">
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

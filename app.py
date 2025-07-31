@@ -42,12 +42,12 @@ def now_works():
 def archive_page(num):
     archive_data = load_archive_data()
     exhibition = archive_data.get(str(num), {})
-    total_pages = len(archive_data)
+    total_pages = len(archive_data)-1
     slide_count = CAROUSEL_SLIDES.get(num, 0)
     enable_carousel = slide_count > 0
 
     return render_template(
-        f'archive/{num}/index.html',
+        'archive/index.html',    # ← 하나로 통합
         current_page=num,
         total_pages=total_pages,
         enable_carousel=enable_carousel,
@@ -61,7 +61,7 @@ def archive_works(num):
     exhibition = archive_data.get(str(num), {})
     total_pages = len(archive_data)
     return render_template(
-        f'archive/{num}/works_detail.html',
+        f'archive/works_detail.html',
         current_page=num,
         total_pages=total_pages,
         exhibition=exhibition

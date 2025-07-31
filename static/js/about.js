@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
           const index = Array.from(entries).indexOf(entry);
 
-          if (index >= 2 && index <= 10) {
+          if (index >= 1 && index <= 10) {
             // 중앙으로 스크롤
             const elementTop = entry.getBoundingClientRect().top + window.scrollY;
             const elementHeight = entry.offsetHeight;
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
               behavior: 'smooth'
             });
           }
-        }, 500); // transition이 끝난 후 위치 계산
+        }, 350); // transition이 끝난 후 위치 계산
       }
       preview.style.display = "none";
     });
