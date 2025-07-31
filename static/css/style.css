@@ -132,6 +132,7 @@ h1, h2, p {
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164) / 1080 * 100vh);
     /* description 끝(16px 폰트 높이)+164px 여백 */
     left: calc(64 / 1920 * 100vw);
+    line-height: calc(28 / 1080 * 100vh);
     font-family: 'Gothic A1', sans-serif;
     font-size: calc(14 / 1080 * 100vh);
     color: #000;
