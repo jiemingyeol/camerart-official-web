@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     entry.addEventListener("mousemove", (e) => {
-      const previewImg = preview.querySelector("img");
+      const previewImgEl = preview.querySelector("img");
       const padding = 10;
-      const previewWidth = previewImg?.offsetWidth || 200;
-      const previewHeight = previewImg?.offsetHeight || 100;
+      const previewWidth = previewImgEl?.offsetWidth || 200;
+      const previewHeight = previewImgEl?.offsetHeight || 100;
 
       let x = e.clientX + padding;
       let y = e.clientY + padding;
@@ -49,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(e => e.classList.remove("active"));
         entry.classList.add("active");
 
-        // ✅ 항목 인덱스 확인 (0부터 시작)
-        const index = Array.from(entries).indexOf(entry);
+        // ✅ transition이 끝날 때까지 기다린 후 스크롤
+        setTimeout(() => {
+          const index = Array.from(entries).indexOf(entry);
 
-        if (index >= 2 && index <= 10) {
-          // 1~11번째 → 페이지 중앙에 고정
-          setTimeout(() => {
+          if (index >= 2 && index <= 10) {
+            // 중앙으로 스크롤
             const elementTop = entry.getBoundingClientRect().top + window.scrollY;
             const elementHeight = entry.offsetHeight;
             const viewportHeight = window.innerHeight;
@@ -64,17 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
               top: scrollPosition,
               behavior: 'smooth'
             });
-          }, 300);
-        } 
-        else if (index >= 11) {
-          // 12~17번째 → 페이지 끝까지 스크롤
-          setTimeout(() => {
+          } else if (index >= 11) {
+            // 페이지 끝까지 스크롤 (scrollHeight 다시 계산)
+            const scrollHeight = document.documentElement.scrollHeight;
             window.scrollTo({
-              top: document.body.scrollHeight,
+              top: scrollHeight,
               behavior: 'smooth'
             });
-          }, 300);
-        }
+          }
+        }, 500); // transition이 끝난 후 위치 계산
       }
       preview.style.display = "none";
     });

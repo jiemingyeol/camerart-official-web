@@ -2,23 +2,23 @@ function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
     const isCurrentlyOpen = sidebar.classList.contains("open");
 
-    // Intro 페이지(‘/’)에서 Now 페이지('/now')로 직접 이동한 경우
-    // 이전에 저장된 open 상태를 강제로 'false'로 설정합니다.
     try {
         const refPath = new URL(document.referrer).pathname;
         if (window.location.pathname === '/now' && refPath === '/') {
-        localStorage.setItem('sidebarOpen', 'false');
+            localStorage.setItem('sidebarOpen', 'false');
         }
-    } catch (e) {
-        // referrer 정보가 없으면 무시
-    }
-    
+    } catch (e) {}
+
     if (isCurrentlyOpen) {
+        // 🔹 애니메이션 중에도 클릭 막힘 방지
+        sidebar.style.pointerEvents = "none";
+
         sidebar.classList.remove("open");
         localStorage.setItem("sidebarOpen", "false");
 
         setTimeout(() => {
             sidebar.style.display = "none";
+            sidebar.style.pointerEvents = "auto"; // 다음 열림 대비 복원
         }, 300);
     } else {
         sidebar.style.display = "block";

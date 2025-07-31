@@ -6,16 +6,19 @@
   font-style: normal;
 }
 
+/* 기본 폰트 설정 */
 html, body {
   font-family: 'Gothic A1', sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: #fff;
+}
+
+/* ---------- 공통 전체 ---------- */
+body {
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h1, h2, p {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
 /* 전체 컨테이너 */
