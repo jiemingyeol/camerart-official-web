@@ -49,18 +49,26 @@ function toggleSubmenu(element) {
 window.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.getElementById("sidebar");
     const shouldBeOpen = localStorage.getItem("sidebarOpen") === "true";
-    const submenuShouldOpen = localStorage.getItem("submenuOpen") === "true";
 
-    // ✅ 로딩 중에는 애니메이션 제거
+    try {
+        const refPath = new URL(document.referrer).pathname;
+        const isFirstLoad = (window.location.pathname === '/now' && refPath === '/');
+        
+        // ✅ intro → now 최초 진입 시 submenu 닫기
+        if (isFirstLoad) {
+            localStorage.setItem("submenuOpen", "false");
+        }
+    } catch (e) {}
+
     sidebar.classList.add("sidebar-no-transition");
 
-    // 열림 상태 복원
+    // 사이드바 열림 복원
     if (shouldBeOpen) {
         sidebar.classList.add("open");
     }
 
     // 서브메뉴 상태 복원
-    if (submenuShouldOpen) {
+    if (localStorage.getItem("submenuOpen") === "true") {
         const menuToggle = document.querySelector(".menu-toggle");
         const arrow = menuToggle.querySelector(".arrow");
         const submenu = menuToggle.nextElementSibling;
@@ -69,7 +77,7 @@ window.addEventListener("DOMContentLoaded", function () {
         arrow.textContent = "▼";
     }
 
-    // ✅ 첫 렌더 후 트랜지션 다시 활성화
+    // 트랜지션 복원
     requestAnimationFrame(() => {
         sidebar.classList.remove("sidebar-no-transition");
     });
