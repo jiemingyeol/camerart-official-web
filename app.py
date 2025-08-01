@@ -22,7 +22,7 @@ def now():
     archive_data = load_archive_data()
     exhibition = archive_data.get("16", {})
     total_pages = len(archive_data)
-    return render_template('archive/16/index.html',
+    return render_template('archive/index.html',
                            current_page=16,
                            total_pages=total_pages,
                            exhibition=exhibition
@@ -33,7 +33,7 @@ def now_works():
     archive_data = load_archive_data()
     exhibition = archive_data.get("16", {})
     total_pages = len(archive_data)
-    return render_template('archive/16/works_detail.html',
+    return render_template('archive/works_detail.html',
                            current_page=16,
                            total_pages=total_pages,
                            exhibition=exhibition)
