@@ -329,16 +329,15 @@
 }
 
 .funding-container {
-  width: 100%;
-  height: calc(320 / 1080 * 100vh);
-  border: 1px solid #ddd;
-  overflow: hidden;
-  margin-top: 20px;
-  padding-bottom: 0;
+    width: 100%;
+    overflow: visible;         /* 잘림 방지 */
+    margin-top: 20px;
+    padding-bottom: calc(288 / 1080 * 100vh);
 }
 
-.funding-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+.funding-container img {
+    margin-left: calc(64 / 1920 * 100vw);
+    width: calc(792 / 1920 * 100vw);
+    height: calc(320 / 1080 * 100vh);
+    display: block;
 }

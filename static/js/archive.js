@@ -100,6 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
           return { lastImg, maxBottom };
       };
 
+      const scrollArea = document.querySelector('.exhibition-right');
+
       const updateFundingPosition = () => {
           const { lastImg, maxBottom } = getLastVisibleImage();
           if (!lastImg) return;
@@ -112,6 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const fundingContainerOffset = fundingHeaderOffset + fundingHeaderHeight + (32 / 1080 * window.innerHeight);
           fundingContainer.style.position = "absolute";
           fundingContainer.style.top = `${fundingContainerOffset}px`;
+
+          // ✅ 스크롤 하단 여유 확보
+          const fundingHeight = fundingContainer.offsetHeight || 320;
+          if (scrollArea) {
+              scrollArea.style.paddingBottom = `${fundingHeight + 100}px`;
+          }
       };
 
       let imagesLoaded = 0;
