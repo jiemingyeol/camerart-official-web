@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/archive.css') }}">
+{% endblock %}
+
 {% block content %}
 <div class="exhibition-container">
     <!-- 왼쪽 포스터 영역 -->
