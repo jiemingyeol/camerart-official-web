@@ -1,83 +1,88 @@
 {
   "1": {
-    "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
-    "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
-    "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
+    "title": "아름다운 倦怠,<br>권태의 도약",
+    "info": "<strong>서울시 은평구 불광동 220-10 B101<br>2018.01.23(수) - 2018.01.26(월)  |  (11:00 - 18:00)</strong>",
+    "description": "카메랄트의 첫 번째 기획 전시 <아름다운 권태, 권태의 도약>는 8명의 각기 다른 목소리로<br>사전적 정의 경계 밖에 존재하는 권태를 이야기하고자 합니다.<br>각자 다른 이야기를 담은 전시물들은 '당신에게 권태란 무엇인가요?'라는 질문을, 그리고<br>우리의 삶과 함께 하고 있는 권태의 존재와 권태와 함께하는 나에 대하여 질문을 던집니다.<br>로고와 포스터를 꾸미고 있는 나비는 카메랄트(CAMERART)의 첫 전시 '권태'의 상징입니다.<br>어딘가를 향해 날아오르고 있는나비는 권태에서 비롯된 상실감과 무기력함에서 벗어나<br>도약하는 모습을 형상화한 모습으로, 카메랄트가 이야기하고자하는 권태를 대표합니다.<br>카메랄트는 날아오르는 흰 나비를 통해, 권태라는 허물을 벗고 날아오르는<br>새로운 '나'를 제시하고자 합니다.",
+    "artist": "길보민 Ra Hyeonseo 박은지 Kim Seoyeon  송희경 Kim Soyeon  이유진 Kim Edel<br>임채은 Kim Hari  정세빈 Sim Serin  허진선 Eom Haeun  황지혜 Oh Jeongha",
     "images": {
-      "poster": "images/archive/16/poster.png",
+      "poster": "images/archive/1/poster.png",
       "installation": [
-        "images/archive/16/install1.png",
-        "images/archive/16/install2.png",
-        "images/archive/16/install3.png",
-        "images/archive/16/install4.png",
-        "images/archive/16/install5.png"
+        "images/archive/1/install1.png",
+        "images/archive/1/install2.png"
       ],
       "works": [
         {
-          "image": "images/archive/16/work1.png",
+          "image": "images/archive/1/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "ratio": "1-1"
         },
         {
-          "image": "images/archive/16/work2.png",
+          "image": "images/archive/1/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "ratio": "1-1"
         },
         {
-          "image": "images/archive/16/work3.png",
+          "image": "images/archive/1/work3.png",
           "caption": "작품 설명 3",
+          "ratio": "1-1"
+        },
+        {
+          "image": "images/archive/1/work4.png",
+          "caption": "작품 설명 4",
+          "ratio": "1-1"
+        },
+        {
+          "image": "images/archive/1/work5.png",
+          "caption": "작품 설명 5",
           "ratio": "4-3"
         },
         {
-          "image": "images/archive/16/work4.png",
-          "caption": "작품 설명 4",
-          "ratio": "3-4"
-        },
-        {
-          "image": "images/archive/16/work5.png",
-          "caption": "작품 설명 5",
-          "ratio": "9:16"
-        },
-        {
-          "image": "images/archive/16/work6.png",
+          "image": "images/archive/1/work6.png",
           "caption": "작품 설명 6",
           "ratio": "4-3"
         },
         {
-          "image": "images/archive/16/work7.png",
+          "image": "images/archive/1/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
         {
-          "image": "images/archive/16/work1_large.png",
+          "image": "images/archive/1/work1_large.png",
           "caption": "대형 작품 1 설명"
         },
         {
-          "image": "images/archive/16/work2_large.png",
+          "image": "images/archive/1/work2_large.png",
           "caption": "대형 작품 2 설명"
         },
         {
-          "image": "images/archive/16/work3_large.png",
+          "image": "images/archive/1/work3_large.png",
           "caption": "대형 작품 3 설명"
         },
         {
-          "image": "images/archive/16/work4_large.png",
+          "image": "images/archive/1/work4_large.png",
           "caption": "대형 작품 4 설명"
         },
         {
-          "image": "images/archive/16/work5_large.png",
+          "image": "images/archive/1/work5_large.png",
+          "caption": "대형 작품 5 설명"
+        },
+        {
+          "image": "images/archive/1/work6_large.png",
+          "caption": "대형 작품 5 설명"
+        },
+        {
+          "image": "images/archive/1/work7_large.png",
           "caption": "대형 작품 5 설명"
         }
       ],
-      "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th"
+      "funding_embed": "https://tumblbug.com/camerart1"
     }
   },
   "2": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -95,7 +100,7 @@
   },
   "3": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -131,7 +136,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -141,7 +146,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -171,7 +176,7 @@
   },
   "4": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -207,7 +212,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -217,7 +222,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -247,7 +252,7 @@
   },
   "5": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -283,7 +288,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -293,7 +298,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -323,7 +328,7 @@
   },
   "6": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -359,7 +364,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -369,7 +374,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -399,7 +404,7 @@
   },
   "7": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -435,7 +440,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -445,7 +450,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -475,7 +480,7 @@
   },
   "8": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -511,7 +516,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -521,7 +526,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -551,7 +556,7 @@
   },
   "9": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -587,7 +592,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -597,7 +602,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -627,7 +632,7 @@
   },
   "10": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -663,7 +668,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -673,7 +678,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -703,7 +708,7 @@
   },
   "11": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -739,7 +744,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -749,7 +754,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -779,7 +784,7 @@
   },
   "12": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -815,7 +820,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -825,7 +830,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -855,7 +860,7 @@
   },
   "13": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -891,7 +896,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -901,7 +906,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -931,7 +936,7 @@
   },
   "14": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -967,7 +972,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -977,7 +982,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -1007,7 +1012,7 @@
   },
   "15": {
     "title": "피사(被寫)의 석탑<br>: 시선의 틈에서<br>서로의 마음을 쌓듯",
-    "info": "서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)",
+    "info": "<strong>서울시 종로구 율곡로 3길 17, 57th 갤러리<br>2025.02.19(수) - 2025.02.24(월)  |  (10:00 - 20:00)</strong>",
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Jo Yunyeong  지민결 Jie Mingyeol",
     "images": {
@@ -1043,7 +1048,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -1053,7 +1058,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
@@ -1119,7 +1124,7 @@
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9:16"
+          "ratio": "9-16"
         },
         {
           "image": "images/archive/16/work6.png",
@@ -1129,7 +1134,7 @@
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-0"
+          "ratio": "16-9"
         }
       ],
       "works_detail": [
