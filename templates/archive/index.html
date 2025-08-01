@@ -42,23 +42,26 @@
                 {% endfor %}
             </div>
         </div>
-        <!-- WORKS 헤더 -->
-        <div class="works-header-section">
-            <img class="works-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
-            <span class="works-title">(WORKS)</span>
-            <a class="works-more" href="{{ url_for('archive_works', num=current_page) }}">MORE</a>
-        </div>
-        <!-- WORKS GRID (정렬된 데이터 사용) -->
-        <div class="works-grid" id="worksGrid">
-            {% for work in exhibition.images.works | sort(attribute='row') %}
-            <div class="work-item" data-row="{{ work.row }}">
-                <div class="work-image-container ratio-{{ work.ratio }}">
-                    <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
-                </div>
-                <p class="work-caption">{{ work.caption }}</p>
+        {% if exhibition.images.works %}
+            <!-- WORKS 헤더 -->
+            <div class="works-header-section">
+                <img class="works-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+                <span class="works-title">(WORKS)</span>
+                <a class="works-more" href="{{ url_for('archive_works', num=current_page) }}">MORE</a>
             </div>
-            {% endfor %}
-        </div>
+
+            <!-- WORKS GRID -->
+            <div class="works-grid" id="worksGrid">
+                {% for work in exhibition.images.works %}
+                <div class="work-item">
+                    <div class="work-image-container ratio-{{ work.ratio }}">
+                        <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
+                    </div>
+                    <p class="work-caption">{{ work.caption }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
         <!-- FUNDING Header & Image -->
         <div class="funding-header-section" id="fundingHeader">
             <img class="funding-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
