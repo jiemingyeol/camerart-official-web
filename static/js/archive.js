@@ -69,65 +69,73 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------------------------------
-  // 3) FUNDING 위치 자동 계산
+  // 3) FUNDING 위치 자동 계산 (Works → Installation Fallback)
   // -------------------------------
   const worksGrid = document.getElementById("worksGrid");
   const fundingHeader = document.getElementById("fundingHeader");
   const fundingContainer = document.getElementById("fundingContainer");
+  const installScroll = document.getElementById("installScroll");
 
-  if (worksGrid && fundingHeader && fundingContainer) {
-    const workItems = worksGrid.querySelectorAll(".work-item img");
+  if (fundingHeader && fundingContainer) {
+      const workItems = worksGrid ? worksGrid.querySelectorAll(".work-item img") : [];
+      const installItems = installScroll ? installScroll.querySelectorAll("img") : [];
 
-    const getLastVisibleImage = () => {
-      let lastImg = null;
-      let maxBottom = 0;
-      workItems.forEach(img => {
-        const rect = img.getBoundingClientRect();
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const bottom = rect.top + scrollTop + rect.height;
+      const getLastVisibleImage = () => {
+          let lastImg = null;
+          let maxBottom = 0;
 
-        if (bottom > maxBottom) {
-          maxBottom = bottom;
-          lastImg = img;
-        }
-      });
-      return { lastImg, maxBottom };
-    };
+          // 1️⃣ 우선순위: Works 이미지
+          let images = (workItems && workItems.length > 0) ? workItems : installItems;
 
-    const updateFundingPosition = () => {
-      const { lastImg, maxBottom } = getLastVisibleImage();
-      if (!lastImg) return;
+          images.forEach(img => {
+              const rect = img.getBoundingClientRect();
+              const scrollTop = window.scrollY || document.documentElement.scrollTop;
+              const bottom = rect.top + scrollTop + rect.height;
+              if (bottom > maxBottom) {
+                  maxBottom = bottom;
+                  lastImg = img;
+              }
+          });
 
-      const fundingHeaderOffset = maxBottom + (238 / 1080 * window.innerHeight);
-      fundingHeader.style.position = "absolute";
-      fundingHeader.style.top = `${fundingHeaderOffset}px`;
+          return { lastImg, maxBottom };
+      };
 
-      const fundingHeaderHeight = fundingHeader.offsetHeight || (48 / 1080 * window.innerHeight);
-      const fundingContainerOffset = fundingHeaderOffset + fundingHeaderHeight + (32 / 1080 * window.innerHeight);
-      fundingContainer.style.position = "absolute";
-      fundingContainer.style.top = `${fundingContainerOffset}px`;
-    };
+      const updateFundingPosition = () => {
+          const { lastImg, maxBottom } = getLastVisibleImage();
+          if (!lastImg) return;
 
-    let imagesLoaded = 0;
-    workItems.forEach(img => {
-      if (img.complete) {
-        imagesLoaded++;
-      } else {
-        img.addEventListener("load", () => {
-          imagesLoaded++;
-          if (imagesLoaded === workItems.length) {
-            updateFundingPosition();
+          const fundingHeaderOffset = maxBottom + (238 / 1080 * window.innerHeight);
+          fundingHeader.style.position = "absolute";
+          fundingHeader.style.top = `${fundingHeaderOffset}px`;
+
+          const fundingHeaderHeight = fundingHeader.offsetHeight || (48 / 1080 * window.innerHeight);
+          const fundingContainerOffset = fundingHeaderOffset + fundingHeaderHeight + (32 / 1080 * window.innerHeight);
+          fundingContainer.style.position = "absolute";
+          fundingContainer.style.top = `${fundingContainerOffset}px`;
+      };
+
+      let imagesLoaded = 0;
+      const allImages = (workItems.length > 0 ? workItems : installItems);
+
+      allImages.forEach(img => {
+          if (img.complete) {
+              imagesLoaded++;
+          } else {
+              img.addEventListener("load", () => {
+                  imagesLoaded++;
+                  if (imagesLoaded === allImages.length) {
+                      updateFundingPosition();
+                  }
+              });
           }
-        });
+      });
+
+      if (imagesLoaded === allImages.length) {
+          updateFundingPosition();
       }
-    });
 
-    if (imagesLoaded === workItems.length) {
-      updateFundingPosition();
-    }
-
-    window.addEventListener("resize", updateFundingPosition);
-    window.addEventListener("scroll", updateFundingPosition);
+      window.addEventListener("resize", updateFundingPosition);
+      window.addEventListener("scroll", updateFundingPosition);
   }
 
   // -------------------------------

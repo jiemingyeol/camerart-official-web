@@ -89,65 +89,7 @@
         "images/archive/16/install4.png",
         "images/archive/16/install5.png"
       ],
-      "works": [
-        {
-          "image": "images/archive/16/work1.png",
-          "caption": "작품 설명 1",
-          "ratio": "3-4"
-        },
-        {
-          "image": "images/archive/16/work2.png",
-          "caption": "작품 설명 2",
-          "ratio": "4-3"
-        },
-        {
-          "image": "images/archive/16/work3.png",
-          "caption": "작품 설명 3",
-          "ratio": "4-3"
-        },
-        {
-          "image": "images/archive/16/work4.png",
-          "caption": "작품 설명 4",
-          "ratio": "3-4"
-        },
-        {
-          "image": "images/archive/16/work5.png",
-          "caption": "작품 설명 5",
-          "ratio": "9:16"
-        },
-        {
-          "image": "images/archive/16/work6.png",
-          "caption": "작품 설명 6",
-          "ratio": "4-3"
-        },
-        {
-          "image": "images/archive/16/work7.png",
-          "caption": "작품 설명 7",
-          "ratio": "16-0"
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/16/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/16/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/16/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/16/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/16/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "works": [],
       "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th"
     }
   },
