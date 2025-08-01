@@ -1,4 +1,4 @@
-/* 전체 레이아웃 기본 설정 */
+/* ────────── 전체 레이아웃 기본 설정 ────────── */
 body.about-page {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body.about-page {
   color: #000;
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 .about-wrapper {
@@ -17,17 +17,17 @@ body.about-page {
   font-family: 'Gothic A1', sans-serif;
 }
 
-/* CAMER:ART 제목 */
+/* ────────── 페이지 제목 (CAMER:ART) ────────── */
 .about-title {
   position: absolute;
   top: calc(111 / 1080 * 100vh);
   left: calc(90 / 1920 * 100vw);
-  font-size: calc(130 / 2560 * 100vw);
-  letter-spacing: calc(7 / 2560 * 100vw);
+  font-size: calc(130 / 2560 * 100vw);   /* 화면 크기에 맞춘 반응형 크기 */
+  letter-spacing: calc(7 / 2560 * 100vw); /* 글자 간격 */
   margin: 0;
 }
 
-/* → (camerata + art) 줄 */
+/* ────────── 부제 (camerata + art) 라인 ────────── */
 .about-sub {
   position: absolute;
   top: calc(250 / 1080 * 100vh);
@@ -35,14 +35,14 @@ body.about-page {
   font-size: calc(86 / 2560 * 100vw);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; /* 화살표와 텍스트 사이 간격 */
 }
 
 .about-sub .arrow {
   font-size: 1.2em;
 }
 
-/* 세로 구분선 (title과 description 사이) */
+/* ────────── 제목과 설명 사이 세로 구분선 ────────── */
 .about-divider {
   position: absolute;
   top: calc(120 / 1080 * 100vh);
@@ -52,30 +52,30 @@ body.about-page {
   background-color: #000;
 }
 
-/* 소개 텍스트 */
+/* ────────── 그룹 소개 설명 텍스트 ────────── */
 .about-description {
   position: absolute;
   top: calc(120 / 1080 * 100vh);
   left: calc(837 / 1920 * 100vw);
   width: calc(875 / 1920 * 100vw);
   font-size: calc(25 / 2560 * 100vw);
-  line-height: 2.2;
+  line-height: 2.2; /* 줄간격 */
   font-family: 'Gothic A1', sans-serif;
   margin-bottom: 4rem;
 }
 
-/* 이미지 미리보기 */
+/* ────────── 이미지 미리보기 (타임라인 hover 시 표시) ────────── */
 #imagePreview {
   position: fixed;
   z-index: 9999;
-  display: none;
-  pointer-events: none;
+  display: none;          /* 기본적으로 숨김 */
+  pointer-events: none;   /* 마우스 이벤트 무시 */
 }
 
 #imagePreview img {
   height: auto;
-  max-height: calc((300) / 1080 * 100vh);
-  min-height: calc((100) / 1080 * 100vh);
+  max-height: calc(300 / 1080 * 100vh);
+  min-height: calc(100 / 1080 * 100vh);
   width: auto;
   border: 1px solid #ccc;
   background: #fff;
@@ -83,16 +83,16 @@ body.about-page {
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-/* 타임라인 영역 */
+/* ────────── 타임라인 전체 영역 ────────── */
 .timeline {
   position: relative;
-  top: calc((250 + 86 + 75) / 1080 * 100vh); /* subtitle bottom + 75px */
+  top: calc((250 + 86 + 75) / 1080 * 100vh); /* 부제 아래에서 75px 간격 */
   width: 100%;
   padding-bottom: 4rem;
   font-family: 'Gothic A1', sans-serif;
 }
 
-/* 전시 항목 */
+/* ────────── 개별 전시 항목(닫힘 상태) ────────── */
 .timeline-entry {
   margin: 0 auto;
   width: calc(100% - 180px);
@@ -101,10 +101,11 @@ body.about-page {
   line-height: 1.6;
 }
 
+/* ────────── 전시 항목 제목 라벨 ────────── */
 .timeline-label {
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 제목 왼쪽, 날짜 오른쪽 */
   align-items: center;
   font-weight: 600;
   font-size: calc(20 / 1080 * 100vh);
@@ -113,15 +114,18 @@ body.about-page {
   transition: background-color 0.3s ease;
 }
 
+/* hover 시 JSON의 hover-color 사용 */
 .timeline-label:hover {
-  color: var(--hover-color, #0000ff); /* ✅ Hover 시 JSON 색상 사용 */
+  color: var(--hover-color, #0000ff);
 }
 
-.timeline-entry.active .timeline-label{
+/* 클릭으로 활성화 시 스타일 변경 */
+.timeline-entry.active .timeline-label {
   background-color: #D4FF3A;
   text-decoration: underline;
 }
 
+/* ────────── 전시 날짜 상세 ────────── */
 .timeline-datedetail {
   display: none;
   font-size: calc(20 / 1080 * 100vh);
@@ -129,12 +133,13 @@ body.about-page {
   padding: 0.3rem 0 0.3rem;
 }
 
+/* 활성화 시 표시 */
 .timeline-entry.active .timeline-datedetail {
   display: block;
   background-color: #D4FF3A;
 }
 
-/* 펼침 영역 - 닫힌 상태 */
+/* ────────── 펼침 상세 영역 (닫힌 상태) ────────── */
 .timeline-detail {
   max-height: 0;
   overflow: hidden;
@@ -149,29 +154,34 @@ body.about-page {
   box-sizing: border-box;
 }
 
+/* 펼침 상태 */
 .timeline-entry.active .timeline-detail {
-  max-height: 1200px;
+  max-height: 1200px; /* 충분히 큰 값으로 높이 확보 */
   opacity: 1;
   padding: 0.2rem 0;
   background-color: #D4FF3A;
 }
 
+/* 특정 전시(18번째 항목) 이미지 영역 높이 조정 */
 .timeline-entry:nth-of-type(18) .detail-images {
   height: calc(300 / 1080 * 100vh);
 }
 
+/* 전시 설명 텍스트 */
 .timeline-detail p {
   width: 40%;
   font-size: calc(20 / 1080 * 100vh);
   line-height: 1.7;
 }
 
+/* ────────── 상세 이미지 영역 ────────── */
 .detail-images {
   position: relative;
   width: 90%;
   height: calc(450 / 1080 * 100vh);
 }
 
+/* 이미지 1번째 */
 .detail-images img:nth-child(1) {
   position: absolute;
   top: 0;
@@ -180,6 +190,7 @@ body.about-page {
   height: auto;
 }
 
+/* 이미지 2번째 */
 .detail-images img:nth-child(2) {
   position: absolute;
   top: 0;
@@ -188,6 +199,7 @@ body.about-page {
   height: auto;
 }
 
+/* 이미지 3번째 */
 .detail-images img:nth-child(3) {
   position: absolute;
   top: 0;
