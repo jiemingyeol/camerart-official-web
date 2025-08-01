@@ -11,17 +11,17 @@ html, body {
   font-family: 'Gothic A1', sans-serif;
 }
 
-/* ---------- 공통 전체 ---------- */
+/* ---------- 공통 전체 스타일 ---------- */
 body {
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden;  /* 가로 스크롤 방지 */
 }
 
 h1, h2, p {
     margin: 0.5rem 0;
 }
 
-/* 전체 컨테이너 */
+/* ────────── 전체 컨테이너 (좌우 2분할 구조) ────────── */
 .exhibition-container {
     display: flex;
     width: 100%;
@@ -30,28 +30,29 @@ h1, h2, p {
     position: relative;
 }
 
-/* 왼쪽 포스터 이미지 영역 */
+/* ────────── 왼쪽: 전시 포스터 영역 ────────── */
 .exhibition-left {
     width: 50%;
     height: 100vh;
     display: flex;
-    justify-content: center;   /* 중앙 정렬 */
-    align-items: flex-start;
+    justify-content: center;       /* 포스터 중앙 정렬 */
+    align-items: flex-start;       /* 위쪽에서 시작 */
     background-color: #fff;
     box-sizing: border-box;
-    padding-top: calc(17 / 1080 * 100vh);  /* 위쪽 여백 */
-    padding-bottom: calc(17 / 1080 * 100vh); /* 아래쪽 여백 */
-    padding-left: 0;   /* 왼쪽 여백 제거 */
+    padding-top: calc(17 / 1080 * 100vh);  
+    padding-bottom: calc(17 / 1080 * 100vh); 
+    padding-left: 0;
 }
 
 /* 포스터 이미지 크기 조정 */
 .exhibition-left img {
     width: auto;
-    height: calc((1080 - 34) / 1080 * 100vh);  /* 전체 높이 - 상하 17px*2 */
-    max-width: 90%; /* 화면이 너무 넓을 때 대비 */
-    object-fit: contain;
+    height: calc((1080 - 34) / 1080 * 100vh);  
+    max-width: 90%; 
+    object-fit: contain; /* 비율 유지 */
 }
-/* 중앙 수직선 */
+
+/* ────────── 중앙 구분선 ────────── */
 .vertical-divider {
     position: absolute;
     left: 50%;
@@ -62,8 +63,7 @@ h1, h2, p {
     z-index: 2;
 }
 
-/* 오른쪽 콘텐츠 영역(텍스트 전체 박스) */
-/* 오른쪽 전체 영역은 세로 스크롤만 */
+/* ────────── 오른쪽: 전시 정보 텍스트 영역 ────────── */
 .exhibition-right {
     position: absolute;
     top: 0;
@@ -72,39 +72,37 @@ h1, h2, p {
     height: 100vh;
     padding-right: calc(18 / 1920 * 100vw);
     background-color: #fff;
-    overflow-y: auto;   /* ✅ 세로 스크롤만 */
-    overflow-x: hidden; /* ✅ 가로 스크롤 차단 */
+    overflow-y: auto;   /* 세로 스크롤 허용 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
     box-sizing: border-box;
 }
 
-/* 제목 */
+/* ────────── 전시 제목 ────────── */
 .exhibition-title {
     position: relative;
     top: calc(111 / 1080 * 100vh);
-    left: calc(64 / 1920 * 100vw); /* 중앙 구분선+22px 기준에서 64px 여백 */
-    font-family: 'Gothic A1', sans-serif;
+    left: calc(64 / 1920 * 100vw);
     font-size: calc(72 / 1080 * 100vh);
     font-weight: normal;
     color: #000;
     margin: 0;
 }
 
-/* 장소 + 일시 */
+/* 전시 장소, 일정 정보 */
 .exhibition-info {
     position: relative;
     top: calc((111 + 72) / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(18 / 1080 * 100vh);
     color: #000;
-    margin: 0;
     line-height: 1.6;
+    margin: 0;
 }
 
+/* 구분선 (제목과 설명 사이) */
 .exhibition-divider {
     position: relative;
     top: calc((111 + 72 + 18 + 36) / 1080 * 100vh); 
-    /* 111: 제목 top, 72: 제목 높이간격, 18: info 폰트 크기 정도 보정, 36: 간격 */
     left: 0;
     width: 100%;
     height: calc(1 / 1080 * 100vh);
@@ -113,27 +111,23 @@ h1, h2, p {
     margin: 0;
 }
 
-/* Description */
+/* 전시 설명 영역 */
 .exhibition-description {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36) / 1080 * 100vh); 
-    /* 제목+간격+info+구분선간격+description 시작간격 */
     left: calc(64 / 1920 * 100vw);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(16 / 1080 * 100vh);
     color: #000;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Artist */
+/* 작가 목록 영역 */
 .exhibition-artist {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164) / 1080 * 100vh);
-    /* description 끝(16px 폰트 높이)+164px 여백 */
     left: calc(64 / 1920 * 100vw);
     line-height: calc(28 / 1080 * 100vh);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(14 / 1080 * 100vh);
     color: #000;
     margin: 0;
@@ -143,7 +137,6 @@ h1, h2, p {
 .exhibition-divider2 {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32) / 1080 * 100vh);
-    /* artist 텍스트 끝 + 32px 아래 */
     left: 0;
     width: 100%;
     height: calc(1 / 1080 * 100vh);
@@ -152,7 +145,7 @@ h1, h2, p {
     margin: 0;
 }
 
-/* Installation Header (위치 복원) */
+/* ────────── INSTALLATION 영역 ────────── */
 .installation-header {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180) / 1080 * 100vh);
@@ -161,37 +154,35 @@ h1, h2, p {
     align-items: center;
 }
 
-/* 화살표 아이콘 */
+/* Installation 제목 옆 화살표 아이콘 */
 .installation-arrow {
     width: calc(60 / 1920 * 100vw);
     height: calc(40 / 1080 * 100vh);
     object-fit: contain;
 }
 
-/* 제목 텍스트 */
+/* Installation 제목 텍스트 */
 .installation-title {
     margin-left: calc(2.5 / 1920 * 100vw);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(48 / 1080 * 100vh);
     color: #000;
 }
 
-/* 이미지 슬라이더 뷰포트 */
+/* Installation 이미지 스크롤 영역 */
 .installation-container {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 48) / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     width: calc((1920 / 2 - 64 - 18) / 1920 * 100vw);
     height: calc(260 / 1080 * 100vh);
-    overflow-x: auto;    /* ✅ 가로 스크롤 허용 */
+    overflow-x: auto;    
     overflow-y: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
 
-/* 가로 스크롤 갤러리 */
-/* dragscroll 이벤트는 이 요소에만 적용 */
+/* 이미지 갤러리 내부 컨테이너 */
 .scroll-gallery {
     display: flex;
     gap: calc(16 / 1920 * 100vw);
@@ -217,6 +208,7 @@ h1, h2, p {
     transform: scale(1.05);
 }
 
+/* 드래그 스크롤 시 커서 모양 */
 .draggable-scroll {
     cursor: grab;
     user-select: none;
@@ -226,7 +218,7 @@ h1, h2, p {
     cursor: grabbing;
 }
 
-/* WORKS Header */
+/* ────────── WORKS 영역 ────────── */
 .works-header-section {
     position: relative;
     top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 220) / 1080 * 100vh);
@@ -243,41 +235,39 @@ h1, h2, p {
 
 .works-title {
     margin-left: calc(2.5 / 1920 * 100vw);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(48 / 1080 * 100vh);
     color: #000;
 }
 
-/* MORE 버튼 */
+/* MORE 버튼 (상세 페이지 이동 링크) */
 .works-more {
     position: relative;
-    left: calc(410 / 1920 * 100vw); /* WORKS 시작점으로부터 410px 오른쪽 */
-    top: calc(14 / 1080 * 100vh);  /* WORKS 글자보다 14px 아래 */
-    font-family: 'Gothic A1', sans-serif;
+    left: calc(410 / 1920 * 100vw);
+    top: calc(14 / 1080 * 100vh);
     font-size: calc(36 / 1080 * 100vh);
     color: #000;
     text-decoration: underline;
     cursor: pointer;
 }
 
-/* WORKS 이미지 그리드 */
+/* WORKS 이미지 2열 그리드 */
 .works-grid {
     position: relative;
-    /* 기존 계산식에서 32px 여백 추가 */
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32   /* 이전 요소들 */
-               + 180 + 32 + 220   /* installation slider 아래 */
+    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32
+               + 180 + 32 + 220
                + 32 + 48 + 36 + 32) / 1080 * 100vh);
-    /* 36px: MORE 글자 높이, 32px: MORE 아래 여백 */
-    left: calc(64 / 1920 * 100vw);  /* 좌측 여백 */
-    width: calc((1920 / 2 - 64 - 18 - 64) / 1920 * 100vw); 
-    /* 우측 64px 여백을 추가로 확보 */
+    left: calc(64 / 1920 * 100vw);
+    width: calc((1920 / 2 - 64 - 18 - 64) / 1920 * 100vw);
+
+    /* ✅ 2개 고정 배치 */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(220 / 1920 * 100vw), 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     gap: calc(24 / 1920 * 100vw) calc(16 / 1920 * 100vw);
     box-sizing: border-box;
 }
 
-/* 기본 이미지 컨테이너 */
+/* 이미지 컨테이너 (비율 유지) */
 .work-image-container {
     width: 100%;
     overflow: hidden;
@@ -292,23 +282,22 @@ h1, h2, p {
     object-fit: cover;
 }
 
-/* 비율별 클래스 */
+/* 다양한 이미지 비율 클래스 */
 .ratio-3-4 { aspect-ratio: 3 / 4; }
 .ratio-1-1 { aspect-ratio: 1 / 1; }
 .ratio-4-3 { aspect-ratio: 4 / 3; }
 .ratio-16-9 { aspect-ratio: 16 / 9; }
 .ratio-9-16 { aspect-ratio: 9 / 16; }
 
-/* 이미지 설명 */
+/* WORKS 이미지 캡션 */
 .work-caption {
     margin-top: calc(12 / 1080 * 100vh);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(14 / 1080 * 100vh);
     color: #000;
     text-align: left;
 }
 
-/* FUNDING (JS에서 top 자동 계산) */
+/* ────────── FUNDING 영역 ────────── */
 .funding-header-section {
     position: absolute;
     left: calc(64 / 1920 * 100vw);
@@ -324,23 +313,23 @@ h1, h2, p {
 
 .funding-title {
     margin-left: calc(2.5 / 1920 * 100vw);
-    font-family: 'Gothic A1', sans-serif;
     font-size: calc(48 / 1080 * 100vh);
     text-decoration: none;
     cursor: pointer;
     color: #000;
 }
 
-/* FUNDING 영역 */
+/* FUNDING 콘텐츠 박스 (iframe or image) */
 .funding-container {
   width: 100%;
-  height: 500px; /* 기존 이미지 크기 유지 */
+  height: 500px;
   border: 1px solid #ddd;
   overflow: hidden;
   margin-top: 20px;
   padding-bottom: calc(288 / 1080 * 100vh);
 }
 
+/* FUNDING 영역 iframe */
 .funding-iframe {
   width: 100%;
   height: 100%;
