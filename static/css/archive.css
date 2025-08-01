@@ -330,11 +330,11 @@
 
 .funding-container {
   width: 100%;
-  height: 500px;
+  height: calc(320 / 1080 * 100vh);
   border: 1px solid #ddd;
   overflow: hidden;
   margin-top: 20px;
-  padding-bottom: calc(288 / 1080 * 100vh);
+  padding-bottom: 0;
 }
 
 .funding-iframe {
