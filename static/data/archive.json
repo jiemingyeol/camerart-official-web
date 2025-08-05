@@ -3,7 +3,7 @@
     "title": "아름다운 倦怠,<br>권태의 도약",
     "info": "<strong>서울시 은평구 불광동 220-10 B101<br>2018.01.23(수) - 2018.01.26(월)  |  (11:00 - 18:00)</strong>",
     "description": "카메랄트의 첫 번째 기획 전시 <아름다운 권태, 권태의 도약>는 8명의 각기 다른 목소리로<br>사전적 정의 경계 밖에 존재하는 권태를 이야기하고자 합니다.<br>각자 다른 이야기를 담은 전시물들은 '당신에게 권태란 무엇인가요?'라는 질문을, 그리고<br>우리의 삶과 함께 하고 있는 권태의 존재와 권태와 함께하는 나에 대하여 질문을 던집니다.<br>로고와 포스터를 꾸미고 있는 나비는 카메랄트(CAMERART)의 첫 전시 '권태'의 상징입니다.<br>어딘가를 향해 날아오르고 있는나비는 권태에서 비롯된 상실감과 무기력함에서 벗어나<br>도약하는 모습을 형상화한 모습으로, 카메랄트가 이야기하고자하는 권태를 대표합니다.<br>카메랄트는 날아오르는 흰 나비를 통해, 권태라는 허물을 벗고 날아오르는<br>새로운 '나'를 제시하고자 합니다.",
-    "artist": "길보민 Ra Hyeonseo 박은지 Kim Seoyeon  송희경 Kim Soyeon  이유진 Kim Edel<br>임채은 Kim Hari  정세빈 Sim Serin  허진선 Eom Haeun  황지혜 Oh Jeongha",
+    "artist": "길보민 Gil Bomin 박은지 Park Eunji  송희경 Song Heekyung  이유진 Lee Yujin<br>임채은 Im Chaeeun  정세빈 Jeong Sebin  허진선 Heo Jinseon  황지혜 Hwang Jihye",
     "images": {
       "poster": "images/archive/1/poster.png",
       "installation": [
@@ -15,38 +15,38 @@
       "works": [
         {
           "image": "images/archive/1/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "표지판 | 단체 작업(2018)",
           "ratio": "1-1"
         },
         {
           "image": "images/archive/1/work2.png",
-          "caption": "작품 설명 2",
-          "ratio": "1-1"
+          "caption": "권태의 도약(열림) | 임채은 (2018)",
+          "ratio": "16-9"
         },
         {
           "image": "images/archive/1/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "어느 날 갑자기 | 이유진 (2018)",
           "ratio": "1-1"
         },
         {
           "image": "images/archive/1/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "권태의 도약(열림) | 임채은",
           "ratio": "1-1"
         },
         {
           "image": "images/archive/1/work5.png",
-          "caption": "작품 설명 5",
-          "ratio": "4-3"
+          "caption": "비상 | 정세빈 (2018)",
+          "ratio": "1-1"
         },
         {
           "image": "images/archive/1/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "World's Sweetest Candy Machine | 송희경(2018)",
           "ratio": "4-3"
         },
         {
           "image": "images/archive/1/work7.png",
-          "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "caption": "내 삶의 권태들 | 허진선 (2018)",
+          "ratio": "4-3"
         }
       ],
       "works_detail": [
