@@ -6,7 +6,7 @@
     "date_detail": "",
     "preview": "",
     "description": "",
-    "color": "#0000ff",
+    "color": "#26221F",
     "images": []
   },
   {
@@ -122,7 +122,7 @@
     "date_detail": "2022.02.17-2022.02.20",
     "preview": "/static/images/about/preview/9.png",
     "description": "<strong>우리의 감정을 치유하기 위한 믿음은 어디 있을까?</strong><br>본 전시는 검은 고양이가 가진 불운의 상징을 전복시키며, 미신의 양면<br>성을 밝혀낸다. 믿는 행위의 원인과 양상 그리고 여러 형태의 미신을<br>예술의 소재로 승화시켜 감정 치유의 계기를 만든다. 미신을 매개로<br>'지금-여기' 에 있는 개인의 마음속 심층에 도달해 두려움의 정서를 통<br>찰하고, 이 감정이 표출되는 양상을 관찰한다. 불안과 두려움이 만들어<br>올린 미신은 누군가에게는 기댈 수 있는 안식처가 되어주기도 하지만,<br>때로는 엇물린 톱니처럼 그것을 믿는 자를 짓누르고 파괴하기도 한다.<br>다양한 형태의 예술로 펼쳐낸 미신의 이야기를 통해 관람객이 결국 한<br>없이 약해져 상해버린 마음을 또렷이 마주해볼 수 있길 바란다. ",
-    "color": "#000000",
+    "color": "#706C6B",
     "images": [
       "/static/images/about/exhibition/9/detail1.png",
       "/static/images/about/exhibition/9/detail2.png"
@@ -227,7 +227,7 @@
     "date_detail": "2026.??.??-2026.??.??",
     "preview": "",
     "description": "<strong>또 새로운 우리만의 도전들</strong><br>다양하고 색다른 경험을 쌓아갈 수 있는 CAMER:ART. 지금껏 쌓아온<br>오묘한 우리만의 전시를 이어가고 싶은 분들을 초대합니다.",
-    "color": "#0000ff",
+    "color": "#7E5DB6",
     "images": [
       "/static/images/about/exhibition/17/detail1.png"
     ]
