@@ -277,7 +277,7 @@
 
 .work-item {
     position: absolute;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
 }
@@ -291,12 +291,19 @@
     background-color: #fff;
 }
 
+/* 이미지 캡션 */
 .work-caption {
-    margin-top: calc(8 / 1080 * 100vh);
+    position: absolute;       /* JS에서 top을 동적으로 계산 */
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-family: 'Gothic A1', sans-serif;
     font-size: calc(14 / 1080 * 100vh);
     color: #000;
-    text-align: left;
-    line-height: 1.4;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin: 0;
+    pointer-events: none;
 }
 
 /* ────────── Funding Section ────────── */

@@ -20,7 +20,7 @@
           "image": "images/archive/1/work1.png",
           "caption": "표지판 | 단체 작업(2018)",
           "x": 64,
-          "y": 1079,
+          "y": 1046,
           "width": 248,
           "height": 248
         },
@@ -28,7 +28,7 @@
           "image": "images/archive/1/work2.png",
           "caption": "권태의 도약(열림) | 임채은 (2018)",
           "x": 336,
-          "y": 1019,
+          "y": 986,
           "width": 519,
           "height": 308
         },
@@ -36,7 +36,7 @@
           "image": "images/archive/1/work3.png",
           "caption": "어느 날 갑자기 | 이유진 (2018)",
           "x": 64,
-          "y": 1464,
+          "y": 1431,
           "width": 237,
           "height": 237
         },
@@ -44,7 +44,7 @@
           "image": "images/archive/1/work4.png",
           "caption": "권태의 도약(열림) | 임채은",
           "x": 325,
-          "y": 1416,
+          "y": 1383,
           "width": 285,
           "height": 285
         },
@@ -52,7 +52,7 @@
           "image": "images/archive/1/work5.png",
           "caption": "비상 | 정세빈 (2018)",
           "x": 634,
-          "y": 1443,
+          "y": 1410,
           "width": 250,
           "height": 258
         },
@@ -60,7 +60,7 @@
           "image": "images/archive/1/work6.png",
           "caption": "World's Sweetest Candy Machine | 송희경(2018)",
           "x": 64,
-          "y": 1752,
+          "y": 1719,
           "width": 411,
           "height": 308
         },
@@ -68,7 +68,7 @@
           "image": "images/archive/1/work7.png",
           "caption": "내 삶의 권태들 | 허진선 (2018)",
           "x": 499,
-          "y": 1787,
+          "y": 1754,
           "width": 364,
           "height": 273
         }
@@ -148,57 +148,57 @@
           "image": "images/archive/3/work1.png",
           "caption": "작품 설명 1",
           "x": 64,
-          "y": 1079,
+          "y": 986,
           "width": 248,
-          "height": 248
+          "height": 331
         },
         {
           "image": "images/archive/3/work2.png",
           "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 336,
+          "y": 997,
+          "width": 460,
+          "height": 320
         },
         {
           "image": "images/archive/3/work3.png",
           "caption": "작품 설명 3",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1430,
+          "width": 251,
+          "height": 251
         },
         {
           "image": "images/archive/3/work4.png",
           "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 339,
+          "y": 1399,
+          "width": 406,
+          "height": 282
         },
         {
           "image": "images/archive/3/work5.png",
           "caption": "작품 설명 5",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1756,
+          "width": 283,
+          "height": 377
         },
         {
           "image": "images/archive/3/work6.png",
           "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 371,
+          "y": 1831,
+          "width": 226,
+          "height": 302
         },
         {
           "image": "images/archive/3/work7.png",
           "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 621,
+          "y": 1799,
+          "width": 251,
+          "height": 334
         }
       ],
       "works_detail": [
@@ -665,65 +665,64 @@
         "images/archive/8/install1.png",
         "images/archive/8/install2.png",
         "images/archive/8/install3.png",
-        "images/archive/8/install4.png",
-        "images/archive/8/install5.png"
+        "images/archive/8/install4.png"
       ],
       "works": [
         {
           "image": "images/archive/8/work1.png",
           "caption": "작품 설명 1",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1037,
+          "width": 259,
+          "height": 257
         },
         {
           "image": "images/archive/8/work2.png",
           "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 347,
+          "y": 1153,
+          "width": 305,
+          "height": 141
         },
         {
           "image": "images/archive/8/work3.png",
           "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 676,
+          "y": 1067,
+          "width": 180,
+          "height": 227
         },
         {
           "image": "images/archive/8/work4.png",
           "caption": "작품 설명 4",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1433,
+          "width": 279,
+          "height": 220
         },
         {
           "image": "images/archive/8/work5.png",
           "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 366,
+          "y": 1370,
+          "width": 424,
+          "height": 283
         },
         {
           "image": "images/archive/8/work6.png",
           "caption": "작품 설명 6",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1806,
+          "width": 156,
+          "height": 177
         },
         {
           "image": "images/archive/8/work7.png",
           "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 244,
+          "y": 1751,
+          "width": 347,
+          "height": 232
         }
       ],
       "works_detail": [
@@ -746,6 +745,54 @@
         {
           "image": "images/archive/8/work5_large.png",
           "caption": "대형 작품 5 설명"
+        },
+        {
+          "image": "images/archive/8/work6_large.png",
+          "caption": "대형 작품 6 설명"
+        },
+        {
+          "image": "images/archive/8/work7_large.png",
+          "caption": "대형 작품 7 설명"
+        },
+        {
+          "image": "images/archive/8/work8_large.png",
+          "caption": "대형 작품 8 설명"
+        },
+        {
+          "image": "images/archive/8/work9_large.png",
+          "caption": "대형 작품 9 설명"
+        },
+        {
+          "image": "images/archive/8/work10_large.png",
+          "caption": "대형 작품 10 설명"
+        },
+        {
+          "image": "images/archive/8/work11_large.png",
+          "caption": "대형 작품 11 설명"
+        },
+        {
+          "image": "images/archive/8/work12_large.png",
+          "caption": "대형 작품 12 설명"
+        },
+        {
+          "image": "images/archive/8/work13_large.png",
+          "caption": "대형 작품 13 설명"
+        },
+        {
+          "image": "images/archive/8/work14_large.png",
+          "caption": "대형 작품 14 설명"
+        },
+        {
+          "image": "images/archive/8/work15_large.png",
+          "caption": "대형 작품 15 설명"
+        },
+        {
+          "image": "images/archive/8/work16_large.png",
+          "caption": "대형 작품 16 설명"
+        },
+        {
+          "image": "images/archive/8/work17_large.png",
+          "caption": "대형 작품 17 설명"
         }
       ],
       "funding": "images/archive/8/funding.png",
@@ -764,68 +811,72 @@
     "images": {
       "poster": "images/archive/9/poster.png",
       "installation": [
-        "images/archive/9/install1.png",
-        "images/archive/9/install2.png",
-        "images/archive/9/install3.png",
-        "images/archive/9/install4.png",
-        "images/archive/9/install5.png"
+        "images/archive/9/install1.png"
       ],
       "works": [
         {
           "image": "images/archive/9/work1.png",
           "caption": "작품 설명 1",
           "x": 64,
-          "y": 1079,
+          "y": 974,
           "width": 248,
-          "height": 248
+          "height": 320
         },
         {
           "image": "images/archive/9/work2.png",
           "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 336,
+          "y": 1045,
+          "width": 193,
+          "height": 249
         },
         {
           "image": "images/archive/9/work3.png",
           "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
+          "x": 553,
+          "y": 1078,
           "width": 248,
-          "height": 248
+          "height": 207
         },
         {
           "image": "images/archive/9/work4.png",
           "caption": "작품 설명 4",
           "x": 64,
-          "y": 1079,
+          "y": 1461,
           "width": 248,
-          "height": 248
+          "height": 207
         },
         {
           "image": "images/archive/9/work5.png",
           "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
+          "x": 336,
+          "y": 1380,
           "width": 248,
-          "height": 248
+          "height": 288
         },
         {
           "image": "images/archive/9/work6.png",
           "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
+          "x": 608,
+          "y": 1458,
           "width": 248,
-          "height": 248
+          "height": 207
         },
         {
           "image": "images/archive/9/work7.png",
           "caption": "작품 설명 7",
           "x": 64,
-          "y": 1079,
+          "y": 1735,
+          "width": 426,
+          "height": 307
+        },
+        {
+          "image": "images/archive/9/work8.png",
+          "caption": "작품 설명 8",
+          "x": 532,
+          "y": 1830,
           "width": 248,
-          "height": 248
+          "height": 212
         }
       ],
       "works_detail": [
@@ -848,6 +899,42 @@
         {
           "image": "images/archive/9/work5_large.png",
           "caption": "대형 작품 5 설명"
+        },
+        {
+          "image": "images/archive/9/work6_large.png",
+          "caption": "대형 작품 6 설명"
+        },
+        {
+          "image": "images/archive/9/work7_large.png",
+          "caption": "대형 작품 7 설명"
+        },
+        {
+          "image": "images/archive/9/work8_large.png",
+          "caption": "대형 작품 8 설명"
+        },
+        {
+          "image": "images/archive/9/work9_large.png",
+          "caption": "대형 작품 9 설명"
+        },
+        {
+          "image": "images/archive/9/work10_large.png",
+          "caption": "대형 작품 10 설명"
+        },
+        {
+          "image": "images/archive/9/work11_large.png",
+          "caption": "대형 작품 11 설명"
+        },
+        {
+          "image": "images/archive/9/work12_large.png",
+          "caption": "대형 작품 12 설명"
+        },
+        {
+          "image": "images/archive/9/work13_large.png",
+          "caption": "대형 작품 13 설명"
+        },
+        {
+          "image": "images/archive/9/work14_large.png",
+          "caption": "대형 작품 14 설명"
         }
       ],
       "funding": "images/archive/9/funding.png",
@@ -961,66 +1048,64 @@
       "installation": [
         "images/archive/15/install1.png",
         "images/archive/15/install2.png",
-        "images/archive/15/install3.png",
-        "images/archive/15/install4.png",
-        "images/archive/15/install5.png"
+        "images/archive/15/install3.png"
       ],
       "works": [
         {
           "image": "images/archive/15/work1.png",
           "caption": "작품 설명 1",
           "x": 64,
-          "y": 1079,
+          "y": 974,
           "width": 248,
-          "height": 248
+          "height": 320
         },
         {
           "image": "images/archive/15/work2.png",
           "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 336,
+          "y": 1037,
+          "width": 520,
+          "height": 257
         },
         {
           "image": "images/archive/15/work3.png",
           "caption": "작품 설명 3",
           "x": 64,
-          "y": 1079,
+          "y": 1461,
           "width": 248,
-          "height": 248
+          "height": 207
         },
         {
           "image": "images/archive/15/work4.png",
           "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
+          "x": 336,
+          "y": 1380,
           "width": 248,
-          "height": 248
+          "height": 288
         },
         {
           "image": "images/archive/15/work5.png",
           "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "x": 608,
+          "y": 1348,
+          "width": 190,
+          "height": 320
         },
         {
           "image": "images/archive/15/work6.png",
           "caption": "작품 설명 6",
           "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
+          "y": 1735,
+          "width": 426,
+          "height": 307
         },
         {
           "image": "images/archive/15/work7.png",
           "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
+          "x": 532,
+          "y": 1830,
           "width": 248,
-          "height": 248
+          "height": 212
         }
       ],
       "works_detail": [

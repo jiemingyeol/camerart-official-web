@@ -72,23 +72,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // -------------------------------
-  // 3) WORKS 수동 좌표 배치
-  // -------------------------------
-  function toVw(px) {
-    return `calc(${px} / 1920 * 100vw)`;
-  }
-  function toVh(px) {
-    return `calc(${px} / 1080 * 100vh)`;
-  }
+// -------------------------------
+// 3) WORKS 수동 좌표 배치
+// -------------------------------
+function toVw(px) {
+  return `calc(${px} / 1920 * 100vw)`;
+}
+function toVh(px) {
+  return `calc(${px} / 1080 * 100vh)`;
+}
 
-  document.querySelectorAll('.work-item').forEach(item => {
-    item.style.position = 'absolute';
-    item.style.top = toVh(item.dataset.y);
-    item.style.left = toVw(item.dataset.x);
-    if (item.dataset.w) item.style.width = toVw(item.dataset.w);
-    if (item.dataset.h) item.style.height = toVh(item.dataset.h);
-  });
+document.querySelectorAll('.work-item').forEach(item => {
+  const x = parseFloat(item.dataset.x);
+  const y = parseFloat(item.dataset.y);
+  const w = parseFloat(item.dataset.w);
+  const h = parseFloat(item.dataset.h);
+
+  // 부모 컨테이너 스타일 지정
+  item.style.position = 'absolute';
+  item.style.top = toVh(y);
+  item.style.left = toVw(x);
+  if (w) item.style.width = toVw(w);
+  if (h) item.style.height = toVh(h);
+
+  // ✅ 캡션 위치 설정
+  const caption = item.querySelector('.work-caption');
+  if (caption) {
+    caption.style.position = 'absolute';
+    caption.style.left = '0';
+    caption.style.top = `calc(${h} / 1080 * 100vh + 12 / 1080 * 100vh)`;
+    caption.style.width = '100%';
+  }
+});
 
   // -------------------------------
   // 4) FUNDING 수동 좌표 배치
