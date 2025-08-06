@@ -40,19 +40,15 @@ def now_works():
 
 @app.route('/archive/<int:num>')
 def archive_page(num):
-    archive_data = load_archive_data()
-    exhibition = archive_data.get(str(num), {})
-    total_pages = len(archive_data)-1
-    slide_count = CAROUSEL_SLIDES.get(num, 0)
-    enable_carousel = slide_count > 0
-
+    with open("static/data/archive.json", encoding='utf-8') as f:
+        data = json.load(f)
+    exhibition = data[str(num)]
+    has_carousel = "poster_carousel" in exhibition["images"]
     return render_template(
-        'archive/index.html',    # ← 하나로 통합
+        'archive/index.html',
+        exhibition=exhibition,
         current_page=num,
-        total_pages=total_pages,
-        enable_carousel=enable_carousel,
-        slide_count=slide_count,
-        exhibition=exhibition
+        has_carousel=has_carousel
     )
 
 @app.route('/archive/<int:num>/works')

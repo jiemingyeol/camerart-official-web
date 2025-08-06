@@ -58,12 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = carousel.querySelector('.next');
 
     prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
-      updateCarousel();
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+        updateCarousel();
+      }
     });
+
     nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
-      updateCarousel();
+      if (currentIndex < slides.length - 1) {
+        currentIndex += 1;
+        updateCarousel();
+      }
     });
   }
 
@@ -88,13 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------
   // 4) FUNDING 수동 좌표 배치
   // -------------------------------
-  function toVw(px) {
-    return `calc(${px} / 1920 * 100vw)`;
-  }
-  function toVh(px) {
-    return `calc(${px} / 1080 * 100vh)`;
-  }
-
   const fundingHeader = document.getElementById('fundingManual');
   if (fundingHeader) {
     fundingHeader.style.position = 'absolute';
@@ -115,24 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const fundingTitle = document.querySelector(".funding-title");
 
   if (fundingTitle) {
+    let fundingUrl = null;
+
+    // 클릭 리스너 먼저 등록
+    fundingTitle.addEventListener("click", () => {
+      if (fundingUrl) {
+        window.open(fundingUrl, "_blank", "noopener,noreferrer");
+      }
+    });
+
+    // JSON 로드
     fetch("/static/data/archive.json")
       .then(response => response.json())
       .then(data => {
-        // 현재 페이지 번호 확인
         const match = document.body.className.match(/archive-(\d+)/);
         const currentPage = match ? match[1] : null;
 
         if (currentPage && data[currentPage]) {
-          // ✅ JSON 경로: images.funding_embed
-          const fundingUrl = data[currentPage].images?.funding_embed;
-
-          if (fundingUrl) {
-            fundingTitle.addEventListener("click", () => {
-              window.open(fundingUrl, "_blank");
-            });
-          } else {
-            console.warn("funding_embed 링크가 존재하지 않습니다:", currentPage);
-          }
+          fundingUrl = data[currentPage].images?.funding_embed || null;
         }
       })
       .catch(err => console.error("archive.json 로드 오류:", err));

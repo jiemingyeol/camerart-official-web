@@ -4,11 +4,25 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/archive.css') }}">
 {% endblock %}
 
+{% block page_class %}archive-{{ current_page }}{% endblock %}
+
 {% block content %}
 <div class="exhibition-container">
     <!-- 왼쪽 포스터 영역 -->
     <div class="exhibition-left">
+        {% if has_carousel %}
+        <div class="poster-carousel">
+            <button class="carousel-btn prev">‹</button>
+            <ul class="carousel-track">
+                {% for img in exhibition.images.poster_carousel %}
+                <li class="carousel-slide"><img src="{{ url_for('static', filename=img) }}" alt="포스터"></li>
+                {% endfor %}
+            </ul>
+            <button class="carousel-btn next">›</button>
+        </div>
+        {% else %}
         <img src="{{ url_for('static', filename=exhibition.images.poster) }}" alt="전시 포스터">
+        {% endif %}
     </div>
 
     <!-- 중앙 수직선 -->
