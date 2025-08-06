@@ -54,26 +54,32 @@
                 <a class="works-more" href="{{ url_for('archive_works', num=current_page) }}">MORE</a>
             </div>
 
-            <!-- WORKS GRID -->
-            <div class="works-grid" id="worksGrid">
+            <!-- WORKS image -->
+            <div class="works-manual" id="worksManual">
                 {% for work in exhibition.images.works %}
-                <div class="work-item">
-                    <div class="work-image-container ratio-{{ work.ratio }}">
-                        <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
-                    </div>
+                <div class="work-item"
+                    data-x="{{ work.x }}"
+                    data-y="{{ work.y }}"
+                    data-w="{{ work.width }}"
+                    data-h="{{ work.height }}">
+                    <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
                     <p class="work-caption">{{ work.caption }}</p>
                 </div>
-                {% endfor %}
+            {% endfor %}
             </div>
         {% endif %}
-        <!-- FUNDING Header & Image -->
-        <div class="funding-header-section" id="fundingHeader">
+        <!-- FUNDING -->
+        <!-- FUNDING 헤더 -->
+        <div class="funding-header-section funding-manual"
+            id="fundingManual"
+            data-x="{{ exhibition.images.funding_position.x }}"
+            data-y="{{ exhibition.images.funding_position.y }}">
             <img class="funding-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
             <span class="funding-title">(FUNDING)</span>
         </div>
 
-        <!-- FUNDING 영역 -->
-        <div class="funding-container" id="fundingContainer">
+        <!-- FUNDING 이미지 -->
+        <div class="funding-container funding-manual-img">
             <img src="{{ url_for('static', filename=exhibition.images.funding) }}" alt="funding">
         </div>
     </div>

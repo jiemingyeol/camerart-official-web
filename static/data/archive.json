@@ -16,37 +16,58 @@
         {
           "image": "images/archive/1/work1.png",
           "caption": "표지판 | 단체 작업(2018)",
-          "ratio": "1-1"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/1/work2.png",
           "caption": "권태의 도약(열림) | 임채은 (2018)",
-          "ratio": "16-9"
+          "x": 336,
+          "y": 1019,
+          "width": 519,
+          "height": 308
         },
         {
           "image": "images/archive/1/work3.png",
           "caption": "어느 날 갑자기 | 이유진 (2018)",
-          "ratio": "1-1"
+          "x": 64,
+          "y": 1464,
+          "width": 237,
+          "height": 237
         },
         {
           "image": "images/archive/1/work4.png",
           "caption": "권태의 도약(열림) | 임채은",
-          "ratio": "1-1"
+          "x": 325,
+          "y": 1416,
+          "width": 285,
+          "height": 285
         },
         {
           "image": "images/archive/1/work5.png",
           "caption": "비상 | 정세빈 (2018)",
-          "ratio": "1-1"
+          "x": 634,
+          "y": 1443,
+          "width": 250,
+          "height": 258
         },
         {
           "image": "images/archive/1/work6.png",
           "caption": "World's Sweetest Candy Machine | 송희경(2018)",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1752,
+          "width": 411,
+          "height": 308
         },
         {
           "image": "images/archive/1/work7.png",
           "caption": "내 삶의 권태들 | 허진선 (2018)",
-          "ratio": "4-3"
+          "x": 499,
+          "y": 1787,
+          "width": 364,
+          "height": 273
         }
       ],
       "works_detail": [
@@ -79,8 +100,12 @@
           "caption": "대형 작품 7 설명"
         }
       ],
-      "funding": "images/archive/16/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart1"
+      "funding": "images/archive/1/funding.png",
+      "funding_embed": "https://tumblbug.com/camerart1",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "2": {

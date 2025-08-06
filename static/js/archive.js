@@ -8,13 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let scrollDeltaPage = 0;
   let lastTimePage    = 0;
 
-  // 현재 페이지 번호 추출
+  // -------------------------------
+  // 1) 페이지 이동 (포스터 영역 마우스 휠)
+  // -------------------------------
   const match = document.body.className.match(/archive-(\d+)/);
   const currentPage = match ? Number(match[1]) : null;
 
-  // -------------------------------
-  // 1) 페이지 이동
-  // -------------------------------
   const goToPage = (pageNum) => {
     if (!pageNum || pageNum < 1 || pageNum > totalPages) return;
     document.body.classList.add('fade-out');
@@ -69,85 +68,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------------------------------
-  // 3) FUNDING 위치 자동 계산 (Works → Installation Fallback)
+  // 3) WORKS 수동 좌표 배치
   // -------------------------------
-  const worksGrid = document.getElementById("worksGrid");
-  const fundingHeader = document.getElementById("fundingHeader");
-  const fundingContainer = document.getElementById("fundingContainer");
-  const installScroll = document.getElementById("installScroll");
+  function toVw(px) {
+    return `calc(${px} / 1920 * 100vw)`;
+  }
+  function toVh(px) {
+    return `calc(${px} / 1080 * 100vh)`;
+  }
 
-  if (fundingHeader && fundingContainer) {
-      const workItems = worksGrid ? worksGrid.querySelectorAll(".work-item img") : [];
-      const installItems = installScroll ? installScroll.querySelectorAll("img") : [];
+  document.querySelectorAll('.work-item').forEach(item => {
+    item.style.position = 'absolute';
+    item.style.top = toVh(item.dataset.y);
+    item.style.left = toVw(item.dataset.x);
+    if (item.dataset.w) item.style.width = toVw(item.dataset.w);
+    if (item.dataset.h) item.style.height = toVh(item.dataset.h);
+  });
 
-      const getLastVisibleImage = () => {
-          let lastImg = null;
-          let maxBottom = 0;
+  // -------------------------------
+  // 4) FUNDING 수동 좌표 배치
+  // -------------------------------
+  function toVw(px) {
+    return `calc(${px} / 1920 * 100vw)`;
+  }
+  function toVh(px) {
+    return `calc(${px} / 1080 * 100vh)`;
+  }
 
-          // 1️⃣ 우선순위: Works 이미지
-          let images = (workItems && workItems.length > 0) ? workItems : installItems;
+  const fundingHeader = document.getElementById('fundingManual');
+  if (fundingHeader) {
+    fundingHeader.style.position = 'absolute';
+    fundingHeader.style.top = toVh(fundingHeader.dataset.y);
+    fundingHeader.style.left = toVw(fundingHeader.dataset.x);
+  }
 
-          images.forEach(img => {
-              const rect = img.getBoundingClientRect();
-              const scrollTop = window.scrollY || document.documentElement.scrollTop;
-              const bottom = rect.top + scrollTop + rect.height;
-              if (bottom > maxBottom) {
-                  maxBottom = bottom;
-                  lastImg = img;
-              }
-          });
-
-          return { lastImg, maxBottom };
-      };
-
-      const scrollArea = document.querySelector('.exhibition-right');
-
-      const updateFundingPosition = () => {
-          const { lastImg, maxBottom } = getLastVisibleImage();
-          if (!lastImg) return;
-
-          const fundingHeaderOffset = maxBottom + (238 / 1080 * window.innerHeight);
-          fundingHeader.style.position = "absolute";
-          fundingHeader.style.top = `${fundingHeaderOffset}px`;
-
-          const fundingHeaderHeight = fundingHeader.offsetHeight || (48 / 1080 * window.innerHeight);
-          const fundingContainerOffset = fundingHeaderOffset + fundingHeaderHeight + (32 / 1080 * window.innerHeight);
-          fundingContainer.style.position = "absolute";
-          fundingContainer.style.top = `${fundingContainerOffset}px`;
-
-          // ✅ 스크롤 하단 여유 확보
-          const fundingHeight = fundingContainer.offsetHeight || 320;
-          if (scrollArea) {
-              scrollArea.style.paddingBottom = `${fundingHeight + 100}px`;
-          }
-      };
-
-      let imagesLoaded = 0;
-      const allImages = (workItems.length > 0 ? workItems : installItems);
-
-      allImages.forEach(img => {
-          if (img.complete) {
-              imagesLoaded++;
-          } else {
-              img.addEventListener("load", () => {
-                  imagesLoaded++;
-                  if (imagesLoaded === allImages.length) {
-                      updateFundingPosition();
-                  }
-              });
-          }
-      });
-
-      if (imagesLoaded === allImages.length) {
-          updateFundingPosition();
-      }
-
-      window.addEventListener("resize", updateFundingPosition);
-      window.addEventListener("scroll", updateFundingPosition);
+  const fundingImg = document.querySelector('.funding-manual-img');
+  if (fundingImg && fundingHeader) {
+    fundingImg.style.position = 'absolute';
+    fundingImg.style.top = `calc(${fundingHeader.dataset.y} / 1080 * 100vh + 72 / 1080 * 100vh)`;
+    fundingImg.style.left = toVw(fundingHeader.dataset.x);
   }
 
   // -------------------------------
-  // 4) FUNDING 클릭 시 링크 열기
+  // 5) FUNDING 클릭 시 외부 링크 열기
   // -------------------------------
   const fundingTitle = document.querySelector(".funding-title");
 
@@ -174,5 +137,4 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => console.error("archive.json 로드 오류:", err));
   }
-
 });
