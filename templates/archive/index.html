@@ -46,20 +46,23 @@
         <!-- ③ 두 번째 구분선 -->
         <hr class="exhibition-divider2">
         <!-- Installation Views Header -->
-        <div class="installation-header">
-            <img class="installation-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
-            <span class="installation-title">(INSTALLATION VIEWS)</span>
-        </div>
-
-        <div class="installation-container">
-            <div class="scroll-gallery draggable-scroll" id="installScroll">
-                {% for img in exhibition.images.installation %}
-                <div class="install-slide">
-                    <img src="{{ url_for('static', filename=img) }}" alt="installation">
-                </div>
-                {% endfor %}
+        {% if exhibition.images.installation %}
+            <!-- Installation Views Header -->
+            <div class="installation-header">
+                <img class="installation-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+                <span class="installation-title">(INSTALLATION VIEWS)</span>
             </div>
-        </div>
+
+            <div class="installation-container">
+                <div class="scroll-gallery draggable-scroll" id="installScroll">
+                    {% for img in exhibition.images.installation %}
+                    <div class="install-slide">
+                        <img src="{{ url_for('static', filename=img) }}" alt="installation">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
         {% if exhibition.images.works %}
             <!-- WORKS 헤더 -->
             <div class="works-header-section">

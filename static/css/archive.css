@@ -219,17 +219,13 @@
 }
 
 .install-slide img {
-    height: calc(220 / 1080 * 100vh);
+    height: calc(260 / 1080 * 100vh);
     width: auto;
     object-fit: cover;
     display: block;
     border: 1px solid #ccc;
     background-color: #fff;
     transition: transform 0.3s;
-}
-
-.install-slide img:hover {
-    transform: scale(1.05);
 }
 
 .draggable-scroll {
@@ -240,6 +236,7 @@
 .draggable-scroll.dragging {
     cursor: grabbing;
 }
+
 /* ────────── Works Section ────────── */
 .works-header-section {
     position: relative;

@@ -124,7 +124,11 @@
       ],
       "works": [],
       "funding": "images/archive/16/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart2"
+      "funding_embed": "https://tumblbug.com/camerart2",
+      "funding_position": {
+        "x": 64,
+        "y": 1802
+      }
     }
   },
   "3": {
@@ -850,7 +854,7 @@
       "funding_embed": "https://tumblbug.com/camerart9",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 3252
       }
     }
   },
@@ -861,98 +865,14 @@
     "artist": "윤민주 Yoon Minju  김나연 Kim Nayeon  김려원 Kim Ryeowon  박수민 Park Sumin  성현아 Sung Hyuna<br>신예은 Shin Yeeun  유수빈 Yoo Subin  이가영 Lee Gayoung  이지민 Lee Jimin  이제희 Lee Jehuei<br>이한나 Lee Hanna  장민경 Jang Mingyeong  장유림 Jang Yurim  정이정 Jun Ejung",
     "images": {
       "poster": "images/archive/10/poster.png",
-      "installation": [
-        "images/archive/10/install1.png",
-        "images/archive/10/install2.png",
-        "images/archive/10/install3.png",
-        "images/archive/10/install4.png",
-        "images/archive/10/install5.png"
-      ],
-      "works": [
-        {
-          "image": "images/archive/10/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/10/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/10/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/10/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/10/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/10/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/10/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "installation": [],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/10/funding.png",
       "funding_embed": "https://tumblbug.com/carmerart-10th-exhibition",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   },
@@ -963,98 +883,14 @@
     "artist": "장민경 Jang Mingyeong   강윤정 Kang Yoonjung  김예진 Kim Yejin  박수민 Park Sumin<br>안지민 Ahn Jimin  이담 Lee Dam  이유빈 Lee Yubin  이윤지 Lee Yoonji  이지민 Lee Jimin<br>이제희 Lee Jehuei  이현아 Lee Hyuna  장현서 Jang Hyunseo  정이정 Jun Ejung",
     "images": {
       "poster": "images/archive/11/poster.png",
-      "installation": [
-        "images/archive/11/install1.png",
-        "images/archive/11/install2.png",
-        "images/archive/11/install3.png",
-        "images/archive/11/install4.png",
-        "images/archive/11/install5.png"
-      ],
-      "works": [
-        {
-          "image": "images/archive/11/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/11/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/11/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/11/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/11/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/11/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/11/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "installation": [],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/11/funding.png",
       "funding_embed": "https://tumblbug.com/camerart11th",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   },
@@ -1065,98 +901,14 @@
     "artist": "강유정 Kang Yujung  강하영 Kang Hayoung  김우경 Kim Woogyeong  김찬희 Kim Chanhee<br>김희수 Kim Heesu  박수민 Park Sumin  이나현 Lee Nahyun  이세라 Lee Sera<br>이지현 Lee Jihyun  임서연 Lim Seoyeon  임의진 Lim Euijin  최서연 Choi Seoyeon",
     "images": {
       "poster": "images/archive/12/poster.png",
-      "installation": [
-        "images/archive/12/install1.png",
-        "images/archive/12/install2.png",
-        "images/archive/12/install3.png",
-        "images/archive/12/install4.png",
-        "images/archive/12/install5.png"
-      ],
-      "works": [
-        {
-          "image": "images/archive/12/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/12/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/12/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/12/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/12/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/12/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/12/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "installation": [],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/12/funding.png",
       "funding_embed": "https://tumblbug.com/camerart12",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   },
@@ -1167,98 +919,14 @@
     "artist": "임서연 Lim Seoyeon  김가영 Kim Gayoung  김나희 Kim Nahee  김수린 Kim Surin<br>김아연 Kim Ayeon  김양희 Kim Yanghee  김은지 Kim Eunji  김희수 Kim Heesu<br>방서형 Bang Seohyung  이채민 Lee Chaemin  정문철 Jung Muncheol  정민선 Jung Minsun",
     "images": {
       "poster": "images/archive/13/poster.png",
-      "installation": [
-        "images/archive/13/install1.png",
-        "images/archive/13/install2.png",
-        "images/archive/13/install3.png",
-        "images/archive/13/install4.png",
-        "images/archive/13/install5.png"
-      ],
-      "works": [
-        {
-          "image": "images/archive/13/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/13/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/13/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/13/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/13/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/13/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/13/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "installation": [],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/13/funding.png",
       "funding_embed": "https://tumblbug.com/camerart13",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   },
@@ -1269,98 +937,14 @@
     "artist": "김예진 Kim Yejin  김나윤 Kim Nayoon  김노아 Kim Noa  김에델 Kim Edel  김지아 Kim Jia<br>김한성 Kim Hansung  라현서 Ra Hyeonseo  박민경 Park Mingyeong  유지수 Yoo Jisu<br>윤예진 Yoon Yejin  이라임 Lee Rime  이수정 Lee Sujung  이유찬 Lee Yuchan",
     "images": {
       "poster": "images/archive/14/poster.png",
-      "installation": [
-        "images/archive/14/install1.png",
-        "images/archive/14/install2.png",
-        "images/archive/14/install3.png",
-        "images/archive/14/install4.png",
-        "images/archive/14/install5.png"
-      ],
-      "works": [
-        {
-          "image": "images/archive/14/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/14/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/14/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/14/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/14/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/14/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/14/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "installation": [],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/14/funding.png",
       "funding_embed": "https://tumblbug.com/camerart14th",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   },
@@ -1483,91 +1067,13 @@
         "images/archive/16/install4.png",
         "images/archive/16/install5.png"
       ],
-      "works": [
-        {
-          "image": "images/archive/16/work1.png",
-          "caption": "작품 설명 1",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work2.png",
-          "caption": "작품 설명 2",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work3.png",
-          "caption": "작품 설명 3",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work4.png",
-          "caption": "작품 설명 4",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work5.png",
-          "caption": "작품 설명 5",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work6.png",
-          "caption": "작품 설명 6",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        },
-        {
-          "image": "images/archive/16/work7.png",
-          "caption": "작품 설명 7",
-          "x": 64,
-          "y": 1079,
-          "width": 248,
-          "height": 248
-        }
-      ],
-      "works_detail": [
-        {
-          "image": "images/archive/16/work1_large.png",
-          "caption": "대형 작품 1 설명"
-        },
-        {
-          "image": "images/archive/16/work2_large.png",
-          "caption": "대형 작품 2 설명"
-        },
-        {
-          "image": "images/archive/16/work3_large.png",
-          "caption": "대형 작품 3 설명"
-        },
-        {
-          "image": "images/archive/16/work4_large.png",
-          "caption": "대형 작품 4 설명"
-        },
-        {
-          "image": "images/archive/16/work5_large.png",
-          "caption": "대형 작품 5 설명"
-        }
-      ],
+      "works": [],
+      "works_detail": [],
       "funding": "images/archive/16/funding.png",
       "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 1194
       }
     }
   }
