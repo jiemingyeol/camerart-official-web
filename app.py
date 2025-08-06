@@ -20,10 +20,10 @@ def intro():
 @app.route('/now')
 def now():
     archive_data = load_archive_data()
-    exhibition = archive_data.get("16", {})
+    exhibition = archive_data.get("15", {})
     total_pages = len(archive_data)
     return render_template('archive/index.html',
-                           current_page=16,
+                           current_page=15,
                            total_pages=total_pages,
                            exhibition=exhibition
                            )
@@ -31,10 +31,10 @@ def now():
 @app.route('/now/works')
 def now_works():
     archive_data = load_archive_data()
-    exhibition = archive_data.get("16", {})
+    exhibition = archive_data.get("15", {})
     total_pages = len(archive_data)
     return render_template('archive/works_detail.html',
-                           current_page=16,
+                           current_page=15,
                            total_pages=total_pages,
                            exhibition=exhibition)
 
