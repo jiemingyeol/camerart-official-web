@@ -21,9 +21,10 @@ def intro():
 def now():
     archive_data = load_archive_data()
     total_pages = len(archive_data)-1
-    exhibition = archive_data.get("15", {})
+    current_page = 15
+    exhibition = archive_data.get(str(current_page), {})
     return render_template('archive/index.html',
-                           current_page=15,
+                           current_page=current_page,
                            total_pages=total_pages,
                            exhibition=exhibition
                            )
@@ -32,9 +33,10 @@ def now():
 def now_works():
     archive_data = load_archive_data()
     total_pages = len(archive_data)-1
-    exhibition = archive_data.get("15", {})
+    current_page = 15
+    exhibition = archive_data.get(str(current_page), {})
     return render_template('archive/works_detail.html',
-                           current_page=15,
+                           current_page=current_page,
                            total_pages=total_pages,
                            exhibition=exhibition)
 
