@@ -143,37 +143,58 @@
         {
           "image": "images/archive/3/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "1-1"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/3/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -211,7 +232,11 @@
         }
       ],
       "funding": "images/archive/16/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart3"
+      "funding_embed": "https://tumblbug.com/camerart3",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "4": {
@@ -220,7 +245,10 @@
     "description": "이번 '창파의 조각배展'은  카메랄트의 네 번째 기획 전시로 청춘의 푸른 이미지에서 출발했습니다.<br>푸름은 바다와 같은 시원함과 청량함을 연상시키는 동시에 I’m so blue, 우울함을 표현할 때<br>쓰이기도 하는 다중적인 단어입니다.<br>다양한 시각으로 청춘이 가지고 있는 심리들을 조망하고자 합니다. <br>기성세대들의 청춘 예찬에 숨어 있는, 누구나 알지만 아무도 모르는 (척하는),<br>망망대해의 조각배와 같은 실제 청춘들의 움직임을 담았습니다.",
     "artist": "강수림 Kang Surim 권예진 Kwon Yejin 김나연 Kim Nayeon 김나영 Kim Nayoung<br>심유나 Sim Yuna 염윤정 Yeom Yunjeong 이아림 Lee Arim<br>이유진 Lee Yujin 임지윤 Lim Jiyoon 조은지 Cho Eunji 현유정 Hyun Yujeong",
     "images": {
-      "poster": "images/archive/4/poster.png",
+      "poster_carousel": [
+        "images/archive/4/poster1.png",
+        "images/archive/4/poster2.png"
+      ],
       "installation": [
         "images/archive/4/install1.png",
         "images/archive/4/install2.png",
@@ -232,37 +260,58 @@
         {
           "image": "images/archive/4/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/4/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -288,7 +337,11 @@
         }
       ],
       "funding": "images/archive/4/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart4"
+      "funding_embed": "https://tumblbug.com/camerart4",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "5": {
@@ -309,37 +362,58 @@
         {
           "image": "images/archive/5/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/5/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -365,7 +439,11 @@
         }
       ],
       "funding": "images/archive/5/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart5"
+      "funding_embed": "https://tumblbug.com/camerart5",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "6": {
@@ -386,37 +464,58 @@
         {
           "image": "images/archive/6/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/6/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -442,7 +541,11 @@
         }
       ],
       "funding": "images/archive/6/funding.png",
-      "funding_embed": "https://tumblbug.com/2020camerart6"
+      "funding_embed": "https://tumblbug.com/2020camerart6",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "7": {
@@ -463,37 +566,58 @@
         {
           "image": "images/archive/7/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/7/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -519,7 +643,11 @@
         }
       ],
       "funding": "images/archive/7/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart7"
+      "funding_embed": "https://tumblbug.com/camerart7",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "8": {
@@ -540,37 +668,58 @@
         {
           "image": "images/archive/8/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/8/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -596,7 +745,11 @@
         }
       ],
       "funding": "images/archive/8/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart8"
+      "funding_embed": "https://tumblbug.com/camerart8",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "9": {
@@ -617,37 +770,58 @@
         {
           "image": "images/archive/9/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/9/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -673,7 +847,11 @@
         }
       ],
       "funding": "images/archive/9/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart9"
+      "funding_embed": "https://tumblbug.com/camerart9",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "10": {
@@ -694,37 +872,58 @@
         {
           "image": "images/archive/10/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/10/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -750,7 +949,11 @@
         }
       ],
       "funding": "images/archive/10/funding.png",
-      "funding_embed": "https://tumblbug.com/carmerart-10th-exhibition"
+      "funding_embed": "https://tumblbug.com/carmerart-10th-exhibition",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "11": {
@@ -771,37 +974,58 @@
         {
           "image": "images/archive/11/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/11/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -827,7 +1051,11 @@
         }
       ],
       "funding": "images/archive/11/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart11th"
+      "funding_embed": "https://tumblbug.com/camerart11th",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "12": {
@@ -848,37 +1076,58 @@
         {
           "image": "images/archive/12/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/12/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -904,7 +1153,11 @@
         }
       ],
       "funding": "images/archive/12/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart12"
+      "funding_embed": "https://tumblbug.com/camerart12",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "13": {
@@ -925,37 +1178,58 @@
         {
           "image": "images/archive/13/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/13/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -981,7 +1255,11 @@
         }
       ],
       "funding": "images/archive/13/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart13"
+      "funding_embed": "https://tumblbug.com/camerart13",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "14": {
@@ -1002,37 +1280,58 @@
         {
           "image": "images/archive/14/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/14/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -1058,7 +1357,11 @@
         }
       ],
       "funding": "images/archive/14/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart14th"
+      "funding_embed": "https://tumblbug.com/camerart14th",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "15": {
@@ -1067,7 +1370,10 @@
     "description": "거울 속의 나는 진짜 나인가요? 누구의 것인지 모를 시선들로 왜곡되어 있지는 않나요?<br>카메랄트의 열다섯 번째 기획 전시, <피사(被寫)의 석탑: 시선의 틈에서 서로의 마음을 쌓듯><br>은 우리에게 비치는 시선의 모습과, 시선 속에 비치는 우리의 모습을 그려냅니다.<br>타인은 때로는 지옥이기에, 그들의 시선은 우리를 검열하고 감시합니다. 하지만 인간은 그 시<br>선과 관계 속에서 스스로의 존재를 확인하기 마련이죠. 카메랄트는 모두가 관찰자이자 동시<br>에 피사체인 세계 속에서, 우리가 어떻게 오롯이 우리로서 실존할 수 있을지 고민합니다. 또한<br>기어코 마주하는 순간을 포착합니다. 흐릿한 군중이 아니라, 내 앞에 존재하는 당신의 눈을.",
     "artist": "라현서 Ra Hyeonseo  김서연 Kim Seoyeon  김소연 Kim Soyeon  김에델 Kim Edel<br>김하리 Kim Hari  심세린 Sim Serin  엄하은 Eom Haeun  오정하 Oh Jeongha<br>유성현 Yu Seonghyeon  이라영 Lee Rayeong  이선미 Lee Seonmi  이영주 Lee Yeongju<br>이정현 Lee junghyeon  장하령 Jang Haryeong  조윤영 Cho Yunyeong  지민결 Jie Mingyeol",
     "images": {
-      "poster": "images/archive/15/poster.png",
+      "poster_carousel": [
+        "images/archive/15/poster1.png",
+        "images/archive/15/poster2.png"
+      ],
       "installation": [
         "images/archive/15/install1.png",
         "images/archive/15/install2.png",
@@ -1079,37 +1385,58 @@
         {
           "image": "images/archive/15/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/15/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -1135,7 +1462,11 @@
         }
       ],
       "funding": "images/archive/15/funding.png",
-      "funding_embed": "https://tumblbug.com/camerart15th"
+      "funding_embed": "https://tumblbug.com/camerart15th",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   },
   "16": {
@@ -1156,37 +1487,58 @@
         {
           "image": "images/archive/16/work1.png",
           "caption": "작품 설명 1",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work2.png",
           "caption": "작품 설명 2",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work3.png",
           "caption": "작품 설명 3",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work4.png",
           "caption": "작품 설명 4",
-          "ratio": "3-4"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work5.png",
           "caption": "작품 설명 5",
-          "ratio": "9-16"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work6.png",
           "caption": "작품 설명 6",
-          "ratio": "4-3"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         },
         {
           "image": "images/archive/16/work7.png",
           "caption": "작품 설명 7",
-          "ratio": "16-9"
+          "x": 64,
+          "y": 1079,
+          "width": 248,
+          "height": 248
         }
       ],
       "works_detail": [
@@ -1212,7 +1564,11 @@
         }
       ],
       "funding": "images/archive/16/funding.png",
-      "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th"
+      "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th",
+      "funding_position": {
+        "x": 64,
+        "y": 3180
+      }
     }
   }
 }
