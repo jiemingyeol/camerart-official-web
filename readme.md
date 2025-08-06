@@ -1,4 +1,4 @@
-# 📌 Camerart 공식 웹사이트
+# 🎨 Camerart 공식 웹사이트
 
 **카메랄트(Camer:art)**는 비평적 사고와 현대 예술을 기반으로 기획 전시를 만들어가는 전시 그룹입니다.  
 이 웹사이트는 그룹의 전시를 온라인 공간에서 체계적으로 소개하고, 기록을 남기기 위해 개발되었습니다.
@@ -15,44 +15,41 @@
 ---
 
 ### 2️⃣ **ON VIEW (Now)**
-- 현재 진행 중인 전시(최신 전시, 16번째) 소개
-- **왼쪽**: 전시 포스터 고정  
-- **오른쪽**: 스크롤 가능한 전시 정보 영역
-  - **Installation Views**: 클릭&드래그(Dragscroll)로 좌우 스크롤
-  - **Works**: 일부 작업물 미리보기 + "MORE" 클릭 시 `/works` 페이지 이동
-  - **Funding**: 외부 크라우드 펀딩 페이지 iframe 임베드
+- 최신 전시(16회차) 소개 페이지
+- **좌측 영역:** 전시 포스터 고정 배치
+- **우측 영역:** 스크롤 가능한 전시 정보 표시
+  - **Installation Views:** 클릭&드래그(Dragscroll)로 부드러운 좌우 스크롤 지원
+  - **Works:** 일부 작업물 미리보기와 "MORE" 버튼을 통한 상세 페이지 이동
+  - **Funding:** 외부 크라우드 펀딩 페이지 임베드로 바로가기 가능
 
 ---
 
 ### 3️⃣ **PAST (Archive)**
-- `/archive/<num>` 경로로 1~15회차 전시 페이지 제공
-- **페이지 구성**:
-  - 왼쪽 포스터 / 오른쪽 전시 정보 (Description, Artist, Installation, Works, Funding)
-  - **Works → MORE** 클릭 시 `/archive/<num>/works` 상세 페이지
-- **기능**:
-  - 마우스 휠로 이전/다음 전시 페이지 전환 (포스터 영역에서 작동)
-  - 일부 전시(1, 4, 15회차)는 Carousel 기능 지원
-  - Funding 제목 클릭 시 `archive.json`에 정의된 외부 링크 새 창 열림
+- `/archive/<num>` 경로로 1~15회차 전시별 개별 페이지 제공
+- **페이지 구성:**
+  - 좌측: 전시 포스터(일부 페이지는 캐러셀 지원, poster_carousel)
+  - 우측: 전시 정보(Description, Artist, Installation Views, Works, Funding)
+  - Works는 수동 좌표 배치로 위치 정확도 개선
+  - Funding 제목 클릭 시 외부 링크(`funding_embed`)로 새 창 열림
 
 ---
 
 ### 4️⃣ **CAMER:ART (About)**
-- `history.json` 기반으로 연혁 데이터 동적 로드
-- Hover 시 미리보기 이미지 표시
-- 클릭 시 상세 설명 및 이미지가 펼쳐지며 자동 스크롤
-- 색상(`color`) 값에 따라 Hover 효과 및 펼침 배경색 변경
+- `history.json` 기반으로 연혁 데이터 자동 로드
+- Hover 시 미리보기 이미지 표시, 클릭 시 상세 설명과 이미지 확장 표시
+- 색상(`color`) 값에 따른 Hover 효과와 배경 스타일 변경
 
 ---
 
 ### 5️⃣ **Sidebar 내비게이션**
-- 항상 우측 상단에 표시되는 햄버거 버튼
-- 메뉴:
-  - (CAMER:ART): About 페이지 이동
-  - (ON VIEW): Now 페이지 이동
-  - (PAST): 1~16회차 전시 페이지 이동
-- **상태 유지**:
+- 우측 상단 햄버거 버튼을 통한 전체 페이지 이동
+- 메뉴 항목:
+  - (CAMER:ART) → About 페이지
+  - (ON VIEW) → Now 페이지
+  - (PAST) → 1~16회차 전시 페이지
+- 상태 유지:
   - 마지막 열림/닫힘 상태 및 PAST 서브메뉴 상태를 `localStorage`에 저장
-  - Intro → Now 최초 진입 시에는 닫힌 상태로 초기화
+  - Intro → Now 최초 진입 시 닫힘 상태로 초기화
 
 ---
 
@@ -93,8 +90,8 @@ camerart-official-web/
 │   │   ├─ archive.json
 │   │   └─ history.json
 │   ├─ images/
-│   │   ├─ intro/ (배경 및 gif)
-│   │   ├─ icons/ (UI 아이콘)
+│   │   ├─ intro/
+│   │   ├─ icons/
 │   │   ├─ about/
 │   │   │   ├─ preview/1.png~16.png
 │   │   │   └─ exhibition/[id]/detail*.png
