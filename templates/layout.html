@@ -8,6 +8,8 @@
   {%- else -%}th{%- endif -%}
 {%- endmacro %}
 
+{% set page_count = total_pages if total_pages is defined else 1 %}
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -40,7 +42,7 @@
                     </span>
                     <!-- ① .submenu → .submenu archive-menu 로 변경 -->
                     <ul class="submenu archive-menu">
-                        {%- for i in range(1, total_pages|default(15) + 1) %}
+                        {%- for i in range(1, page_count + 1) %}
                         {# ② <li>에 archive-menu-item 클래스와 active 토글 #}
                         <li class="archive-menu-item {% if current_page|default(0) == i %}active{% endif %}">
                             <a href="{{ url_for('archive_page', num=i) }}">{{ ordinal(i) }}</a>
