@@ -80,7 +80,7 @@
                     data-w="{{ work.width }}"
                     data-h="{{ work.height }}">
                     <img src="{{ url_for('static', filename=work.image) }}" alt="work image">
-                    <p class="work-caption">{{ work.caption }}</p>
+                    <p class="work-caption">{{ work.caption | safe }}</p>
                 </div>
             {% endfor %}
             </div>

@@ -76,31 +76,43 @@
       "works_detail": [
         {
           "image": "images/archive/1/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "표지판 | 단체 작업(2018)"
         },
         {
           "image": "images/archive/1/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "권태의 도약(열림) | 임채은 (2018)"
         },
         {
           "image": "images/archive/1/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "비상 | 정세빈 (2018)"
         },
         {
           "image": "images/archive/1/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "지도 | 단체작 (2018)"
         },
         {
           "image": "images/archive/1/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "어느 날 갑자기 | 이유진 (2018)"
         },
         {
           "image": "images/archive/1/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "권태의 도약(열림) | 임채은"
         },
         {
           "image": "images/archive/1/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "World's Sweetest Candy Machine | 송희경(2018)"
+        },
+        {
+          "image": "images/archive/1/work8_large.png",
+          "caption": "권태의 과정 | 박은지 (2018)"
+        },
+        {
+          "image": "images/archive/1/work9_large.png",
+          "caption": "권태 기록 일지 | 길보민 (2018)"
+        },
+        {
+          "image": "images/archive/1/work10_large.png",
+          "caption": "나비 | 황지혜 (2018)"
         }
       ],
       "funding": "images/archive/1/funding.png",
@@ -146,7 +158,7 @@
       "works": [
         {
           "image": "images/archive/3/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "지워진것, 지워지지 않는것. | 권예진 (2019)",
           "x": 64,
           "y": 986,
           "width": 248,
@@ -154,7 +166,7 @@
         },
         {
           "image": "images/archive/3/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "사세한 실력(實力) | 박은지 (2019)",
           "x": 336,
           "y": 997,
           "width": 460,
@@ -162,7 +174,7 @@
         },
         {
           "image": "images/archive/3/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "소통(消通)사회 | 황지혜 (2019)",
           "x": 64,
           "y": 1430,
           "width": 251,
@@ -170,7 +182,7 @@
         },
         {
           "image": "images/archive/3/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "리드 | 임지윤 (2019)",
           "x": 339,
           "y": 1399,
           "width": 406,
@@ -178,7 +190,7 @@
         },
         {
           "image": "images/archive/3/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "초등학교 시절의 그림일기 | 박은지 (2019)",
           "x": 64,
           "y": 1756,
           "width": 283,
@@ -186,7 +198,7 @@
         },
         {
           "image": "images/archive/3/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "Reluctant Agreement | 임지윤 (2019)",
           "x": 371,
           "y": 1831,
           "width": 226,
@@ -194,7 +206,7 @@
         },
         {
           "image": "images/archive/3/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "Floundering (허우적) | 심유나 (2019)",
           "x": 621,
           "y": 1799,
           "width": 251,
@@ -204,35 +216,59 @@
       "works_detail": [
         {
           "image": "images/archive/3/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "지워진것, 지워지지 않는것. | 권예진 (2019)"
         },
         {
           "image": "images/archive/3/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "사세한 실력(實力) | 박은지 (2019)"
         },
         {
           "image": "images/archive/3/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "리드 | 임지윤 (2019)"
         },
         {
           "image": "images/archive/3/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "소통(消通)사회 | 황지혜 (2019)"
         },
         {
           "image": "images/archive/3/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "초등학교 시절의 그림일기 | 박은지 (2019)"
         },
         {
           "image": "images/archive/3/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "Reluctant Agreement | 임지윤 (2019)"
         },
         {
           "image": "images/archive/3/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "Floundering (허우적) | 심유나 (2019)"
         },
         {
           "image": "images/archive/3/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "아찔. 진심 | 구보미 (2019)"
+        },
+        {
+          "image": "images/archive/3/work9_large.png",
+          "caption": "종로 3가 유명 카페에서 쓴 인턴 지원서 | 송희경 (2019)"
+        },
+        {
+          "image": "images/archive/3/work10_large.png",
+          "caption": "OT | 길보민 (2019)"
+        },
+        {
+          "image": "images/archive/3/work11_large.png",
+          "caption": "사람들 | 허진선 (2019)"
+        },
+        {
+          "image": "images/archive/3/work12_large.png",
+          "caption": "레드에 대하여 | 구보미 (2019)"
+        },
+        {
+          "image": "images/archive/3/work13_large.png",
+          "caption": "세모씨의 삶 | 길보민 (2019)"
+        },
+        {
+          "image": "images/archive/3/work14_large.png",
+          "caption": "착즙 고백 | 송희경 (2019)"
         }
       ],
       "funding": "images/archive/16/funding.png",
@@ -261,7 +297,7 @@
       "works": [
         {
           "image": "images/archive/4/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "한없이 무해(無害) 한 것들에 대하여 (2019)",
           "x": 64,
           "y": 1046,
           "width": 248,
@@ -269,7 +305,7 @@
         },
         {
           "image": "images/archive/4/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "연붉은 모든 것이 네 안에서 여물기를 (2019)",
           "x": 336,
           "y": 983,
           "width": 417,
@@ -277,7 +313,7 @@
         },
         {
           "image": "images/archive/4/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "은화, 고사리 (2019)",
           "x": 64,
           "y": 1348,
           "width": 274,
@@ -285,7 +321,7 @@
         },
         {
           "image": "images/archive/4/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "청춘 (2019)",
           "x": 362,
           "y": 1440,
           "width": 274,
@@ -293,7 +329,7 @@
         },
         {
           "image": "images/archive/4/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "귀착 (2019)",
           "x": 660,
           "y": 1421,
           "width": 219,
@@ -301,7 +337,7 @@
         },
         {
           "image": "images/archive/4/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "undefinable (2019)",
           "x": 64,
           "y": 1772,
           "width": 339,
@@ -309,7 +345,7 @@
         },
         {
           "image": "images/archive/4/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "포지셔널 트래킹 (2019)",
           "x": 427,
           "y": 1772,
           "width": 339,
@@ -319,47 +355,47 @@
       "works_detail": [
         {
           "image": "images/archive/4/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "한없이 무해(無害) 한 것들에 대하여 | 권예진 (2019)"
         },
         {
           "image": "images/archive/4/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "연붉은 모든 것이 네 안에서 여물기를 | 현유정 (2019)"
         },
         {
           "image": "images/archive/4/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "undefinable | 조은지 (2019)"
         },
         {
           "image": "images/archive/4/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "포지셔널 트래킹 | 임지윤 (2019)"
         },
         {
           "image": "images/archive/4/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "은화, 고사리 | 김나영 (2019)"
         },
         {
           "image": "images/archive/4/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "청춘 | 심유나(2019)"
         },
         {
           "image": "images/archive/4/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "귀착 | 강수림 (2019)"
         },
         {
           "image": "images/archive/4/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "결국 비가 된다 | 염윤정 (2019)"
         },
         {
           "image": "images/archive/4/work9_large.png",
-          "caption": "대형 작품 9 설명"
+          "caption": "이정표 | 이유진 (2019)"
         },
         {
           "image": "images/archive/4/work10_large.png",
-          "caption": "대형 작품 10 설명"
+          "caption": "내 케이크는 내가 고를게 | 김나연 (2019)"
         },
         {
           "image": "images/archive/4/work11_large.png",
-          "caption": "대형 작품 11 설명"
+          "caption": "환승(換乘); from place to place | 이아림 (2019)"
         }
       ],
       "funding": "images/archive/4/funding.png",
@@ -385,7 +421,7 @@
       "works": [
         {
           "image": "images/archive/5/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "sight of _ _ _ | 김진희 (2020)",
           "x": 64,
           "y": 1006,
           "width": 288,
@@ -393,7 +429,7 @@
         },
         {
           "image": "images/archive/5/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "WWW (World-Wide-Web) | 심유나 (2020)",
           "x": 376,
           "y": 974,
           "width": 460,
@@ -401,7 +437,7 @@
         },
         {
           "image": "images/archive/5/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "시선의 모양 | 박성은 (2020)",
           "x": 64,
           "y": 1360,
           "width": 386,
@@ -409,7 +445,7 @@
         },
         {
           "image": "images/archive/5/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "내가 사랑하고, 사랑했던 모든 것들에게 | 김나연 (2020)",
           "x": 474,
           "y": 1360,
           "width": 386,
@@ -419,27 +455,27 @@
       "works_detail": [
         {
           "image": "images/archive/5/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "sight of _ _ _ | 김진희 (2020)"
         },
         {
           "image": "images/archive/5/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "WWW (World-Wide-Web) | 심유나 (2020)"
         },
         {
           "image": "images/archive/5/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "시선의 모양 | 박성은 (2020)"
         },
         {
           "image": "images/archive/5/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "내가 사랑하고, 사랑했던 모든 것들에게 | 김나연 (2020)"
         },
         {
           "image": "images/archive/5/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "Standard | 이현아 (2020)"
         },
         {
           "image": "images/archive/5/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "모순 (矛盾) | 정은선 (2020)"
         }
       ],
       "funding": "images/archive/5/funding.png",
@@ -465,7 +501,7 @@
       "works": [
         {
           "image": "images/archive/6/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "발악 (2020)",
           "x": 64,
           "y": 1031,
           "width": 263,
@@ -473,7 +509,7 @@
         },
         {
           "image": "images/archive/6/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "판도라 (2020)",
           "x": 339,
           "y": 1030,
           "width": 264,
@@ -481,7 +517,7 @@
         },
         {
           "image": "images/archive/6/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "탈피(脫皮) (2020)",
           "x": 610,
           "y": 1030,
           "width": 263,
@@ -489,7 +525,7 @@
         },
         {
           "image": "images/archive/6/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "원죄의 코르셋 (2020)",
           "x": 64,
           "y": 1359,
           "width": 230,
@@ -497,7 +533,7 @@
         },
         {
           "image": "images/archive/6/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "거울 연작 1, 2 (2020)",
           "x": 319,
           "y": 1394,
           "width": 291,
@@ -505,7 +541,7 @@
         },
         {
           "image": "images/archive/6/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "patterned (2020)",
           "x": 633,
           "y": 1406,
           "width": 215,
@@ -513,7 +549,7 @@
         },
         {
           "image": "images/archive/6/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "김아무개씨의 쇼핑 (2020)",
           "x": 64,
           "y": 1770,
           "width": 356,
@@ -521,7 +557,7 @@
         },
         {
           "image": "images/archive/6/work8.png",
-          "caption": "작품 설명 8",
+          "caption": "사랑의 기원 (2020)",
           "x": 444,
           "y": 1696,
           "width": 321,
@@ -531,47 +567,47 @@
       "works_detail": [
         {
           "image": "images/archive/6/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "발악 | 김수정 (2020)"
         },
         {
           "image": "images/archive/6/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "판도라 (2020)"
         },
         {
           "image": "images/archive/6/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "탈피(脫皮) | 김희선 (2020)"
         },
         {
           "image": "images/archive/6/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "해피, 투게더 | 강수림 (2020)"
         },
         {
           "image": "images/archive/6/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "원죄의 코르셋 | 김진희 (2020)"
         },
         {
           "image": "images/archive/6/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "거울 연작 1, 2 | 박하윤 (2020)"
         },
         {
           "image": "images/archive/6/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "patterned (2020)"
         },
         {
           "image": "images/archive/6/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "What's your sexual organs? (2020)"
         },
         {
           "image": "images/archive/6/work9_large.png",
-          "caption": "대형 작품 9 설명"
+          "caption": "불장난 | 김수정 (2020)"
         },
         {
           "image": "images/archive/6/work10_large.png",
-          "caption": "대형 작품 10 설명"
+          "caption": "원죄의 코르셋 | 김진희 (2020)"
         },
         {
           "image": "images/archive/6/work11_large.png",
-          "caption": "대형 작품 11 설명"
+          "caption": "사랑의 기원 | 안가현 (2020)"
         }
       ],
       "funding": "images/archive/6/funding.png",
@@ -597,7 +633,7 @@
       "works": [
         {
           "image": "images/archive/7/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "OO의 서식지로 부터 온 메세지 (2021)",
           "x": 64,
           "y": 1081,
           "width": 459,
@@ -605,7 +641,7 @@
         },
         {
           "image": "images/archive/7/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "inseparable (2021)",
           "x": 550,
           "y": 1051,
           "width": 273,
@@ -613,7 +649,7 @@
         },
         {
           "image": "images/archive/7/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "나의 비거니즘 (2021)",
           "x": 64,
           "y": 1477,
           "width": 346,
@@ -621,7 +657,7 @@
         },
         {
           "image": "images/archive/7/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "당신의 하루는 어떤가요? (2021)",
           "x": 420,
           "y": 1477,
           "width": 346,
@@ -629,7 +665,7 @@
         },
         {
           "image": "images/archive/7/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "핑계를 위한 보호구역 (2021)",
           "x": 64,
           "y": 1793,
           "width": 247,
@@ -637,7 +673,7 @@
         },
         {
           "image": "images/archive/7/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "? (2021)",
           "x": 326,
           "y": 1869,
           "width": 246,
@@ -647,43 +683,43 @@
       "works_detail": [
         {
           "image": "images/archive/7/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "나의 비거니즘 | 김진희 (2021)"
         },
         {
           "image": "images/archive/7/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "나의 비거니즘 | 김진희 (2021)"
         },
         {
           "image": "images/archive/7/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "진화 | 김채연 (2021)"
         },
         {
           "image": "images/archive/7/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "OO의 서식지로 부터 온 메세지 | 지혜민 (2021)"
         },
         {
           "image": "images/archive/7/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "나인가 너인가 | 공예은, 김채연, 지혜민, 채나경 (2021)"
         },
         {
           "image": "images/archive/7/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "? | 박서현 (2021)"
         },
         {
           "image": "images/archive/7/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "Just Cool | 김희선 (2021)"
         },
         {
           "image": "images/archive/7/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "inseparable | 김진희 (2021)"
         },
         {
           "image": "images/archive/7/work9_large.png",
-          "caption": "대형 작품 9 설명"
+          "caption": "기이한 공존 | 채나경 (2021)"
         },
         {
           "image": "images/archive/7/work10_large.png",
-          "caption": "대형 작품 10 설명"
+          "caption": "핑계를 위한 보호구역 | 지혜민 (2021)"
         }
       ],
       "funding": "images/archive/7/funding.png",
@@ -710,7 +746,7 @@
       "works": [
         {
           "image": "images/archive/8/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "삶, 죽음, 그리고 경계 (2021)",
           "x": 64,
           "y": 1037,
           "width": 259,
@@ -718,7 +754,7 @@
         },
         {
           "image": "images/archive/8/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "___ was (t)here, ___ will be (t)here. (2021)",
           "x": 347,
           "y": 1153,
           "width": 305,
@@ -726,7 +762,7 @@
         },
         {
           "image": "images/archive/8/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "기억과 망각 (2021)",
           "x": 676,
           "y": 1067,
           "width": 180,
@@ -734,7 +770,7 @@
         },
         {
           "image": "images/archive/8/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "Dead celebrities (죽은 유명인사들) (2021)",
           "x": 64,
           "y": 1433,
           "width": 279,
@@ -742,7 +778,7 @@
         },
         {
           "image": "images/archive/8/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "Spectrum (2021)",
           "x": 366,
           "y": 1370,
           "width": 424,
@@ -750,7 +786,7 @@
         },
         {
           "image": "images/archive/8/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "얄궂은 오브제 (2021)",
           "x": 64,
           "y": 1806,
           "width": 156,
@@ -758,7 +794,7 @@
         },
         {
           "image": "images/archive/8/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "우리가 양지에 묻히게 된다면? (2021)",
           "x": 244,
           "y": 1751,
           "width": 347,
@@ -768,71 +804,71 @@
       "works_detail": [
         {
           "image": "images/archive/8/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "삶, 죽음, 그리고 경계 | 채나경 (2021)"
         },
         {
           "image": "images/archive/8/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "___ was (t)here, ___ will be (t)here. | 김정하 (2021)"
         },
         {
           "image": "images/archive/8/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "기억과 망각 | 박서영 (2021)"
         },
         {
           "image": "images/archive/8/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "Dead celebrities (죽은 유명인사들) | 지혜민 (2021)"
         },
         {
           "image": "images/archive/8/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "Spectrum | 박서현 (2021)"
         },
         {
           "image": "images/archive/8/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "(In)visible | 안효진 (2021)"
         },
         {
           "image": "images/archive/8/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "蓄音 | 박서현 (2021)"
         },
         {
           "image": "images/archive/8/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "얄궂은 오브제 | 인남홍 (2021)"
         },
         {
           "image": "images/archive/8/work9_large.png",
-          "caption": "대형 작품 9 설명"
+          "caption": "우리가 양지에 묻히게 된다면? | 김재윤, 신예은, 이예원, 지혜민 (2021)"
         },
         {
           "image": "images/archive/8/work10_large.png",
-          "caption": "대형 작품 10 설명"
+          "caption": "完 | 공예은, 김정하, 박서영, 안효진, 인남홍 (2021)"
         },
         {
           "image": "images/archive/8/work11_large.png",
-          "caption": "대형 작품 11 설명"
+          "caption": "궤적 | 신예은 (2021)"
         },
         {
           "image": "images/archive/8/work12_large.png",
-          "caption": "대형 작품 12 설명"
+          "caption": "Keep in touch | 공예은, 김재윤, 김정하, 박서영, 박서현, 손예형, 신예은,<br>안효진, 이예원, 인남홍, 지혜민, 채나경, 한재연 (2021)"
         },
         {
           "image": "images/archive/8/work13_large.png",
-          "caption": "대형 작품 13 설명"
+          "caption": "구경꾼 | 이예원 (2021)"
         },
         {
           "image": "images/archive/8/work14_large.png",
-          "caption": "대형 작품 14 설명"
+          "caption": "음성사서함 | 박서현, 손예형, 채나경, 한재연 (2021)"
         },
         {
           "image": "images/archive/8/work15_large.png",
-          "caption": "대형 작품 15 설명"
+          "caption": "Your sensibility. | 손예형 (2021)"
         },
         {
           "image": "images/archive/8/work16_large.png",
-          "caption": "대형 작품 16 설명"
+          "caption": "영화 같은 엔딩 (Ending like a movie) | 김재윤 (2021)"
         },
         {
           "image": "images/archive/8/work17_large.png",
-          "caption": "대형 작품 17 설명"
+          "caption": "A의 전언(傳言) | 지혜민 (2021)"
         }
       ],
       "funding": "images/archive/8/funding.png",
@@ -856,7 +892,7 @@
       "works": [
         {
           "image": "images/archive/9/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "WANTED trust or distrust (2022)",
           "x": 64,
           "y": 974,
           "width": 248,
@@ -864,7 +900,7 @@
         },
         {
           "image": "images/archive/9/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "요설(饒舌) (2022)",
           "x": 336,
           "y": 1045,
           "width": 193,
@@ -872,7 +908,7 @@
         },
         {
           "image": "images/archive/9/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "BLANK FRAME (2022)",
           "x": 553,
           "y": 1078,
           "width": 248,
@@ -880,7 +916,7 @@
         },
         {
           "image": "images/archive/9/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "무지의 그림자 뒤편에는 (2022)",
           "x": 64,
           "y": 1461,
           "width": 248,
@@ -888,7 +924,7 @@
         },
         {
           "image": "images/archive/9/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "향- (2022)",
           "x": 336,
           "y": 1380,
           "width": 248,
@@ -896,7 +932,7 @@
         },
         {
           "image": "images/archive/9/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "믿음의 온도: 용해 (2022)",
           "x": 608,
           "y": 1458,
           "width": 248,
@@ -904,7 +940,7 @@
         },
         {
           "image": "images/archive/9/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "당신은 어떤 세상에 살고 있나요? (2022)",
           "x": 64,
           "y": 1735,
           "width": 426,
@@ -912,7 +948,7 @@
         },
         {
           "image": "images/archive/9/work8.png",
-          "caption": "작품 설명 8",
+          "caption": "믿음의 사람들 (People of faith) (2022)",
           "x": 532,
           "y": 1830,
           "width": 248,
@@ -922,59 +958,59 @@
       "works_detail": [
         {
           "image": "images/archive/9/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "WANTED trust or distrust | 신예은, 윤민주, 이가영 (2022)"
         },
         {
           "image": "images/archive/9/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "요설(饒舌) | 유수빈 (2022)"
         },
         {
           "image": "images/archive/9/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "BLANK FRAME | 이가영 (2022)"
         },
         {
           "image": "images/archive/9/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "무지의 그림자 뒤편에는 | 이한나 (2022)"
         },
         {
           "image": "images/archive/9/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "향- | 유서연 (2022)"
         },
         {
           "image": "images/archive/9/work6_large.png",
-          "caption": "대형 작품 6 설명"
+          "caption": "믿음의 온도: 용해 | 김재윤, 유서연, 정다은, 허채윤 (2022)"
         },
         {
           "image": "images/archive/9/work7_large.png",
-          "caption": "대형 작품 7 설명"
+          "caption": "당신은 어떤 세상에 살고 있나요? | 허채윤 (2022)"
         },
         {
           "image": "images/archive/9/work8_large.png",
-          "caption": "대형 작품 8 설명"
+          "caption": "믿음의 사람들 | 신예은 (2022)"
         },
         {
           "image": "images/archive/9/work9_large.png",
-          "caption": "대형 작품 9 설명"
+          "caption": "가까이, 멀리, 다시 가까이 | 김재윤 (2021)"
         },
         {
           "image": "images/archive/9/work10_large.png",
-          "caption": "대형 작품 10 설명"
+          "caption": "신제_missing link | 유서연(2022)"
         },
         {
           "image": "images/archive/9/work11_large.png",
-          "caption": "대형 작품 11 설명"
+          "caption": "묘(猫)한 인상 | 정다은 (2022)"
         },
         {
           "image": "images/archive/9/work12_large.png",
-          "caption": "대형 작품 12 설명"
+          "caption": "스키너의 케이지: 천공을 향하여 | 이예원 (2022)"
         },
         {
           "image": "images/archive/9/work13_large.png",
-          "caption": "대형 작품 13 설명"
+          "caption": "수취인 불명, 미신의 편지 | 정다은 (2022)"
         },
         {
           "image": "images/archive/9/work14_large.png",
-          "caption": "대형 작품 14 설명"
+          "caption": "To be continued(...) | 성현아, 유수빈, 이예원, 이한나 (2022)"
         }
       ],
       "funding": "images/archive/9/funding.png",
@@ -1093,7 +1129,7 @@
       "works": [
         {
           "image": "images/archive/15/work1.png",
-          "caption": "작품 설명 1",
+          "caption": "Intro: Scopophobia (2025)",
           "x": 64,
           "y": 974,
           "width": 248,
@@ -1101,7 +1137,7 @@
         },
         {
           "image": "images/archive/15/work2.png",
-          "caption": "작품 설명 2",
+          "caption": "시선, 추락 (2025)",
           "x": 336,
           "y": 1037,
           "width": 520,
@@ -1109,7 +1145,7 @@
         },
         {
           "image": "images/archive/15/work3.png",
-          "caption": "작품 설명 3",
+          "caption": "관상용 (2025)",
           "x": 64,
           "y": 1461,
           "width": 248,
@@ -1117,7 +1153,7 @@
         },
         {
           "image": "images/archive/15/work4.png",
-          "caption": "작품 설명 4",
+          "caption": "새장 (2025)",
           "x": 336,
           "y": 1380,
           "width": 248,
@@ -1125,7 +1161,7 @@
         },
         {
           "image": "images/archive/15/work5.png",
-          "caption": "작품 설명 5",
+          "caption": "Unframed Reality (2025)",
           "x": 608,
           "y": 1348,
           "width": 190,
@@ -1133,7 +1169,7 @@
         },
         {
           "image": "images/archive/15/work6.png",
-          "caption": "작품 설명 6",
+          "caption": "무제 (2025)",
           "x": 64,
           "y": 1735,
           "width": 426,
@@ -1141,7 +1177,7 @@
         },
         {
           "image": "images/archive/15/work7.png",
-          "caption": "작품 설명 7",
+          "caption": "「현실과 환상의 군중」 (The Crowd of Reality<br>and Illusion) | 김하리 (2025)",
           "x": 532,
           "y": 1830,
           "width": 248,
@@ -1151,23 +1187,39 @@
       "works_detail": [
         {
           "image": "images/archive/15/work1_large.png",
-          "caption": "대형 작품 1 설명"
+          "caption": "Intro: Scopophobia | 김하리, 엄하은, 지민결 (2025)"
         },
         {
           "image": "images/archive/15/work2_large.png",
-          "caption": "대형 작품 2 설명"
+          "caption": "시선, 추락 | 유성현,엄하은, 조윤영, 이정현 (2025)"
         },
         {
           "image": "images/archive/15/work3_large.png",
-          "caption": "대형 작품 3 설명"
+          "caption": "관상용 | 김서연 (2025)"
         },
         {
           "image": "images/archive/15/work4_large.png",
-          "caption": "대형 작품 4 설명"
+          "caption": "새장 | 김하리, 오정하, 지민결 (2025)"
         },
         {
           "image": "images/archive/15/work5_large.png",
-          "caption": "대형 작품 5 설명"
+          "caption": "Unframed Reality | 엄하은 (2025)"
+        },
+        {
+          "image": "images/archive/15/work6_large.png",
+          "caption": "무제 | 이선미, 이영주, 심세린, 장하령(2025)"
+        },
+        {
+          "image": "images/archive/15/work7_large.png",
+          "caption": "시[선] | 심세린 (2025)"
+        },
+        {
+          "image": "images/archive/15/work8_large.png",
+          "caption": "「현실과 환상의 군중」 (The Crowd of Reality and Illusion) | 김하리 (2025)"
+        },
+        {
+          "image": "images/archive/15/work9_large.png",
+          "caption": "불가능한 도형 | 장하령 (2025)"
         }
       ],
       "funding": "images/archive/15/funding.png",

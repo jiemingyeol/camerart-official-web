@@ -22,7 +22,7 @@
             <div class="works-detail-image">
                 <img src="{{ url_for('static', filename=work.image) }}" alt="work">
             </div>
-            <p class="works-detail-caption">{{ work.caption }}</p>
+            <p class="works-detail-caption">{{ work.caption | safe }}</p>
         </div>
         {% endfor %}
     </div>

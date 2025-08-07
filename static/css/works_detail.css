@@ -5,6 +5,7 @@
   min-height: 100vh; /* 최소 화면 높이 확보 */
   background-color: #fff;
   box-sizing: border-box;
+  
 }
 
 /* 헤더 */
@@ -58,6 +59,7 @@
   /* 자동으로 여러 행으로 배치 */
   grid-auto-rows: auto;
   gap: calc(24 / 1920 * 100vw) calc(24 / 1920 * 100vw);
+  padding-bottom: calc(107 / 1080 * 100vh);
 }
 
 /* 개별 아이템 */
