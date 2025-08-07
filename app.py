@@ -23,11 +23,13 @@ def now():
     total_pages = len(archive_data)-1
     current_page = 15
     exhibition = archive_data.get(str(current_page), {})
+    has_carousel = "poster_carousel" in exhibition["images"]
     return render_template('archive/index.html',
-                           current_page=current_page,
-                           total_pages=total_pages,
-                           exhibition=exhibition
-                           )
+        current_page=current_page,
+        total_pages=total_pages,
+        exhibition=exhibition,
+        has_carousel=has_carousel
+    )
 
 @app.route('/now/works')
 def now_works():
@@ -36,9 +38,10 @@ def now_works():
     current_page = 15
     exhibition = archive_data.get(str(current_page), {})
     return render_template('archive/works_detail.html',
-                           current_page=current_page,
-                           total_pages=total_pages,
-                           exhibition=exhibition)
+        current_page=current_page,
+        total_pages=total_pages,
+        exhibition=exhibition
+    )
 
 @app.route('/archive/<int:num>')
 def archive_page(num):
