@@ -9,11 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastTimePage    = 0;
 
   // -------------------------------
-  // 1) 페이지 이동 (포스터 영역 마우스 휠) - 제거됨
-  // -------------------------------
-
-  // -------------------------------
-  // 2) 캐러셀 버튼
+  // 1) 캐러셀 버튼
   // -------------------------------
   if (carousel) {
     const track       = carousel.querySelector('.carousel-track');
@@ -45,41 +41,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-// -------------------------------
-// 3) WORKS 수동 좌표 배치
-// -------------------------------
-function toVw(px) {
-  return `calc(${px} / 1920 * 100vw)`;
-}
-function toVh(px) {
-  return `calc(${px} / 1080 * 100vh)`;
-}
-
-document.querySelectorAll('.work-item').forEach(item => {
-  const x = parseFloat(item.dataset.x);
-  const y = parseFloat(item.dataset.y);
-  const w = parseFloat(item.dataset.w);
-  const h = parseFloat(item.dataset.h);
-
-  // 부모 컨테이너 스타일 지정
-  item.style.position = 'absolute';
-  item.style.top = toVh(y);
-  item.style.left = toVw(x);
-  if (w) item.style.width = toVw(w);
-  if (h) item.style.height = toVh(h);
-
-  // ✅ 캡션 위치 설정
-  const caption = item.querySelector('.work-caption');
-  if (caption) {
-    caption.style.position = 'absolute';
-    caption.style.left = '0';
-    caption.style.top = `calc(${h} / 1080 * 100vh + 12 / 1080 * 100vh)`;
-    caption.style.width = '100%';
+  // -------------------------------
+  // 2) WORKS 수동 좌표 배치
+  // -------------------------------
+  function toVw(px) {
+    return `calc(${px} / 1920 * 100vw)`;
   }
-});
+  function toVh(px) {
+    return `calc(${px} / 1080 * 100vh)`;
+  }
+
+  document.querySelectorAll('.work-item').forEach(item => {
+    const x = parseFloat(item.dataset.x);
+    const y = parseFloat(item.dataset.y);
+    const w = parseFloat(item.dataset.w);
+    const h = parseFloat(item.dataset.h);
+
+    // 부모 컨테이너 스타일 지정
+    item.style.position = 'absolute';
+    item.style.top = toVh(y);
+    item.style.left = toVw(x);
+    if (w) item.style.width = toVw(w);
+    if (h) item.style.height = toVh(h);
+
+    // ✅ 캡션 위치 설정
+    const caption = item.querySelector('.work-caption');
+    if (caption) {
+      caption.style.position = 'absolute';
+      caption.style.left = '0';
+      caption.style.top = `calc(${h} / 1080 * 100vh + 12 / 1080 * 100vh)`;
+      caption.style.width = '100%';
+    }
+  });
 
   // -------------------------------
-  // 4) FUNDING 수동 좌표 배치
+  // 3) FUNDING 수동 좌표 배치
   // -------------------------------
   const fundingHeader = document.getElementById('fundingManual');
   if (fundingHeader) {
@@ -96,7 +92,7 @@ document.querySelectorAll('.work-item').forEach(item => {
   }
 
   // -------------------------------
-  // 5) FUNDING 클릭 시 외부 링크 열기
+  // 4) FUNDING 클릭 시 외부 링크 열기
   // -------------------------------
   const fundingTitle = document.querySelector(".funding-title");
 
