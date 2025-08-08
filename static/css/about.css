@@ -217,6 +217,34 @@ body.about-page {
 
 /* ────────── 반응형 브레이크포인트 ────────── */
 
+/* 2000~3000px 범위에서 timeline 텍스트 크기 조정 */
+@media (min-width: 2000px) and (max-width: 2999px) {
+  .timeline-detail p {
+    font-size: clamp(0.96rem, calc(19.2 / 1080 * 100vh), 1.2rem);
+    line-height: 1.4;
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(150px, calc(250 / 2400 * 100vw), 250px);
+  }
+}
+
+/* 3024*1964 해상도 이상에서 timeline 텍스트 크기 조정 */
+@media (min-width: 3000px) {
+  .timeline-detail p {
+    font-size: clamp(1.35rem, calc(27 / 1080 * 100vh), 1.65rem);
+    line-height: 1.5;
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(200px, calc(320 / 2560 * 100vw), 320px);
+  }
+}
+
 /* 브라우저 창이 1920px보다 작을 때 */
 @media (max-width: 1919px) {
   .about-title {
@@ -299,6 +327,12 @@ body.about-page {
   
   .timeline-detail p {
     font-size: clamp(0.7rem, calc(20 / 1080 * 100vh), 0.9rem);
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(180px, calc(350 / 2560 * 100vw), 300px);
   }
 }
 
