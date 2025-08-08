@@ -1,6 +1,7 @@
 // dragscroll.js
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("installScroll");
+    if (!container) return; // 이 페이지에는 갤러리 없음 → 그냥 종료
 
     let isDown = false;
     let startX;
