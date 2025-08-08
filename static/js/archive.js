@@ -9,35 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastTimePage    = 0;
 
   // -------------------------------
-  // 1) 페이지 이동 (포스터 영역 마우스 휠)
+  // 1) 페이지 이동 (포스터 영역 마우스 휠) - 제거됨
   // -------------------------------
-  const match = document.body.className.match(/archive-(\d+)/);
-  const currentPage = match ? Number(match[1]) : null;
-
-  const goToPage = (pageNum) => {
-    if (!pageNum || pageNum < 1 || pageNum > totalPages) return;
-    document.body.classList.add('fade-out');
-    setTimeout(() => {
-      window.location.href = `/archive/${pageNum}`;
-    }, transitionTime);
-  };
-
-  const navElement = poster || carousel;
-  if (navElement && currentPage) {
-    navElement.addEventListener('wheel', e => {
-      e.preventDefault();
-      const now = Date.now();
-      if (now - lastTimePage < transitionTime) return;
-
-      scrollDeltaPage += e.deltaY;
-      if (Math.abs(scrollDeltaPage) >= threshold) {
-        const dir = scrollDeltaPage > 0 ? 1 : -1;
-        goToPage(currentPage + dir);
-        scrollDeltaPage = 0;
-        lastTimePage    = now;
-      }
-    });
-  }
 
   // -------------------------------
   // 2) 캐러셀 버튼
