@@ -224,6 +224,10 @@ body.about-page {
     line-height: 1.4;
   }
   
+  .detail-images {
+    height: calc(300 / 1080 * 100vh);
+  }
+  
   .detail-images img:nth-child(1),
   .detail-images img:nth-child(2),
   .detail-images img:nth-child(3) {
@@ -236,6 +240,10 @@ body.about-page {
   .timeline-detail p {
     font-size: clamp(1.35rem, calc(27 / 1080 * 100vh), 1.65rem);
     line-height: 1.5;
+  }
+  
+  .detail-images {
+    height: calc(280 / 1080 * 100vh);
   }
   
   .detail-images img:nth-child(1),
