@@ -9,9 +9,11 @@
 
     <!-- 헤더 -->
     <div class="works-detail-header">
-        <img class="works-detail-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+        <a href="{{ url_for('archive_page', num=current_page) }}">
+            <img class="works-detail-arrow" src="{{ url_for('static', filename='images/icons/arrow.png') }}" alt="arrow">
+        </a>
         <a href="{{ url_for('archive_page', num=current_page) }}" class="works-detail-title-link">
-        (WORKS)
+            (WORKS)
         </a>
     </div>
 
