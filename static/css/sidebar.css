@@ -47,6 +47,8 @@
     padding-right: calc(16 / 1920 * 100vw);
     padding-bottom: calc(16 / 1080 * 100vh);
     overflow-y: auto;
+    min-width: 220px; /* 최소 너비 설정 */
+    min-height: 990px; /* 최소 높이 설정 */
 
     transform: translateX(100%);
     opacity: 0;

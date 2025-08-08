@@ -7,7 +7,9 @@
     height: 100vh;
     background-color: #fff;
     position: relative;
-    overflow: hidden; /* 스크롤바 없이 화면 이동 방지 */
+    overflow: hidden;
+    min-width: 1760px; /* 최소 너비 설정 - 이 이하로는 화면 잘림 */
+    min-height: 990px; /* 최소 높이 설정 - 이 이하로는 화면 잘림 */
 }
 
 /* 왼쪽 포스터 영역 */
@@ -101,9 +103,11 @@
     height: 100vh;
     padding-right: calc(18 / 1920 * 100vw);
     background-color: #fff;
-    overflow-y: auto; /* 세로 스크롤만 허용 */
-    overflow-x: hidden; /* 가로 스크롤 방지 */
+    overflow-y: auto;
+    overflow-x: hidden;
     box-sizing: border-box;
+    min-width: 880px; /* 최소 너비 설정 */
+    min-height: 990px; /* 최소 높이 설정 */
 }
 
 /* 전시 제목 */

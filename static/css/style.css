@@ -12,10 +12,12 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh; /* min-height에서 height로 변경 */
+  height: 100vh;
   color: #000;
   background-color: #fff;
-  overflow: hidden; /* overflow-x: hidden에서 overflow: hidden으로 변경 */
+  overflow: hidden;
+  min-width: 1760px; /* 최소 너비 설정 - 이 이하로는 화면 잘림 */
+  min-height: 990px; /* 최소 높이 설정 - 이 이하로는 화면 잘림 */
 }
 
 /* 기본 텍스트 요소 여백 초기화 */
