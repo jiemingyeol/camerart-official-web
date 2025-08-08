@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const preview = document.getElementById("imagePreview");
   const entries = document.querySelectorAll(".timeline-entry");
+  
+  // 스크롤 가능한 컨테이너 찾기
+  const scrollableContainer = document.querySelector('.about-wrapper') || document.documentElement;
+  console.log('스크롤 가능한 컨테이너:', scrollableContainer);
 
   entries.forEach(entry => {
     const previewImg = entry.dataset.preview;
@@ -51,28 +55,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ✅ transition이 끝날 때까지 기다린 후 스크롤
         setTimeout(() => {
-          const index = Array.from(entries).indexOf(entry);
+          const index = Array.from(entries).indexOf(entry) + 1; // 1부터 시작하는 인덱스
+          console.log('클릭된 항목 인덱스:', index);
 
           if (index >= 1 && index <= 10) {
-            // 중앙으로 스크롤
-            const elementTop = entry.getBoundingClientRect().top + window.scrollY;
+            // 중앙으로 스크롤 - 스크롤 가능한 컨테이너에 적용
+            const elementRect = entry.getBoundingClientRect();
+            const containerRect = scrollableContainer.getBoundingClientRect();
+            const elementTop = elementRect.top - containerRect.top + scrollableContainer.scrollTop;
             const elementHeight = entry.offsetHeight;
             const viewportHeight = window.innerHeight;
+            
+            // 요소를 화면 중앙에 위치시키기 위한 스크롤 위치 계산
             const scrollPosition = elementTop - (viewportHeight / 2) + (elementHeight / 2);
+            
+            // 스크롤 위치가 음수가 되지 않도록 보정
+            const finalScrollPosition = Math.max(0, scrollPosition);
+            
+            console.log('중앙 스크롤 정보:', {
+              elementTop,
+              elementHeight,
+              viewportHeight,
+              scrollPosition,
+              finalScrollPosition
+            });
 
-            window.scrollTo({
-              top: scrollPosition,
-              behavior: 'smooth'
-            });
+            // 스크롤 가능한 컨테이너에 스크롤 적용
+            if (scrollableContainer === document.documentElement) {
+              window.scrollTo({
+                top: finalScrollPosition,
+                behavior: 'smooth'
+              });
+            } else {
+              scrollableContainer.scrollTo({
+                top: finalScrollPosition,
+                behavior: 'smooth'
+              });
+            }
           } else if (index >= 11) {
-            // 페이지 끝까지 스크롤 (scrollHeight 다시 계산)
-            const scrollHeight = document.documentElement.scrollHeight;
-            window.scrollTo({
-              top: scrollHeight,
-              behavior: 'smooth'
+            // 페이지 끝까지 스크롤 - 스크롤 가능한 컨테이너에 적용
+            const containerHeight = scrollableContainer.scrollHeight;
+            const viewportHeight = window.innerHeight;
+            const scrollToBottom = containerHeight - viewportHeight;
+            
+            console.log('끝 스크롤 정보:', {
+              containerHeight,
+              viewportHeight,
+              scrollToBottom
             });
+
+            // 스크롤 가능한 컨테이너에 스크롤 적용
+            if (scrollableContainer === document.documentElement) {
+              window.scrollTo({
+                top: scrollToBottom,
+                behavior: 'smooth'
+              });
+            } else {
+              scrollableContainer.scrollTo({
+                top: scrollToBottom,
+                behavior: 'smooth'
+              });
+            }
           }
-        }, 350); // transition이 끝난 후 위치 계산
+        }, 450); // transition 시간을 조금 더 늘려서 확실하게 대기
       }
       preview.style.display = "none";
     });

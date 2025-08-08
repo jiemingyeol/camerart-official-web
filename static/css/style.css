@@ -12,10 +12,10 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh; /* min-height에서 height로 변경 */
   color: #000;
   background-color: #fff;
-  overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow: hidden; /* overflow-x: hidden에서 overflow: hidden으로 변경 */
 }
 
 /* 기본 텍스트 요소 여백 초기화 */
@@ -40,4 +40,50 @@ img {
 /* 박스 크기 계산을 border까지 포함 */
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+/* ────────── 반응형 브레이크포인트 ────────── */
+
+/* 브라우저 창이 1920px보다 작을 때 */
+@media (max-width: 1919px) {
+  html, body {
+    font-size: clamp(14px, 1vw, 16px);
+  }
+  
+  h1, h2, p {
+    margin: clamp(0.3rem, 0.5rem, 0.4rem) 0;
+  }
+}
+
+/* 브라우저 창이 1600px보다 작을 때 */
+@media (max-width: 1599px) {
+  html, body {
+    font-size: clamp(12px, 1vw, 14px);
+  }
+  
+  h1, h2, p {
+    margin: clamp(0.2rem, 0.5rem, 0.3rem) 0;
+  }
+}
+
+/* 브라우저 창이 1200px보다 작을 때 */
+@media (max-width: 1199px) {
+  html, body {
+    font-size: clamp(10px, 1vw, 12px);
+  }
+  
+  h1, h2, p {
+    margin: clamp(0.1rem, 0.5rem, 0.2rem) 0;
+  }
+}
+
+/* 브라우저 창이 900px보다 작을 때 */
+@media (max-width: 899px) {
+  html, body {
+    font-size: clamp(8px, 1vw, 10px);
+  }
+  
+  h1, h2, p {
+    margin: clamp(0.1rem, 0.5rem, 0.15rem) 0;
+  }
 }

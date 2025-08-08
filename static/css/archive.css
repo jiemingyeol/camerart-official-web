@@ -7,6 +7,7 @@
     height: 100vh;
     background-color: #fff;
     position: relative;
+    overflow: hidden; /* 스크롤바 없이 화면 이동 방지 */
 }
 
 /* 왼쪽 포스터 영역 */
@@ -100,8 +101,8 @@
     height: 100vh;
     padding-right: calc(18 / 1920 * 100vw);
     background-color: #fff;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: auto; /* 세로 스크롤만 허용 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
     box-sizing: border-box;
 }
 
@@ -341,4 +342,242 @@
     width: calc(792 / 1920 * 100vw);
     height: calc(320 / 1080 * 100vh);
     display: block;
+}
+
+/* ────────── 반응형 브레이크포인트 ────────── */
+
+/* 브라우저 창이 1920px보다 작을 때 */
+@media (max-width: 1919px) {
+    .exhibition-title {
+        font-size: clamp(2rem, calc(72 / 1080 * 100vh), 3.5rem);
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+    }
+    
+    .exhibition-info {
+        font-size: clamp(0.8rem, calc(18 / 1080 * 100vh), 1rem);
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+    }
+    
+    .exhibition-description {
+        font-size: clamp(0.7rem, calc(16 / 1080 * 100vh), 0.9rem);
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+    }
+    
+    .exhibition-artist {
+        font-size: clamp(0.6rem, calc(14 / 1080 * 100vh), 0.8rem);
+        line-height: clamp(1.2rem, calc(28 / 1080 * 100vh), 1.6rem);
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+    }
+    
+    .installation-header,
+    .works-header-section {
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+    }
+    
+    .installation-container {
+        left: clamp(40px, calc(64 / 1920 * 100vw), 64px);
+        width: calc(100% - clamp(80px, calc(64 / 1920 * 100vw), 64px) - clamp(18px, calc(18 / 1920 * 100vw), 18px));
+    }
+    
+    .installation-title,
+    .works-title,
+    .funding-title {
+        font-size: clamp(1.5rem, calc(48 / 1080 * 100vh), 2.5rem);
+    }
+    
+    .works-more {
+        font-size: clamp(1rem, calc(36 / 1080 * 100vh), 2rem);
+        left: clamp(300px, calc(410 / 1920 * 100vw), 410px);
+    }
+    
+    .work-caption {
+        font-size: clamp(0.6rem, calc(14 / 1080 * 100vh), 0.8rem);
+    }
+    
+    .carousel-btn {
+        font-size: clamp(1.2rem, 2rem, 1.5rem);
+    }
+    
+    .exhibition-right {
+        left: calc(50% + clamp(15px, calc(22 / 1920 * 100vw), 22px));
+        width: calc(50% - clamp(12px, calc(18 / 1920 * 100vw), 18px) - clamp(15px, calc(22 / 1920 * 100vw), 22px));
+        padding-right: clamp(12px, calc(18 / 1920 * 100vw), 18px);
+    }
+}
+
+/* 브라우저 창이 1600px보다 작을 때 */
+@media (max-width: 1599px) {
+    .exhibition-title {
+        font-size: clamp(1.8rem, calc(72 / 1080 * 100vh), 3rem);
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+    }
+    
+    .exhibition-info {
+        font-size: clamp(0.7rem, calc(18 / 1080 * 100vh), 0.9rem);
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+    }
+    
+    .exhibition-description {
+        font-size: clamp(0.6rem, calc(16 / 1080 * 100vh), 0.8rem);
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+    }
+    
+    .exhibition-artist {
+        font-size: clamp(0.5rem, calc(14 / 1080 * 100vh), 0.7rem);
+        line-height: clamp(1rem, calc(28 / 1080 * 100vh), 1.4rem);
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+    }
+    
+    .installation-header,
+    .works-header-section {
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+    }
+    
+    .installation-container {
+        left: clamp(30px, calc(64 / 1920 * 100vw), 60px);
+        width: calc(100% - clamp(60px, calc(64 / 1920 * 100vw), 60px) - clamp(15px, calc(18 / 1920 * 100vw), 18px));
+    }
+    
+    .installation-title,
+    .works-title,
+    .funding-title {
+        font-size: clamp(1.3rem, calc(48 / 1080 * 100vh), 2rem);
+    }
+    
+    .works-more {
+        font-size: clamp(0.9rem, calc(36 / 1080 * 100vh), 1.8rem);
+        left: clamp(250px, calc(410 / 1920 * 100vw), 350px);
+    }
+    
+    .work-caption {
+        font-size: clamp(0.5rem, calc(14 / 1080 * 100vh), 0.7rem);
+    }
+    
+    .carousel-btn {
+        font-size: clamp(1rem, 2rem, 1.3rem);
+    }
+    
+    .exhibition-right {
+        left: calc(50% + clamp(12px, calc(22 / 1920 * 100vw), 18px));
+        width: calc(50% - clamp(10px, calc(18 / 1920 * 100vw), 15px) - clamp(12px, calc(22 / 1920 * 100vw), 18px));
+        padding-right: clamp(10px, calc(18 / 1920 * 100vw), 15px);
+    }
+}
+
+/* 브라우저 창이 1200px보다 작을 때 */
+@media (max-width: 1199px) {
+    .exhibition-title {
+        font-size: clamp(1.5rem, calc(72 / 1080 * 100vh), 2.5rem);
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+    }
+    
+    .exhibition-info {
+        font-size: clamp(0.6rem, calc(18 / 1080 * 100vh), 0.8rem);
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+    }
+    
+    .exhibition-description {
+        font-size: clamp(0.5rem, calc(16 / 1080 * 100vh), 0.7rem);
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+    }
+    
+    .exhibition-artist {
+        font-size: clamp(0.4rem, calc(14 / 1080 * 100vh), 0.6rem);
+        line-height: clamp(0.8rem, calc(28 / 1080 * 100vh), 1.2rem);
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+    }
+    
+    .installation-header,
+    .works-header-section {
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+    }
+    
+    .installation-container {
+        left: clamp(20px, calc(64 / 1920 * 100vw), 50px);
+        width: calc(100% - clamp(40px, calc(64 / 1920 * 100vw), 50px) - clamp(12px, calc(18 / 1920 * 100vw), 15px));
+    }
+    
+    .installation-title,
+    .works-title,
+    .funding-title {
+        font-size: clamp(1.1rem, calc(48 / 1080 * 100vh), 1.8rem);
+    }
+    
+    .works-more {
+        font-size: clamp(0.8rem, calc(36 / 1080 * 100vh), 1.5rem);
+        left: clamp(200px, calc(410 / 1920 * 100vw), 300px);
+    }
+    
+    .work-caption {
+        font-size: clamp(0.4rem, calc(14 / 1080 * 100vh), 0.6rem);
+    }
+    
+    .carousel-btn {
+        font-size: clamp(0.8rem, 2rem, 1.1rem);
+    }
+    
+    .exhibition-right {
+        left: calc(50% + clamp(10px, calc(22 / 1920 * 100vw), 15px));
+        width: calc(50% - clamp(8px, calc(18 / 1920 * 100vw), 12px) - clamp(10px, calc(22 / 1920 * 100vw), 15px));
+        padding-right: clamp(8px, calc(18 / 1920 * 100vw), 12px);
+    }
+}
+
+/* 브라우저 창이 900px보다 작을 때 */
+@media (max-width: 899px) {
+    .exhibition-title {
+        font-size: clamp(1.2rem, calc(72 / 1080 * 100vh), 2rem);
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+    }
+    
+    .exhibition-info {
+        font-size: clamp(0.5rem, calc(18 / 1080 * 100vh), 0.7rem);
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+    }
+    
+    .exhibition-description {
+        font-size: clamp(0.4rem, calc(16 / 1080 * 100vh), 0.6rem);
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+    }
+    
+    .exhibition-artist {
+        font-size: clamp(0.3rem, calc(14 / 1080 * 100vh), 0.5rem);
+        line-height: clamp(0.6rem, calc(28 / 1080 * 100vh), 1rem);
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+    }
+    
+    .installation-header,
+    .works-header-section {
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+    }
+    
+    .installation-container {
+        left: clamp(15px, calc(64 / 1920 * 100vw), 40px);
+        width: calc(100% - clamp(30px, calc(64 / 1920 * 100vw), 40px) - clamp(10px, calc(18 / 1920 * 100vw), 12px));
+    }
+    
+    .installation-title,
+    .works-title,
+    .funding-title {
+        font-size: clamp(0.9rem, calc(48 / 1080 * 100vh), 1.5rem);
+    }
+    
+    .works-more {
+        font-size: clamp(0.7rem, calc(36 / 1080 * 100vh), 1.2rem);
+        left: clamp(150px, calc(410 / 1920 * 100vw), 250px);
+    }
+    
+    .work-caption {
+        font-size: clamp(0.3rem, calc(14 / 1080 * 100vh), 0.5rem);
+    }
+    
+    .carousel-btn {
+        font-size: clamp(0.6rem, 2rem, 0.9rem);
+    }
+    
+    .exhibition-right {
+        left: calc(50% + clamp(8px, calc(22 / 1920 * 100vw), 12px));
+        width: calc(50% - clamp(6px, calc(18 / 1920 * 100vw), 10px) - clamp(8px, calc(22 / 1920 * 100vw), 12px));
+        padding-right: clamp(6px, calc(18 / 1920 * 100vw), 10px);
+    }
 }

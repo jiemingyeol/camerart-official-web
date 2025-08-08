@@ -135,3 +135,136 @@
     text-decoration: underline !important;
     font-weight: bold;
 }
+
+/* ────────── 반응형 브레이크포인트 ────────── */
+
+/* 브라우저 창이 1920px보다 작을 때 */
+@media (max-width: 1919px) {
+    #menu-button {
+        width: clamp(30px, calc(35 / 1920 * 100vw), 35px);
+        height: clamp(30px, calc(35 / 1080 * 100vh), 35px);
+        padding: clamp(6px, calc(8 / 1920 * 100vw), 8px);
+        border-radius: clamp(8px, calc(10 / 1920 * 100vw), 10px);
+        border-width: clamp(1px, calc(1 / 1920 * 100vw), 1px);
+        right: clamp(30px, calc(45 / 1920 * 100vw), 45px);
+    }
+    
+    #sidebar {
+        width: clamp(200px, calc(250 / 1920 * 100vw), 250px);
+        padding-top: clamp(24px, calc(32 / 1080 * 100vh), 32px);
+        padding-left: clamp(12px, calc(16 / 1920 * 100vw), 16px);
+        padding-right: clamp(12px, calc(16 / 1920 * 100vw), 16px);
+        padding-bottom: clamp(12px, calc(16 / 1080 * 100vh), 16px);
+        box-shadow: clamp(-1px, calc(-2 / 1920 * 100vw), -2px) 0 clamp(4px, calc(6 / 1080 * 100vh), 6px) rgba(0, 0, 0, 0.1);
+    }
+    
+    #sidebar .menu a,
+    #sidebar .menu span {
+        font-size: clamp(0.9rem, calc(18 / 1080 * 100vh), 1.1rem);
+        line-height: clamp(1.2rem, calc(24 / 1080 * 100vh), 1.5rem);
+    }
+    
+    #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
+        font-size: clamp(0.8rem, calc(16 / 1080 * 100vh), 1rem);
+    }
+    
+    .menu-toggle .arrow {
+        font-size: clamp(0.7rem, calc(14 / 1080 * 100vh), 0.9rem);
+    }
+}
+
+/* 브라우저 창이 1600px보다 작을 때 */
+@media (max-width: 1599px) {
+    #menu-button {
+        width: clamp(25px, calc(35 / 1920 * 100vw), 32px);
+        height: clamp(25px, calc(35 / 1080 * 100vh), 32px);
+        padding: clamp(5px, calc(8 / 1920 * 100vw), 7px);
+        right: clamp(25px, calc(45 / 1920 * 100vw), 40px);
+    }
+    
+    #sidebar {
+        width: clamp(180px, calc(250 / 1920 * 100vw), 220px);
+        padding-top: clamp(20px, calc(32 / 1080 * 100vh), 28px);
+        padding-left: clamp(10px, calc(16 / 1920 * 100vw), 14px);
+        padding-right: clamp(10px, calc(16 / 1920 * 100vw), 14px);
+        padding-bottom: clamp(10px, calc(16 / 1080 * 100vh), 14px);
+    }
+    
+    #sidebar .menu a,
+    #sidebar .menu span {
+        font-size: clamp(0.8rem, calc(18 / 1080 * 100vh), 1rem);
+        line-height: clamp(1.1rem, calc(24 / 1080 * 100vh), 1.3rem);
+    }
+    
+    #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
+        font-size: clamp(0.7rem, calc(16 / 1080 * 100vh), 0.9rem);
+    }
+    
+    .menu-toggle .arrow {
+        font-size: clamp(0.6rem, calc(14 / 1080 * 100vh), 0.8rem);
+    }
+}
+
+/* 브라우저 창이 1200px보다 작을 때 */
+@media (max-width: 1199px) {
+    #menu-button {
+        width: clamp(20px, calc(35 / 1920 * 100vw), 28px);
+        height: clamp(20px, calc(35 / 1080 * 100vh), 28px);
+        padding: clamp(4px, calc(8 / 1920 * 100vw), 6px);
+        right: clamp(20px, calc(45 / 1920 * 100vw), 35px);
+    }
+    
+    #sidebar {
+        width: clamp(160px, calc(250 / 1920 * 100vw), 200px);
+        padding-top: clamp(16px, calc(32 / 1080 * 100vh), 24px);
+        padding-left: clamp(8px, calc(16 / 1920 * 100vw), 12px);
+        padding-right: clamp(8px, calc(16 / 1920 * 100vw), 12px);
+        padding-bottom: clamp(8px, calc(16 / 1080 * 100vh), 12px);
+    }
+    
+    #sidebar .menu a,
+    #sidebar .menu span {
+        font-size: clamp(0.7rem, calc(18 / 1080 * 100vh), 0.9rem);
+        line-height: clamp(1rem, calc(24 / 1080 * 100vh), 1.2rem);
+    }
+    
+    #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
+        font-size: clamp(0.6rem, calc(16 / 1080 * 100vh), 0.8rem);
+    }
+    
+    .menu-toggle .arrow {
+        font-size: clamp(0.5rem, calc(14 / 1080 * 100vh), 0.7rem);
+    }
+}
+
+/* 브라우저 창이 900px보다 작을 때 */
+@media (max-width: 899px) {
+    #menu-button {
+        width: clamp(18px, calc(35 / 1920 * 100vw), 25px);
+        height: clamp(18px, calc(35 / 1080 * 100vh), 25px);
+        padding: clamp(3px, calc(8 / 1920 * 100vw), 5px);
+        right: clamp(15px, calc(45 / 1920 * 100vw), 30px);
+    }
+    
+    #sidebar {
+        width: clamp(140px, calc(250 / 1920 * 100vw), 180px);
+        padding-top: clamp(12px, calc(32 / 1080 * 100vh), 20px);
+        padding-left: calc(8 / 1920 * 100vw);
+        padding-right: calc(8 / 1920 * 100vw);
+        padding-bottom: calc(8 / 1080 * 100vh);
+    }
+    
+    #sidebar .menu a,
+    #sidebar .menu span {
+        font-size: clamp(0.6rem, calc(18 / 1080 * 100vh), 0.8rem);
+        line-height: clamp(0.9rem, calc(24 / 1080 * 100vh), 1.1rem);
+    }
+    
+    #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
+        font-size: clamp(0.5rem, calc(16 / 1080 * 100vh), 0.7rem);
+    }
+    
+    .menu-toggle .arrow {
+        font-size: clamp(0.4rem, calc(14 / 1080 * 100vh), 0.6rem);
+    }
+}

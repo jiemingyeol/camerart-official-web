@@ -6,15 +6,18 @@ body.about-page {
   font-family: 'Gothic A1', sans-serif;
   color: #000;
   width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden; /* 가로 스크롤 방지 */
+  height: 100vh; /* min-height에서 height로 변경 */
+  overflow: hidden; /* overflow-x: hidden에서 overflow: hidden으로 변경 */
 }
 
 .about-wrapper {
   position: relative;
   width: 100%;
+  height: 100vh; /* min-height에서 height로 변경 */
   padding: 0;
   font-family: 'Gothic A1', sans-serif;
+  overflow-y: auto; /* 스크롤 가능하도록 설정 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* ────────── 페이지 제목 (CAMER:ART) ────────── */
@@ -207,3 +210,181 @@ body.about-page {
   width: calc(350 / 2560 * 100vw);
   height: auto;
 }
+
+/* ────────── 반응형 브레이크포인트 ────────── */
+
+/* 브라우저 창이 1920px보다 작을 때 */
+@media (max-width: 1919px) {
+  .about-title {
+    font-size: clamp(2.5rem, calc(130 / 2560 * 100vw), 4rem);
+    letter-spacing: clamp(0.1rem, calc(7 / 2560 * 100vw), 0.3rem);
+    left: clamp(60px, calc(90 / 1920 * 100vw), 90px);
+  }
+  
+  .about-sub {
+    font-size: clamp(1.5rem, calc(86 / 2560 * 100vw), 2.5rem);
+    left: clamp(60px, calc(90 / 1920 * 100vw), 90px);
+  }
+  
+  .about-description {
+    font-size: clamp(0.9rem, calc(25 / 2560 * 100vw), 1.2rem);
+    left: clamp(600px, calc(837 / 1920 * 100vw), 800px);
+    width: clamp(300px, calc(875 / 1920 * 100vw), 600px);
+  }
+  
+  .about-divider {
+    left: clamp(600px, calc(750 / 1920 * 100vw), 750px);
+  }
+  
+  .timeline-entry {
+    width: calc(100% - clamp(120px, 180px, 150px));
+  }
+  
+  .timeline-label {
+    font-size: clamp(0.9rem, calc(20 / 1080 * 100vh), 1.2rem);
+  }
+  
+  .timeline-datedetail {
+    font-size: clamp(0.8rem, calc(20 / 1080 * 100vh), 1rem);
+  }
+  
+  .timeline-detail p {
+    font-size: clamp(0.8rem, calc(20 / 1080 * 100vh), 1rem);
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(200px, calc(350 / 2560 * 100vw), 350px);
+  }
+}
+
+/* 브라우저 창이 1600px보다 작을 때 */
+@media (max-width: 1599px) {
+  .about-title {
+    font-size: clamp(2rem, calc(130 / 2560 * 100vw), 3.5rem);
+    left: clamp(40px, calc(90 / 1920 * 100vw), 80px);
+  }
+  
+  .about-sub {
+    font-size: clamp(1.2rem, calc(86 / 2560 * 100vw), 2rem);
+    left: clamp(40px, calc(90 / 1920 * 100vw), 80px);
+  }
+  
+  .about-description {
+    font-size: clamp(0.8rem, calc(25 / 2560 * 100vw), 1rem);
+    left: clamp(500px, calc(837 / 1920 * 100vw), 700px);
+    width: clamp(250px, calc(875 / 1920 * 100vw), 500px);
+  }
+  
+  .about-divider {
+    left: clamp(500px, calc(750 / 1920 * 100vw), 700px);
+  }
+  
+  .timeline-entry {
+    width: calc(100% - clamp(80px, 180px, 120px));
+  }
+  
+  .timeline-label {
+    font-size: clamp(0.8rem, calc(20 / 1080 * 100vh), 1rem);
+  }
+  
+  .timeline-datedetail {
+    font-size: clamp(0.7rem, calc(20 / 1080 * 100vh), 0.9rem);
+  }
+  
+  .timeline-detail p {
+    font-size: clamp(0.7rem, calc(20 / 1080 * 100vh), 0.9rem);
+  }
+}
+
+/* 브라우저 창이 1200px보다 작을 때 */
+@media (max-width: 1199px) {
+  .about-title {
+    font-size: clamp(1.8rem, calc(130 / 2560 * 100vw), 3rem);
+    left: clamp(30px, calc(90 / 1920 * 100vw), 60px);
+  }
+  
+  .about-sub {
+    font-size: clamp(1rem, calc(86 / 2560 * 100vw), 1.8rem);
+    left: clamp(30px, calc(90 / 1920 * 100vw), 60px);
+  }
+  
+  .about-description {
+    font-size: clamp(0.7rem, calc(25 / 2560 * 100vw), 0.9rem);
+    left: clamp(400px, calc(837 / 1920 * 100vw), 600px);
+    width: clamp(200px, calc(875 / 1920 * 100vw), 400px);
+  }
+  
+  .about-divider {
+    left: clamp(400px, calc(750 / 1920 * 100vw), 600px);
+  }
+  
+  .timeline-entry {
+    width: calc(100% - clamp(60px, 180px, 100px));
+  }
+  
+  .timeline-label {
+    font-size: clamp(0.7rem, calc(20 / 1080 * 100vh), 0.9rem);
+  }
+  
+  .timeline-datedetail {
+    font-size: clamp(0.6rem, calc(20 / 1080 * 100vh), 0.8rem);
+  }
+  
+  .timeline-detail p {
+    font-size: clamp(0.6rem, calc(20 / 1080 * 100vh), 0.8rem);
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(150px, calc(350 / 2560 * 100vw), 300px);
+  }
+}
+
+/* 브라우저 창이 900px보다 작을 때 */
+@media (max-width: 899px) {
+  .about-title {
+    font-size: clamp(1.5rem, calc(130 / 2560 * 100vw), 2.5rem);
+    left: clamp(20px, calc(90 / 1920 * 100vw), 40px);
+  }
+  
+  .about-sub {
+    font-size: clamp(0.9rem, calc(86 / 2560 * 100vw), 1.5rem);
+    left: clamp(20px, calc(90 / 1920 * 100vw), 40px);
+  }
+  
+  .about-description {
+    font-size: clamp(0.6rem, calc(25 / 2560 * 100vw), 0.8rem);
+    left: clamp(300px, calc(837 / 1920 * 100vw), 500px);
+    width: clamp(150px, calc(875 / 1920 * 100vw), 300px);
+  }
+  
+  .about-divider {
+    left: clamp(300px, calc(750 / 1920 * 100vw), 500px);
+  }
+  
+  .timeline-entry {
+    width: calc(100% - clamp(40px, 180px, 80px));
+  }
+  
+  .timeline-label {
+    font-size: clamp(0.6rem, calc(20 / 1080 * 100vh), 0.8rem);
+  }
+  
+  .timeline-datedetail {
+    font-size: clamp(0.5rem, calc(20 / 1080 * 100vh), 0.7rem);
+  }
+  
+  .timeline-detail p {
+    font-size: clamp(0.5rem, calc(20 / 1080 * 100vh), 0.7rem);
+  }
+  
+  .detail-images img:nth-child(1),
+  .detail-images img:nth-child(2),
+  .detail-images img:nth-child(3) {
+    width: clamp(120px, calc(350 / 2560 * 100vw), 250px);
+  }
+}
+

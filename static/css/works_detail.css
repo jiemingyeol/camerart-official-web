@@ -2,10 +2,11 @@
 .works-detail-container {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* 최소 화면 높이 확보 */
+  height: 100vh; /* min-height에서 height로 변경 */
   background-color: #fff;
   box-sizing: border-box;
-  
+  overflow-y: auto; /* 세로 스크롤만 허용 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* 헤더 */
@@ -103,4 +104,118 @@
 
 .works-detail-title-link:hover {
   text-decoration: none;
+}
+
+/* ────────── 반응형 브레이크포인트 ────────── */
+
+/* 브라우저 창이 1920px보다 작을 때 */
+@media (max-width: 1919px) {
+  .works-detail-header {
+    left: clamp(60px, calc(90 / 1920 * 100vw), 90px);
+  }
+  
+  .works-detail-title-link {
+    font-size: clamp(1.5rem, calc(48 / 1080 * 100vh), 2.5rem);
+    line-height: clamp(1.2rem, calc(40 / 1080 * 100vh), 2rem);
+  }
+  
+  .works-detail-arrow {
+    width: clamp(40px, calc(60 / 1920 * 100vw), 60px);
+    height: clamp(30px, calc(40 / 1080 * 100vh), 40px);
+  }
+  
+  .works-detail-caption {
+    font-size: clamp(0.6rem, calc(14 / 1080 * 100vh), 0.8rem);
+    margin-top: clamp(0.5rem, calc(12 / 1080 * 100vh), 0.8rem);
+  }
+  
+  .works-detail-grid {
+    left: clamp(60px, calc(90 / 1920 * 100vw), 90px);
+    width: calc(100% - clamp(120px, calc(90 / 1920 * 100vw), 90px) * 2);
+    gap: clamp(12px, calc(24 / 1920 * 100vw), 24px);
+  }
+}
+
+/* 브라우저 창이 1600px보다 작을 때 */
+@media (max-width: 1599px) {
+  .works-detail-header {
+    left: clamp(40px, calc(90 / 1920 * 100vw), 80px);
+  }
+  
+  .works-detail-title-link {
+    font-size: clamp(1.3rem, calc(48 / 1080 * 100vh), 2rem);
+    line-height: clamp(1rem, calc(40 / 1080 * 100vh), 1.6rem);
+  }
+  
+  .works-detail-arrow {
+    width: clamp(35px, calc(60 / 1920 * 100vw), 50px);
+    height: clamp(25px, calc(40 / 1080 * 100vh), 35px);
+  }
+  
+  .works-detail-caption {
+    font-size: clamp(0.5rem, calc(14 / 1080 * 100vh), 0.7rem);
+    margin-top: clamp(0.4rem, calc(12 / 1080 * 100vh), 0.6rem);
+  }
+  
+  .works-detail-grid {
+    left: clamp(40px, calc(90 / 1920 * 100vw), 80px);
+    width: calc(100% - clamp(80px, calc(90 / 1920 * 100vw), 80px) * 2);
+    gap: clamp(10px, calc(24 / 1920 * 100vw), 20px);
+  }
+}
+
+/* 브라우저 창이 1200px보다 작을 때 */
+@media (max-width: 1199px) {
+  .works-detail-header {
+    left: clamp(30px, calc(90 / 1920 * 100vw), 60px);
+  }
+  
+  .works-detail-title-link {
+    font-size: clamp(1.1rem, calc(48 / 1080 * 100vh), 1.8rem);
+    line-height: clamp(0.8rem, calc(40 / 1080 * 100vh), 1.4rem);
+  }
+  
+  .works-detail-arrow {
+    width: clamp(30px, calc(60 / 1920 * 100vw), 45px);
+    height: clamp(20px, calc(40 / 1080 * 100vh), 30px);
+  }
+  
+  .works-detail-caption {
+    font-size: clamp(0.4rem, calc(14 / 1080 * 100vh), 0.6rem);
+    margin-top: clamp(0.3rem, calc(12 / 1080 * 100vh), 0.5rem);
+  }
+  
+  .works-detail-grid {
+    left: clamp(30px, calc(90 / 1920 * 100vw), 60px);
+    width: calc(100% - clamp(60px, calc(90 / 1920 * 100vw), 60px) * 2);
+    gap: clamp(8px, calc(24 / 1920 * 100vw), 16px);
+  }
+}
+
+/* 브라우저 창이 900px보다 작을 때 */
+@media (max-width: 899px) {
+  .works-detail-header {
+    left: clamp(20px, calc(90 / 1920 * 100vw), 40px);
+  }
+  
+  .works-detail-title-link {
+    font-size: clamp(0.9rem, calc(48 / 1080 * 100vh), 1.5rem);
+    line-height: clamp(0.6rem, calc(40 / 1080 * 100vh), 1.2rem);
+  }
+  
+  .works-detail-arrow {
+    width: clamp(25px, calc(60 / 1920 * 100vw), 40px);
+    height: clamp(15px, calc(40 / 1080 * 100vh), 25px);
+  }
+  
+  .works-detail-caption {
+    font-size: clamp(0.3rem, calc(14 / 1080 * 100vh), 0.5rem);
+    margin-top: clamp(0.2rem, calc(12 / 1080 * 100vh), 0.4rem);
+  }
+  
+  .works-detail-grid {
+    left: clamp(20px, calc(90 / 1920 * 100vw), 40px);
+    width: calc(100% - clamp(40px, calc(90 / 1920 * 100vw), 40px) * 2);
+    gap: clamp(6px, calc(24 / 1920 * 100vw), 12px);
+  }
 }
