@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   entries.forEach(entry => {
     const previewImg = entry.dataset.preview;
     const label = entry.querySelector(".timeline-label");
+    const entryId = entry.dataset.id; // timeline entry의 id 가져오기
 
     // Hover preview
     entry.addEventListener("mouseenter", () => {
@@ -120,6 +121,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 450); // transition 시간을 조금 더 늘려서 확실하게 대기
       }
       preview.style.display = "none";
+    });
+
+    // Timeline 내의 이미지 클릭 이벤트 추가
+    const detailImages = entry.querySelectorAll('.detail-images img');
+    detailImages.forEach(img => {
+      img.addEventListener('click', (e) => {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        
+        // entryId가 있고, 숫자인 경우에만 archive 페이지로 이동
+        if (entryId && !isNaN(parseInt(entryId))) {
+          const archiveNumber = parseInt(entryId); // "01" -> 1, "02" -> 2로 변환
+          console.log(`이미지 클릭: entryId=${entryId}, archiveNumber=${archiveNumber}`);
+          // archive/n 페이지로 이동
+          window.location.href = `/archive/${archiveNumber}`;
+        }
+      });
     });
   });
 });

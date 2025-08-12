@@ -165,9 +165,9 @@ body.about-page {
 
 /* 펼침 상태 */
 .timeline-entry.active .timeline-detail {
-  max-height: 1200px; /* 충분히 큰 값으로 높이 확보 */
+  max-height: 1400px; /* 높이를 더 늘려서 이미지 아래 여백 확보 */
   opacity: 1;
-  padding: 0.2rem 0;
+  padding: 0.2rem 0 1.5rem 0; /* 하단 패딩 추가 */
   background-color: #D4FF3A;
 }
 
@@ -197,6 +197,7 @@ body.about-page {
   left: 0;
   width: calc(350 / 2560 * 100vw);
   height: auto;
+  cursor: pointer; /* 마우스 커서를 pointer로 변경 */
 }
 
 /* 이미지 2번째 */
@@ -206,6 +207,7 @@ body.about-page {
   left: calc(400 / 2560 * 100vw);
   width: calc(350 / 2560 * 100vw);
   height: auto;
+  cursor: pointer; /* 마우스 커서를 pointer로 변경 */
 }
 
 /* 이미지 3번째 */
@@ -215,6 +217,7 @@ body.about-page {
   left: calc(800 / 2560 * 100vw);
   width: calc(350 / 2560 * 100vw);
   height: auto;
+  cursor: pointer; /* 마우스 커서를 pointer로 변경 */
 }
 
 /* ────────── 반응형 브레이크포인트 ────────── */
