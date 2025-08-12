@@ -48,6 +48,7 @@ body.about-page {
 
 .about-sub .arrow {
   font-size: 1.2em;
+  height: calc(70 / 1080 * 100vh);
 }
 
 /* ────────── 제목과 설명 사이 세로 구분선 ────────── */
