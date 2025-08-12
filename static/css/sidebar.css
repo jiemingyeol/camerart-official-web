@@ -7,8 +7,7 @@
     right: calc(45 / 1920 * 100vw);
     width: calc(35 / 1920 * 100vw);
     height: calc(35 / 1080 * 100vh);
-    background: rgba(0, 0, 0, 0.05);
-    border: calc(1 / 1920 * 100vw) solid rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
     border-radius: calc(10 / 1920 * 100vw);
     padding: calc(8 / 1920 * 100vw);
     cursor: pointer;
