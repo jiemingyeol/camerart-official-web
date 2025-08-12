@@ -117,6 +117,7 @@
     left: calc(64 / 1920 * 100vw);
     font-size: calc(72 / 1080 * 100vh);
     font-weight: normal;
+    line-height: calc(86 / 1080 * 100vh);
     color: #000;
     margin: 0;
 }
@@ -127,15 +128,15 @@
     top: calc((111 + 72) / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     font-size: calc(18 / 1080 * 100vh);
+    line-height: calc(23 / 1080 * 100vh);
     color: #000;
     margin: 0;
-    line-height: 1.6;
 }
 
 /* 첫 번째 구분선 */
 .exhibition-divider {
     position: relative;
-    top: calc((111 + 72 + 18 + 36) / 1080 * 100vh);
+    top: calc((111 + 72 + 36) / 1080 * 100vh);
     left: 0;
     width: 100%;
     height: calc(1 / 1080 * 100vh);
@@ -147,7 +148,7 @@
 /* 전시 설명 */
 .exhibition-description {
     position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36) / 1080 * 100vh);
+    top: calc((111 + 72 + 36 + 36) / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     font-size: calc(16 / 1080 * 100vh);
     color: #000;
@@ -157,8 +158,7 @@
 
 /* 작가 정보 */
 .exhibition-artist {
-    position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164) / 1080 * 100vh);
+    position: absolute;
     left: calc(64 / 1920 * 100vw);
     line-height: calc(28 / 1080 * 100vh);
     font-size: calc(14 / 1080 * 100vh);
@@ -168,8 +168,8 @@
 
 /* 두 번째 구분선 */
 .exhibition-divider2 {
-    position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32) / 1080 * 100vh);
+    position: absolute;
+    top: calc(1084 / 1080 * 100vh);
     left: 0;
     width: 100%;
     height: calc(1 / 1080 * 100vh);
@@ -180,8 +180,8 @@
 
 /* ────────── Installation Views ────────── */
 .installation-header {
-    position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180) / 1080 * 100vh);
+    position: absolute;
+    top: calc(1264 / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     display: flex;
     align-items: center;
@@ -200,8 +200,8 @@
 }
 
 .installation-container {
-    position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 48) / 1080 * 100vh);
+    position: absolute;
+    top: calc(1336 / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     width: calc((1920 / 2 - 64 - 18) / 1920 * 100vw);
     height: calc(260 / 1080 * 100vh);
@@ -244,8 +244,8 @@
 
 /* ────────── Works Section ────────── */
 .works-header-section {
-    position: relative;
-    top: calc((111 + 72 + 18 + 36 + 36 + 16 + 164 + 14 + 32 + 180 + 32 + 220) / 1080 * 100vh);
+    position: absolute;
+    top: calc(1802 / 1080 * 100vh);
     left: calc(64 / 1920 * 100vw);
     display: flex;
     align-items: center;
@@ -334,6 +334,7 @@
 /* 이미지 컨테이너는 고정 크기 유지 */
 .funding-container {
     position: absolute;
+    top: calc(3250 / 1080 * 100vh);
     overflow: visible;
     pointer-events: none;
     padding-bottom: calc(288 / 1080 * 100vh);

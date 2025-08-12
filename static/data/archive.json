@@ -20,7 +20,7 @@
           "image": "images/archive/1/work1.png",
           "caption": "표지판 | 단체 작업(2018)",
           "x": 64,
-          "y": 1046,
+          "y": 1446,
           "width": 248,
           "height": 248
         },
@@ -28,7 +28,7 @@
           "image": "images/archive/1/work2.png",
           "caption": "권태의 도약(열림) | 임채은 (2018)",
           "x": 336,
-          "y": 986,
+          "y": 1386,
           "width": 519,
           "height": 308
         },
@@ -36,7 +36,7 @@
           "image": "images/archive/1/work3.png",
           "caption": "어느 날 갑자기 | 이유진 (2018)",
           "x": 64,
-          "y": 1431,
+          "y": 1831,
           "width": 237,
           "height": 237
         },
@@ -44,7 +44,7 @@
           "image": "images/archive/1/work4.png",
           "caption": "권태의 도약(열림) | 임채은 (2018)",
           "x": 325,
-          "y": 1383,
+          "y": 1783,
           "width": 285,
           "height": 285
         },
@@ -52,7 +52,7 @@
           "image": "images/archive/1/work5.png",
           "caption": "비상 | 정세빈 (2018)",
           "x": 634,
-          "y": 1410,
+          "y": 1810,
           "width": 250,
           "height": 258
         },
@@ -60,7 +60,7 @@
           "image": "images/archive/1/work6.png",
           "caption": "World's Sweetest Candy Machine | 송희경(2018)",
           "x": 64,
-          "y": 1719,
+          "y": 2119,
           "width": 411,
           "height": 308
         },
@@ -68,7 +68,7 @@
           "image": "images/archive/1/work7.png",
           "caption": "내 삶의 권태들 | 허진선 (2018)",
           "x": 499,
-          "y": 1754,
+          "y": 2154,
           "width": 364,
           "height": 273
         }
@@ -119,7 +119,7 @@
       "funding_embed": "https://tumblbug.com/camerart1",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -139,7 +139,7 @@
       "funding_embed": "https://tumblbug.com/camerart2",
       "funding_position": {
         "x": 64,
-        "y": 1774
+        "y": 1802
       }
     }
   },
@@ -160,7 +160,7 @@
           "image": "images/archive/3/work1.png",
           "caption": "지워진것, 지워지지 않는것.<br>| 권예진 (2019)",
           "x": 64,
-          "y": 986,
+          "y": 1586,
           "width": 248,
           "height": 331
         },
@@ -168,7 +168,7 @@
           "image": "images/archive/3/work2.png",
           "caption": "사세한 실력(實力) | 박은지 (2019)",
           "x": 336,
-          "y": 997,
+          "y": 1597,
           "width": 460,
           "height": 320
         },
@@ -176,7 +176,7 @@
           "image": "images/archive/3/work3.png",
           "caption": "소통(消通)사회 | 황지혜 (2019)",
           "x": 64,
-          "y": 1430,
+          "y": 2030,
           "width": 251,
           "height": 251
         },
@@ -184,7 +184,7 @@
           "image": "images/archive/3/work4.png",
           "caption": "리드 | 임지윤 (2019)",
           "x": 339,
-          "y": 1399,
+          "y": 1999,
           "width": 406,
           "height": 282
         },
@@ -192,7 +192,7 @@
           "image": "images/archive/3/work5.png",
           "caption": "초등학교 시절의 그림일기 | 박은지 (2019)",
           "x": 64,
-          "y": 1756,
+          "y": 2356,
           "width": 283,
           "height": 377
         },
@@ -200,7 +200,7 @@
           "image": "images/archive/3/work6.png",
           "caption": "Reluctant Agreement | 임지윤 (2019)",
           "x": 371,
-          "y": 1831,
+          "y": 2431,
           "width": 226,
           "height": 302
         },
@@ -208,7 +208,7 @@
           "image": "images/archive/3/work7.png",
           "caption": "Floundering (허우적) | 심유나 (2019)",
           "x": 621,
-          "y": 1799,
+          "y": 2399,
           "width": 251,
           "height": 334
         }
@@ -275,7 +275,7 @@
       "funding_embed": "https://tumblbug.com/camerart3",
       "funding_position": {
         "x": 64,
-        "y": 3175
+        "y": 3283
       }
     }
   },
@@ -299,7 +299,7 @@
           "image": "images/archive/4/work1.png",
           "caption": "한없이 무해(無害) 한 것들에 대하여 (2019)",
           "x": 64,
-          "y": 1046,
+          "y": 1646,
           "width": 248,
           "height": 248
         },
@@ -307,7 +307,7 @@
           "image": "images/archive/4/work2.png",
           "caption": "연붉은 모든 것이 네 안에서 여물기를 (2019)",
           "x": 336,
-          "y": 983,
+          "y": 1583,
           "width": 417,
           "height": 311
         },
@@ -315,7 +315,7 @@
           "image": "images/archive/4/work3.png",
           "caption": "은화, 고사리 (2019)",
           "x": 64,
-          "y": 1348,
+          "y": 1948,
           "width": 274,
           "height": 366
         },
@@ -323,7 +323,7 @@
           "image": "images/archive/4/work4.png",
           "caption": "청춘 (2019)",
           "x": 362,
-          "y": 1440,
+          "y": 2040,
           "width": 274,
           "height": 274
         },
@@ -331,7 +331,7 @@
           "image": "images/archive/4/work5.png",
           "caption": "귀착 (2019)",
           "x": 660,
-          "y": 1421,
+          "y": 2021,
           "width": 219,
           "height": 293
         },
@@ -339,7 +339,7 @@
           "image": "images/archive/4/work6.png",
           "caption": "undefinable (2019)",
           "x": 64,
-          "y": 1772,
+          "y": 2372,
           "width": 339,
           "height": 339
         },
@@ -347,7 +347,7 @@
           "image": "images/archive/4/work7.png",
           "caption": "포지셔널 트래킹 (2019)",
           "x": 427,
-          "y": 1772,
+          "y": 2372,
           "width": 339,
           "height": 339
         }
@@ -402,7 +402,7 @@
       "funding_embed": "https://tumblbug.com/camerart4",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -423,7 +423,7 @@
           "image": "images/archive/5/work1.png",
           "caption": "sight of _ _ _ | 김진희 (2020)",
           "x": 64,
-          "y": 1006,
+          "y": 1606,
           "width": 288,
           "height": 288
         },
@@ -431,7 +431,7 @@
           "image": "images/archive/5/work2.png",
           "caption": "WWW (World-Wide-Web) | 심유나 (2020)",
           "x": 376,
-          "y": 974,
+          "y": 1574,
           "width": 460,
           "height": 320
         },
@@ -439,7 +439,7 @@
           "image": "images/archive/5/work3.png",
           "caption": "시선의 모양 | 박성은 (2020)",
           "x": 64,
-          "y": 1360,
+          "y": 1960,
           "width": 386,
           "height": 268
         },
@@ -447,7 +447,7 @@
           "image": "images/archive/5/work4.png",
           "caption": "내가 사랑하고, 사랑했던 모든 것들에게 | 김나연 (2020)",
           "x": 474,
-          "y": 1360,
+          "y": 1960,
           "width": 386,
           "height": 268
         }
@@ -482,7 +482,7 @@
       "funding_embed": "https://tumblbug.com/camerart5",
       "funding_position": {
         "x": 64,
-        "y": 2641
+        "y": 2749
       }
     }
   },
@@ -503,7 +503,7 @@
           "image": "images/archive/6/work1.png",
           "caption": "발악 (2020)",
           "x": 64,
-          "y": 1031,
+          "y": 1631,
           "width": 263,
           "height": 263
         },
@@ -511,7 +511,7 @@
           "image": "images/archive/6/work2.png",
           "caption": "판도라 (2020)",
           "x": 339,
-          "y": 1030,
+          "y": 1630,
           "width": 264,
           "height": 264
         },
@@ -519,7 +519,7 @@
           "image": "images/archive/6/work3.png",
           "caption": "탈피(脫皮) (2020)",
           "x": 610,
-          "y": 1030,
+          "y": 1630,
           "width": 263,
           "height": 263
         },
@@ -527,7 +527,7 @@
           "image": "images/archive/6/work4.png",
           "caption": "원죄의 코르셋 (2020)",
           "x": 64,
-          "y": 1359,
+          "y": 1959,
           "width": 230,
           "height": 230
         },
@@ -535,7 +535,7 @@
           "image": "images/archive/6/work5.png",
           "caption": "거울 연작 1, 2 (2020)",
           "x": 319,
-          "y": 1394,
+          "y": 1994,
           "width": 291,
           "height": 195
         },
@@ -543,7 +543,7 @@
           "image": "images/archive/6/work6.png",
           "caption": "patterned (2020)",
           "x": 633,
-          "y": 1406,
+          "y": 2006,
           "width": 215,
           "height": 183
         },
@@ -551,7 +551,7 @@
           "image": "images/archive/6/work7.png",
           "caption": "김아무개씨의 쇼핑 (2020)",
           "x": 64,
-          "y": 1770,
+          "y": 2370,
           "width": 356,
           "height": 247
         },
@@ -559,7 +559,7 @@
           "image": "images/archive/6/work8.png",
           "caption": "사랑의 기원 (2020)",
           "x": 444,
-          "y": 1696,
+          "y": 2296,
           "width": 321,
           "height": 321
         }
@@ -614,7 +614,7 @@
       "funding_embed": "https://tumblbug.com/2020camerart6",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -635,7 +635,7 @@
           "image": "images/archive/7/work1.png",
           "caption": "OO의 서식지로 부터 온 메세지 (2021)",
           "x": 64,
-          "y": 1081,
+          "y": 1581,
           "width": 459,
           "height": 334
         },
@@ -643,7 +643,7 @@
           "image": "images/archive/7/work2.png",
           "caption": "inseparable (2021)",
           "x": 550,
-          "y": 1051,
+          "y": 1551,
           "width": 273,
           "height": 364
         },
@@ -651,7 +651,7 @@
           "image": "images/archive/7/work3.png",
           "caption": "나의 비거니즘 (2021)",
           "x": 64,
-          "y": 1477,
+          "y": 1977,
           "width": 346,
           "height": 241
         },
@@ -659,7 +659,7 @@
           "image": "images/archive/7/work4.png",
           "caption": "당신의 하루는 어떤가요? (2021)",
           "x": 420,
-          "y": 1477,
+          "y": 1977,
           "width": 346,
           "height": 241
         },
@@ -667,7 +667,7 @@
           "image": "images/archive/7/work5.png",
           "caption": "핑계를 위한 보호구역 (2021)",
           "x": 64,
-          "y": 1793,
+          "y": 2293,
           "width": 247,
           "height": 261
         },
@@ -675,7 +675,7 @@
           "image": "images/archive/7/work6.png",
           "caption": "? (2021)",
           "x": 326,
-          "y": 1869,
+          "y": 2369,
           "width": 246,
           "height": 185
         }
@@ -726,7 +726,7 @@
       "funding_embed": "https://tumblbug.com/camerart7",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -748,7 +748,7 @@
           "image": "images/archive/8/work1.png",
           "caption": "삶, 죽음, 그리고 경계 (2021)",
           "x": 64,
-          "y": 1037,
+          "y": 1537,
           "width": 259,
           "height": 257
         },
@@ -756,7 +756,7 @@
           "image": "images/archive/8/work2.png",
           "caption": "___ was (t)here, ___ will be (t)here. (2021)",
           "x": 347,
-          "y": 1153,
+          "y": 1653,
           "width": 305,
           "height": 141
         },
@@ -764,7 +764,7 @@
           "image": "images/archive/8/work3.png",
           "caption": "기억과 망각 (2021)",
           "x": 676,
-          "y": 1067,
+          "y": 1567,
           "width": 180,
           "height": 227
         },
@@ -772,7 +772,7 @@
           "image": "images/archive/8/work4.png",
           "caption": "Dead celebrities (죽은 유명인사들) (2021)",
           "x": 64,
-          "y": 1433,
+          "y": 1933,
           "width": 279,
           "height": 220
         },
@@ -780,7 +780,7 @@
           "image": "images/archive/8/work5.png",
           "caption": "Spectrum (2021)",
           "x": 366,
-          "y": 1370,
+          "y": 1870,
           "width": 424,
           "height": 283
         },
@@ -788,7 +788,7 @@
           "image": "images/archive/8/work6.png",
           "caption": "얄궂은 오브제 (2021)",
           "x": 64,
-          "y": 1806,
+          "y": 2306,
           "width": 156,
           "height": 177
         },
@@ -796,7 +796,7 @@
           "image": "images/archive/8/work7.png",
           "caption": "우리가 양지에 묻히게 된다면? (2021)",
           "x": 244,
-          "y": 1751,
+          "y": 2251,
           "width": 347,
           "height": 232
         }
@@ -875,7 +875,7 @@
       "funding_embed": "https://tumblbug.com/camerart8",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -894,7 +894,7 @@
           "image": "images/archive/9/work1.png",
           "caption": "WANTED trust or distrust (2022)",
           "x": 64,
-          "y": 974,
+          "y": 1274,
           "width": 248,
           "height": 320
         },
@@ -902,7 +902,7 @@
           "image": "images/archive/9/work2.png",
           "caption": "요설(饒舌) (2022)",
           "x": 336,
-          "y": 1045,
+          "y": 1345,
           "width": 193,
           "height": 249
         },
@@ -910,7 +910,7 @@
           "image": "images/archive/9/work3.png",
           "caption": "BLANK FRAME (2022)",
           "x": 553,
-          "y": 1078,
+          "y": 1378,
           "width": 248,
           "height": 207
         },
@@ -918,7 +918,7 @@
           "image": "images/archive/9/work4.png",
           "caption": "무지의 그림자 뒤편에는 (2022)",
           "x": 64,
-          "y": 1461,
+          "y": 1761,
           "width": 248,
           "height": 207
         },
@@ -926,7 +926,7 @@
           "image": "images/archive/9/work5.png",
           "caption": "향- (2022)",
           "x": 336,
-          "y": 1380,
+          "y": 1680,
           "width": 248,
           "height": 288
         },
@@ -934,7 +934,7 @@
           "image": "images/archive/9/work6.png",
           "caption": "믿음의 온도: 용해 (2022)",
           "x": 608,
-          "y": 1458,
+          "y": 1758,
           "width": 248,
           "height": 207
         },
@@ -942,7 +942,7 @@
           "image": "images/archive/9/work7.png",
           "caption": "당신은 어떤 세상에 살고 있나요? (2022)",
           "x": 64,
-          "y": 1735,
+          "y": 2035,
           "width": 426,
           "height": 307
         },
@@ -950,7 +950,7 @@
           "image": "images/archive/9/work8.png",
           "caption": "믿음의 사람들 (People of faith) (2022)",
           "x": 532,
-          "y": 1830,
+          "y": 2130,
           "width": 248,
           "height": 212
         }
@@ -1017,7 +1017,7 @@
       "funding_embed": "https://tumblbug.com/camerart9",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },
@@ -1035,7 +1035,7 @@
       "funding_embed": "https://tumblbug.com/carmerart-10th-exhibition",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 1194
       }
     }
   },
@@ -1053,7 +1053,7 @@
       "funding_embed": "https://tumblbug.com/camerart11th",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 1194
       }
     }
   },
@@ -1071,7 +1071,7 @@
       "funding_embed": "https://tumblbug.com/camerart12",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 1194
       }
     }
   },
@@ -1089,7 +1089,7 @@
       "funding_embed": "https://tumblbug.com/camerart13",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 1194
       }
     }
   },
@@ -1107,7 +1107,7 @@
       "funding_embed": "https://tumblbug.com/camerart14th",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 1194
       }
     }
   },
@@ -1131,7 +1131,7 @@
           "image": "images/archive/15/work1.png",
           "caption": "Intro: Scopophobia (2025)",
           "x": 64,
-          "y": 974,
+          "y": 1374,
           "width": 248,
           "height": 320
         },
@@ -1139,7 +1139,7 @@
           "image": "images/archive/15/work2.png",
           "caption": "시선, 추락 (2025)",
           "x": 336,
-          "y": 1037,
+          "y": 1437,
           "width": 520,
           "height": 257
         },
@@ -1147,7 +1147,7 @@
           "image": "images/archive/15/work3.png",
           "caption": "관상용 (2025)",
           "x": 64,
-          "y": 1461,
+          "y": 1861,
           "width": 248,
           "height": 207
         },
@@ -1155,7 +1155,7 @@
           "image": "images/archive/15/work4.png",
           "caption": "새장 (2025)",
           "x": 336,
-          "y": 1380,
+          "y": 1780,
           "width": 248,
           "height": 288
         },
@@ -1163,7 +1163,7 @@
           "image": "images/archive/15/work5.png",
           "caption": "Unframed Reality (2025)",
           "x": 608,
-          "y": 1348,
+          "y": 1748,
           "width": 190,
           "height": 320
         },
@@ -1171,7 +1171,7 @@
           "image": "images/archive/15/work6.png",
           "caption": "무제 (2025)",
           "x": 64,
-          "y": 1735,
+          "y": 2135,
           "width": 426,
           "height": 307
         },
@@ -1179,7 +1179,7 @@
           "image": "images/archive/15/work7.png",
           "caption": "「현실과 환상의 군중」 (The Crowd of Reality<br>and Illusion) (2025)",
           "x": 532,
-          "y": 1830,
+          "y": 2230,
           "width": 248,
           "height": 212
         }
@@ -1226,7 +1226,7 @@
       "funding_embed": "https://tumblbug.com/camerart15th",
       "funding_position": {
         "x": 64,
-        "y": 3152
+        "y": 3180
       }
     }
   },

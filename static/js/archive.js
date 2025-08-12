@@ -42,13 +42,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------------------------------
-  // 2) WORKS 수동 좌표 배치
+  // 2) ARTIST 동적 위치 조정
   // -------------------------------
   function toVw(px) {
     return `calc(${px} / 1920 * 100vw)`;
   }
   function toVh(px) {
     return `calc(${px} / 1080 * 100vh)`;
+  }
+
+  // Artist 텍스트의 줄 수를 계산하고 위치 조정
+  const artistElement = document.querySelector('.exhibition-artist');
+  if (artistElement) {
+    // <br> 태그 개수를 세어 줄 수 계산
+    const artistText = artistElement.innerHTML;
+    const lineBreaks = (artistText.match(/<br\s*\/?>/gi) || []).length;
+    const lineCount = lineBreaks + 1; // 줄 수 = <br> 개수 + 1
+    
+    // 한 줄당 높이 (line-height 값)
+    const lineHeight = 28; // CSS에서 설정된 line-height 값
+    
+    // 전체 텍스트 높이 계산
+    const totalHeight = lineCount * lineHeight;
+    
+    // divider2 위치에서 36px 위에 바닥이 오도록 위치 계산
+    const divider2Position = 1084; // CSS에서 설정된 divider2의 top 값
+    const marginFromDivider = 36; // divider2로부터의 여백
+    
+    // artist 요소의 top 위치 계산
+    const artistTopPosition = divider2Position - marginFromDivider - totalHeight;
+    
+    // 위치 적용
+    artistElement.style.top = toVh(artistTopPosition);
   }
 
   document.querySelectorAll('.work-item').forEach(item => {
