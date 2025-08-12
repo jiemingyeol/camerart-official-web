@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------
   // 4) FUNDING 클릭 시 외부 링크 열기
   // -------------------------------
-  const fundingTitle = document.querySelector(".funding-title");
+  const fundingTitle = document.querySelector(".funding-container img");
 
   if (fundingTitle) {
     let fundingUrl = null;

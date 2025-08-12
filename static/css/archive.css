@@ -328,10 +328,7 @@
     margin-left: calc(2.5 / 1920 * 100vw);
     font-size: calc(48 / 1080 * 100vh);
     text-decoration: none;
-    cursor: pointer;
     color: #000;
-    pointer-events: auto;
-    z-index: 9999;
 }
 
 /* 이미지 컨테이너는 고정 크기 유지 */
@@ -343,8 +340,11 @@
 }
 
 .funding-container img {
+    cursor: pointer;
+    pointer-events: auto;
     width: calc(792 / 1920 * 100vw);
     height: calc(320 / 1080 * 100vh);
+    z-index: 9999;
     display: block;
 }
 
