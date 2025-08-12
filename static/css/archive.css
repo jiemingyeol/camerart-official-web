@@ -151,7 +151,7 @@
     left: calc(64 / 1920 * 100vw);
     font-size: calc(16 / 1080 * 100vh);
     color: #000;
-    line-height: 1.6;
+    line-height: calc(32 / 1080 * 100vh);
     margin: 0;
 }
 
