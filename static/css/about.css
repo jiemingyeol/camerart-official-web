@@ -27,9 +27,10 @@ body.about-page {
 /* ────────── 페이지 제목 (CAMER:ART) ────────── */
 .about-title {
   position: absolute;
+  font-family: 'EliceDXNeolli-Light';
   top: calc(111 / 1080 * 100vh);
   left: calc(90 / 1920 * 100vw);
-  font-size: calc(130 / 2560 * 100vw);   /* 화면 크기에 맞춘 반응형 크기 */
+  font-size: calc(115 / 2560 * 100vw);   /* 화면 크기에 맞춘 반응형 크기 */
   letter-spacing: calc(7 / 2560 * 100vw); /* 글자 간격 */
   margin: 0;
 }
