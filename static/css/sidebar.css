@@ -70,9 +70,9 @@
 /* ─────────────────────────────────────────────────── */
 #instagram-icon {
     position: absolute;
-    left: calc(32 / 1080 * 100vh);
-    bottom: calc(32 / 1920 * 100vw);
-    width: calc(41 / 1080 * 100vh);
+    left: calc(32 / 1920 * 100vw);
+    bottom: calc(32 / 1080 * 100vh);
+    width: calc(41 / 1920 * 100vw);
     height: calc(41 / 1080 * 100vh);
     z-index: 1002;
 }
