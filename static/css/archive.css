@@ -344,7 +344,7 @@
     cursor: pointer;
     pointer-events: auto;
     width: calc(792 / 1920 * 100vw);
-    height: calc(320 / 1080 * 100vh);
+    height: calc(360 / 1080 * 100vh);
     z-index: 9999;
     display: block;
 }
