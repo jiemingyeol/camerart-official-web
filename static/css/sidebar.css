@@ -124,6 +124,14 @@
     cursor: pointer;
 }
 
+/* 현재 페이지 메뉴 항목에 밑줄 표시 */
+#sidebar .menu li.active > a,
+#sidebar .menu li.active > span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 /* 초기 로딩 시 트랜지션 제거 */
 .sidebar-no-transition {
     transition: none !important;
@@ -195,6 +203,13 @@
         line-height: clamp(1.2rem, calc(24 / 1080 * 100vh), 1.5rem);
     }
     
+    #sidebar .menu li.active > a,
+    #sidebar .menu li.active > span {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+    }
+    
     #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
         font-size: clamp(0.8rem, calc(16 / 1080 * 100vh), 1rem);
     }
@@ -232,6 +247,13 @@
     #sidebar .menu span {
         font-size: clamp(0.8rem, calc(18 / 1080 * 100vh), 1rem);
         line-height: clamp(1.1rem, calc(24 / 1080 * 100vh), 1.3rem);
+    }
+    
+    #sidebar .menu li.active > a,
+    #sidebar .menu li.active > span {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
     }
     
     #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
@@ -273,6 +295,13 @@
         line-height: clamp(1rem, calc(24 / 1080 * 100vh), 1.2rem);
     }
     
+    #sidebar .menu li.active > a,
+    #sidebar .menu li.active > span {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+    }
+    
     #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {
         font-size: clamp(0.6rem, calc(16 / 1080 * 100vh), 0.8rem);
     }
@@ -310,6 +339,13 @@
     #sidebar .menu span {
         font-size: clamp(0.6rem, calc(18 / 1080 * 100vh), 0.8rem);
         line-height: clamp(0.9rem, calc(24 / 1080 * 100vh), 1.1rem);
+    }
+    
+    #sidebar .menu li.active > a,
+    #sidebar .menu li.active > span {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
     }
     
     #sidebar .menu .submenu.archive-menu li.archive-menu-item > a {

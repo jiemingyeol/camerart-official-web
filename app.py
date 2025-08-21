@@ -15,7 +15,7 @@ def load_archive_data():
 def intro():
     archive_data = load_archive_data()
     total_pages = len(archive_data)
-    return render_template('intro.html', total_pages=total_pages)
+    return render_template('intro.html', total_pages=total_pages, current_page='intro')
 
 @app.route('/now')
 def now():
@@ -28,7 +28,8 @@ def now():
         current_page=current_page,
         total_pages=total_pages,
         exhibition=exhibition,
-        has_carousel=has_carousel
+        has_carousel=has_carousel,
+        current_section='now'
     )
 
 @app.route('/now/works')
@@ -40,7 +41,8 @@ def now_works():
     return render_template('archive/works_detail.html',
         current_page=current_page,
         total_pages=total_pages,
-        exhibition=exhibition
+        exhibition=exhibition,
+        current_section='now'
     )
 
 @app.route('/archive/<int:num>')
@@ -54,7 +56,8 @@ def archive_page(num):
         current_page=num,
         total_pages=total_pages,
         exhibition=exhibition,
-        has_carousel=has_carousel
+        has_carousel=has_carousel,
+        current_section='archive'
     )
 
 @app.route('/archive/<int:num>/works')
@@ -66,7 +69,8 @@ def archive_works(num):
         f'archive/works_detail.html',
         current_page=num,
         total_pages=total_pages,
-        exhibition=exhibition
+        exhibition=exhibition,
+        current_section='archive'
     )
 
 @app.route("/about")
@@ -79,7 +83,8 @@ def about():
     return render_template(
         "about.html",
         history=history_data,
-        total_pages=total_pages
+        total_pages=total_pages,
+        current_page='about'
     )
 
 if __name__ == '__main__':
