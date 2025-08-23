@@ -21,7 +21,7 @@ def intro():
 def now():
     archive_data = load_archive_data()
     total_pages = len(archive_data)-1
-    current_page = 15
+    current_page = 16
     exhibition = archive_data.get(str(current_page), {})
     has_carousel = "poster_carousel" in exhibition["images"]
     return render_template('archive/index.html',

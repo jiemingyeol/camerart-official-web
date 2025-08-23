@@ -1226,7 +1226,7 @@
       "funding_embed": "https://tumblbug.com/camerart15th",
       "funding_position": {
         "x": 64,
-        "y": 3180
+        "y": 3230
       }
     }
   },
@@ -1242,15 +1242,162 @@
         "images/archive/16/install2.png",
         "images/archive/16/install3.png",
         "images/archive/16/install4.png",
-        "images/archive/16/install5.png"
+        "images/archive/16/install5.png",
+        "images/archive/16/install6.png"
       ],
-      "works": [],
-      "works_detail": [],
+      "works": [
+        {
+          "image": "images/archive/16/work1.png",
+          "caption": "자유의, 자유에 의한, 자유를 위한,<br>자유에 대한 계약서 (2025)",
+          "x": 64,
+          "y": 1424,
+          "width": 192,
+          "height": 320
+        },
+        {
+          "image": "images/archive/16/work2.png",
+          "caption": "La La Limb (2025)",
+          "x": 280,
+          "y": 1513,
+          "width": 296,
+          "height": 231 
+        },
+        {
+          "image": "images/archive/16/work3.png",
+          "caption": "Wind (2025)",
+          "x": 600,
+          "y": 1459,
+          "width": 200,
+          "height": 285
+        },
+        {
+          "image": "images/archive/16/work4.png",
+          "caption": "축적에 의한 상실 (2025)",
+          "x": 64,
+          "y": 1943,
+          "width": 210,
+          "height": 175
+        },
+        {
+          "image": "images/archive/16/work5.png",
+          "caption": "판도라 (2025)",
+          "x": 298,
+          "y": 1819,
+          "width": 232,
+          "height": 299
+        },
+        {
+          "image": "images/archive/16/work6.png",
+          "caption": "토끼의 두 번째 편지 (2025)",
+          "x": 554,
+          "y": 1897,
+          "width": 302,
+          "height": 221
+        },
+        {
+          "image": "images/archive/16/work7.png",
+          "caption": "너머의 정원 (2025)",
+          "x": 64,
+          "y": 2193,
+          "width": 266,
+          "height": 356
+        },
+        {
+          "image": "images/archive/16/work8.png",
+          "caption": "Dress Code: None (2025)",
+          "x": 354,
+          "y": 2260,
+          "width": 193,
+          "height": 289
+        },
+        {
+          "image": "images/archive/16/work1.png",
+          "caption": "Touch me (2025)",
+          "x": 571,
+          "y": 2228,
+          "width": 238,
+          "height": 321
+        }
+      ],
+      "works_detail": [
+        {
+          "image": "images/archive/16/work1_large.png",
+          "caption": "자유의, 자유에 의한, 자유를 위한,<br>자유에 대한 계약서 | 김지아 (2025)"
+        },
+        {
+          "image": "images/archive/16/work2_large.png",
+          "caption": "La La Limb | 김노아 (2025)"
+        },
+        {
+          "image": "images/archive/16/work3_large.png",
+          "caption": "Wind | 홍준기(2025)"
+        },
+        {
+          "image": "images/archive/16/work4_large.png",
+          "caption": "축적에 의한 상실 | 라현서 (2025)"
+        },
+        {
+          "image": "images/archive/16/work5_large.png",
+          "caption": "판도라 | 진수연 (2025)"
+        },
+        {
+          "image": "images/archive/16/work6_large.png",
+          "caption": "토끼의 두 번째 편지 | 라현서, 안희정, 이가은, 최은서(2025)"
+        },
+        {
+          "image": "images/archive/16/work7_large.png",
+          "caption": "너머의 정원 | 이가은 (2025)"
+        },
+        {
+          "image": "images/archive/16/work8_large.png",
+          "caption": "Dress Code: None | 장효영, 조윤영 (2025)"
+        },
+        {
+          "image": "images/archive/16/work9_large.png",
+          "caption": "Touch me | 김나현, 유성현, 조윤영, 홍준기 (2025)"
+        },
+        {
+          "image": "images/archive/16/work10_large.png",
+          "caption": "Flutter(날갯짓) | 지민결, 홍준기 (2025)"
+        },
+        {
+          "image": "images/archive/16/work11_large.png",
+          "caption": "투명해지고 나는 비로소 | 김서연 (2025)"
+        },
+        {
+          "image": "images/archive/16/work12_large.png",
+          "caption": "나의 정원, 나의 자유 | 김나윤, 김유희, 장준, 지민결 (2025)"
+        },
+        {
+          "image": "images/archive/16/work13_large.png",
+          "caption": "When you wish upon a star | 김서연, 김채유, 장효영, 진수연 (2025)"
+        },
+        {
+          "image": "images/archive/16/work14_large.png",
+          "caption": "자유 레시피 | 김나윤 (2025)"
+        },
+        {
+          "image": "images/archive/16/work15_large.png",
+          "caption": "비워둔 꿈 | 안희정(2025)"
+        },
+        {
+          "image": "images/archive/16/work16_large.png",
+          "caption": "My Home | 이라영 (2025)"
+        },
+        {
+          "image": "images/archive/16/work17_large.png",
+          "caption": "6과 2분의 1 | 김하리 (2025)"
+        },
+        {
+          "image": "images/archive/16/work18_large.png",
+          "caption": "지 | 장준 (2025)"
+        }
+      ],
       "funding": "images/archive/16/funding.png",
       "funding_embed": "https://tumblbug.com/tokkey0fcamerart16th",
       "funding_position": {
         "x": 64,
-        "y": 1166
+        "y": 3280
       }
     }
   }
