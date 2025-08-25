@@ -337,7 +337,7 @@
     top: calc(3250 / 1080 * 100vh);
     overflow: visible;
     pointer-events: none;
-    padding-bottom: calc(288 / 1080 * 100vh);
+    padding-bottom: calc(200 / 1080 * 100vh);
 }
 
 .funding-container img {
